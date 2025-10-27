@@ -1,6 +1,5 @@
 [project]
 name = "xbox-webapi"
-version = "2.1.0"
 description = "A library to authenticate with Windows Live/Xbox Live and use their API"
 authors = [
     {name = "OpenXbox"},
@@ -28,6 +27,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dynamic = ["version"]
 
 [project.urls]
 Homepage = "https://github.com/OpenXbox/xbox-webapi-python"
@@ -145,10 +145,24 @@ tests = [
 target-version = ["py37", "py38", "py39", "py310", "py311"]
 exclude = 'generated'
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["xbox.webapi.*"]
+[tool.hatch.version]
+source = "regex_commit"
+commit_extra_args = ["-e"]
+path = "xbox/webapi/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/xbox/webapi",
+]
+[tool.hatch.build.targets.wheel]
+packages = ["xbox/webapi"]
+
+[tool.hatch.envs.hatch-static-analysis]
+dependencies = [
+    "ruff==0.14.0",
+]
+config-path = "none"
 
 [build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling", "hatch-regex-commit"]
+build-backend = "hatchling.build"
