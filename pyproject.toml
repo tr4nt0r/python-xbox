@@ -157,6 +157,33 @@ include = [
 [tool.hatch.build.targets.wheel]
 packages = ["xbox/webapi"]
 
+[tool.hatch.envs.default]
+python = "3.13"
+dependencies = [
+    "appdirs==1.4.4",
+    "ecdsa==0.19.1",
+    "httpx==0.28.1",
+    "ms_cv==0.1.1",
+    "pydantic==2.12.3",
+]
+
+[tool.hatch.envs.hatch-test]
+parallel = true
+extra-dependencies = [
+  "pytest-cov~=6.2",
+  "pytest-asyncio~=1.1",
+  "respx~=0.22"
+]
+extra-args = ["--cov=xbox/webapi/", "--cov-report=term-missing", "--cov-report=xml", "-vv"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["xbox/webapi"]
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.14", "3.13", "3.12", "3.11"]
+
 [tool.hatch.envs.hatch-static-analysis]
 dependencies = [
     "ruff==0.14.0",
