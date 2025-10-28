@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 from datetime import datetime
@@ -53,10 +52,12 @@ class Recommendation(PascalCaseModel):
     type: str
     reasons: list[str]
 
+
 class SessionRef(CamelCaseModel):
     scid: str
     template_name: str
     name: str
+
 
 class PartyDetails(CamelCaseModel):
     session_ref: SessionRef
@@ -64,6 +65,7 @@ class PartyDetails(CamelCaseModel):
     visibility: str
     join_restriction: str
     accepted: int
+
 
 class MultiplayerSummary(CamelCaseModel):
     in_multiplayer_session: int | None = None
@@ -79,7 +81,7 @@ class RecentPlayer(CamelCaseModel):
 
 class Follower(CamelCaseModel):
     text: str | None = None
-    followed_date_time_utc: datetime | None  = None
+    followed_date_time_utc: datetime | None = None
 
 
 class PreferredColor(CamelCaseModel):
@@ -139,7 +141,7 @@ class SocialManager(CamelCaseModel):
 
 
 class Avatar(CamelCaseModel):
-    update_time_offset: datetime | None  = None
+    update_time_offset: datetime | None = None
     spritesheet_metadata: Any | None = None
 
 
@@ -157,7 +159,7 @@ class Person(CamelCaseModel):
     is_following_caller: bool
     is_followed_by_caller: bool
     is_identity_shared: bool
-    added_date_time_utc: datetime | None  = None
+    added_date_time_utc: datetime | None = None
     display_name: str | None = None
     real_name: str
     display_pic_raw: str
@@ -175,7 +177,7 @@ class Person(CamelCaseModel):
     is_cloaked: bool | None = None
     is_quarantined: bool
     is_xbox_360_gamerpic: bool
-    last_seen_date_time_utc: datetime | None  = None
+    last_seen_date_time_utc: datetime | None = None
     suggestion: Suggestion | None = None
     recommendation: Recommendation | None = None
     search: Any | None = None
@@ -202,7 +204,6 @@ class Person(CamelCaseModel):
     is_friend: bool
     is_friend_request_received: bool
     is_friend_request_sent: bool
-    
 
 
 class RecommendationSummary(CamelCaseModel):
@@ -214,7 +215,6 @@ class RecommendationSummary(CamelCaseModel):
     steam_friend: int
     promote_suggestions: bool
     community_suggestion: int
-    
 
 
 class FriendFinderState(CamelCaseModel):
@@ -239,8 +239,10 @@ class FriendFinderState(CamelCaseModel):
     you_tube_opt_in_status: str
     you_tube_token_status: str
 
+
 class FriendRequestSummary(CamelCaseModel):
     friend_requests_received_count: int
+
 
 class PeopleResponse(CamelCaseModel):
     people: list[Person]

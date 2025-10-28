@@ -1,6 +1,7 @@
 """
 Gameclips - Get gameclip info
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.gameclips.models import GameclipsResponse
 

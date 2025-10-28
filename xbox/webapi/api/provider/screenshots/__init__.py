@@ -1,6 +1,7 @@
 """
 Screenshots - Get screenshot info
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.screenshots.models import ScreenshotResponse
 

@@ -1,6 +1,7 @@
 """
 Example script that enables using your one-time-free gamertag change
 """
+
 import argparse
 import asyncio
 import os

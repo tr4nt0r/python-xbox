@@ -1,4 +1,5 @@
 """Authentication Models."""
+
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional
 

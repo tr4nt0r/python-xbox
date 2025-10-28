@@ -1,4 +1,5 @@
 """Base Models."""
+
 from pydantic import ConfigDict, BaseModel
 
 
@@ -16,12 +17,18 @@ def to_lower(string):
 
 
 class PascalCaseModel(BaseModel):
-    model_config = ConfigDict(arbitrary_types_allowed=True, populate_by_name=True, alias_generator=to_pascal)
+    model_config = ConfigDict(
+        arbitrary_types_allowed=True, populate_by_name=True, alias_generator=to_pascal
+    )
 
 
 class CamelCaseModel(BaseModel):
-    model_config = ConfigDict(arbitrary_types_allowed=True, populate_by_name=True, alias_generator=to_camel)
+    model_config = ConfigDict(
+        arbitrary_types_allowed=True, populate_by_name=True, alias_generator=to_camel
+    )
 
 
 class LowerCaseModel(BaseModel):
-    model_config = ConfigDict(arbitrary_types_allowed=True, populate_by_name=True, alias_generator=to_lower)
+    model_config = ConfigDict(
+        arbitrary_types_allowed=True, populate_by_name=True, alias_generator=to_lower
+    )

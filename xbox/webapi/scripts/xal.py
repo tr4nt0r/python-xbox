@@ -1,6 +1,7 @@
 """
 Example scripts that performs XBL authentication via XAL
 """
+
 import argparse
 import asyncio
 import json

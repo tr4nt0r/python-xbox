@@ -3,6 +3,7 @@ Xbox Authentication Library
 
 Authenticate with Windows Live Server and Xbox Live (used by mobile Xbox Apps)
 """
+
 import base64
 import hashlib
 import logging

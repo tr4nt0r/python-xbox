@@ -4,6 +4,7 @@ CQS
 Used for download stump (TV Streaming) data
 (RemoteTVInput ServiceChannel on Smartglass)
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.cqs.models import (
     CqsChannelListResponse,

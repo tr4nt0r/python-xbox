@@ -1,6 +1,7 @@
 """
 Store Catalog - Lookup Product Information
 """
+
 from typing import List
 
 from xbox.webapi.api.provider.baseprovider import BaseProvider

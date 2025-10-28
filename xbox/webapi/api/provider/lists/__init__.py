@@ -1,6 +1,7 @@
 """
 EPLists - Mainly used for XBL Pins
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.lists.models import ListMetadata, ListsResponse
 

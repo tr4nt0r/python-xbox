@@ -1,6 +1,7 @@
 """
 Titlehub - Get Title history and info
 """
+
 from typing import List, Optional
 
 from xbox.webapi.api.provider.baseprovider import BaseProvider

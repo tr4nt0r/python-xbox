@@ -3,6 +3,7 @@ Message - Read and send messages
 
 TODO: Support group messaging
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.message.models import (
     ConversationResponse,

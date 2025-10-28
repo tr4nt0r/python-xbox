@@ -1,6 +1,7 @@
 """
 Mediahub - Fetch screenshots and gameclips
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.mediahub.models import (
     MediahubGameclips,

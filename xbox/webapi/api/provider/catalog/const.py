@@ -1,4 +1,5 @@
 """Web API Constants."""
+
 from xbox.webapi.api.provider.catalog.models import AlternateIdType
 
 HOME_APP_IDS = {

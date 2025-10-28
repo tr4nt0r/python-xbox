@@ -3,6 +3,7 @@ Profile
 
 Get Userprofiles by XUID or Gamertag
 """
+
 from typing import List
 
 from xbox.webapi.api.provider.ratelimitedprovider import RateLimitedProvider

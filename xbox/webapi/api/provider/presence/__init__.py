@@ -1,6 +1,7 @@
 """
 Presence - Get online status of friends
 """
+
 from typing import List
 
 from xbox.webapi.api.provider.baseprovider import BaseProvider

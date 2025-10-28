@@ -10,7 +10,7 @@ from xbox.webapi.common.request_signer import RequestSigner
 
 
 class SignedSession(httpx.AsyncClient):
-    def __init__(self, request_signer=None, ssl_context: SSLContext=None):
+    def __init__(self, request_signer=None, ssl_context: SSLContext = None):
         super().__init__(verify=ssl_context if ssl_context is not None else True)
 
         self.request_signer = request_signer or RequestSigner()

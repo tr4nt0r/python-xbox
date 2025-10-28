@@ -4,6 +4,7 @@ Xbox Live Client
 Basic factory that stores :class:`XboxLiveLanguage`, User authorization data
 and available `Providers`
 """
+
 import logging
 from typing import Any
 
@@ -64,9 +65,9 @@ class Session:
             # Ensure tokens valid
             await self._auth_mgr.refresh_tokens()
             # Set auth header
-            headers[
-                "Authorization"
-            ] = self._auth_mgr.xsts_token.authorization_header_value
+            headers["Authorization"] = (
+                self._auth_mgr.xsts_token.authorization_header_value
+            )
 
         if include_cv:
             headers["MS-CV"] = self._cv.increment()
