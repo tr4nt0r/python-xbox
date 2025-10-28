@@ -4,12 +4,12 @@
       "screenshotId": "013ccd76-95a8-4bff-bbfc-58b3fa40e7a8",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:45.8585941Z",
       "dateTaken": "2018-03-29T16:46:14Z",
       "lastModified": "2018-03-29T16:46:14Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -24,19 +24,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535460013312229-public/013ccd76-95a8-4bff-bbfc-58b3fa40e7a8_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535460013312229-public/013ccd76-95a8-4bff-bbfc-58b3fa40e7a8_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535460013312229-private/013ccd76-95a8-4bff-bbfc-58b3fa40e7a8.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=9R%2FeI5EL%2BDDlIlwIcz9rnpLWIyv9%2F5%2BOYiEMeYTmyQY%3D",
           "fileSize": 1373197,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -44,19 +44,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "34564b38-0d8a-4ea4-973e-814160ad91b1",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:33.4309282Z",
       "dateTaken": "2018-03-29T16:46:20Z",
       "lastModified": "2018-03-29T16:46:20Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -71,19 +71,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535407837993814-public/34564b38-0d8a-4ea4-973e-814160ad91b1_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535407837993814-public/34564b38-0d8a-4ea4-973e-814160ad91b1_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535407837993814-private/34564b38-0d8a-4ea4-973e-814160ad91b1.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=uJttrKSiAPz7Uuh7h%2FfLcghkNThb7t6U00vYlWGix9M%3D",
           "fileSize": 2646603,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -91,19 +91,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "ce9e8753-fd53-472e-9fe7-9d73cabaf08b",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:26.0688432Z",
       "dateTaken": "2018-03-29T16:44:51Z",
       "lastModified": "2018-03-29T16:44:51Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -118,19 +118,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535439795340009-public/ce9e8753-fd53-472e-9fe7-9d73cabaf08b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535439795340009-public/ce9e8753-fd53-472e-9fe7-9d73cabaf08b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535439795340009-private/ce9e8753-fd53-472e-9fe7-9d73cabaf08b.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=AEafYF5zK37UtAxg7PbaLcg7Rt2ZouFdZ1y2VlL%2F%2FrM%3D",
           "fileSize": 5264353,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -138,19 +138,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "50c2651b-d626-4f51-b660-b4fcda11af3e",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:23.8351252Z",
       "dateTaken": "2018-03-29T16:45:56Z",
       "lastModified": "2018-03-29T16:45:56Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -165,19 +165,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274794500800-public/50c2651b-d626-4f51-b660-b4fcda11af3e_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274794500800-public/50c2651b-d626-4f51-b660-b4fcda11af3e_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2533274794500800-private/50c2651b-d626-4f51-b660-b4fcda11af3e.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=yp7hasyjJ6zGbv5L3383NdZ7xAvFhDm9LP3VvPxrCZs%3D",
           "fileSize": 2013187,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -185,19 +185,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "de8f3c8b-068d-47d6-bc0e-7a65786f72f6",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:22.5002698Z",
       "dateTaken": "2018-03-29T16:43:55Z",
       "lastModified": "2018-03-29T16:43:55Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -212,19 +212,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535409089914471-public/de8f3c8b-068d-47d6-bc0e-7a65786f72f6_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535409089914471-public/de8f3c8b-068d-47d6-bc0e-7a65786f72f6_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535409089914471-private/de8f3c8b-068d-47d6-bc0e-7a65786f72f6.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Twaq37hDMdQc%2BxC3YQidgYtjTpGNahspEHi20ZeGKM8%3D",
           "fileSize": 2480760,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -232,19 +232,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "pt-BR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "83c132e8-a973-4c58-8ff9-337020d67f59",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:14.4653683Z",
       "dateTaken": "2018-03-29T16:44:24Z",
       "lastModified": "2018-03-29T16:44:24Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -259,19 +259,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535445934155950-public/83c132e8-a973-4c58-8ff9-337020d67f59_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535445934155950-public/83c132e8-a973-4c58-8ff9-337020d67f59_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535445934155950-private/83c132e8-a973-4c58-8ff9-337020d67f59.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=b1aqjBfb35Ptke%2F%2B%2BbfCmKznBRvtymShYoPrJAGXM48%3D",
           "fileSize": 2154975,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -279,19 +279,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "it-IT",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "bd1c6a0e-5564-414b-814b-25f677885d6f",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:14.3789472Z",
       "dateTaken": "2018-03-29T16:45:40Z",
       "lastModified": "2018-03-29T16:45:40Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -306,19 +306,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535406384081076-public/bd1c6a0e-5564-414b-814b-25f677885d6f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535406384081076-public/bd1c6a0e-5564-414b-814b-25f677885d6f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535406384081076-private/bd1c6a0e-5564-414b-814b-25f677885d6f.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Eld0Koyk6TYYM%2F37rYXOPxvCNW58UJMSdNQr9%2B8dFOs%3D",
           "fileSize": 777240,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -326,19 +326,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "0c5887ad-3088-466f-bfd0-a39de26335f7",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:09.8568055Z",
       "dateTaken": "2018-03-29T16:44:10Z",
       "lastModified": "2018-03-29T16:44:10Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -353,19 +353,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535466120169153-public/0c5887ad-3088-466f-bfd0-a39de26335f7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535466120169153-public/0c5887ad-3088-466f-bfd0-a39de26335f7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2535466120169153-private/0c5887ad-3088-466f-bfd0-a39de26335f7.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=BYR23Y%2Ff%2BCTtuzdbOGhjeY3eA9J71LByBNnNlfTUUnE%3D",
           "fileSize": 2225018,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -373,19 +373,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "11fa0e86-4594-48fd-9e08-dce950266cc9",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:46:00.2621371Z",
       "dateTaken": "2018-03-29T16:45:51Z",
       "lastModified": "2018-03-29T16:45:51Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -400,19 +400,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274831895106-public/11fa0e86-4594-48fd-9e08-dce950266cc9_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274831895106-public/11fa0e86-4594-48fd-9e08-dce950266cc9_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2533274831895106-private/11fa0e86-4594-48fd-9e08-dce950266cc9.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=TD0PBZJKZqCvL86JO0j9QVXR5PkZDawipKkwRE8iJ%2Fs%3D",
           "fileSize": 1603247,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -420,19 +420,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "cca26e6d-09c1-4977-ac27-537145eecb39",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:45:41.4909591Z",
       "dateTaken": "2018-03-29T16:35:49Z",
       "lastModified": "2018-03-29T16:35:49Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -447,19 +447,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535423394542260-public/cca26e6d-09c1-4977-ac27-537145eecb39_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535423394542260-public/cca26e6d-09c1-4977-ac27-537145eecb39_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535423394542260-private/cca26e6d-09c1-4977-ac27-537145eecb39.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=PHrlT0gpkB15Nzhh4Z1RC7V3uOMjCg3AEP5EEJwm7cY%3D",
           "fileSize": 10411151,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -467,19 +467,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "17c3cf32-f475-4f5c-a8d6-8527a4a2d4ac",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:45:41.1355831Z",
       "dateTaken": "2018-03-29T16:44:02Z",
       "lastModified": "2018-03-29T16:44:02Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -494,19 +494,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535440186521780-public/17c3cf32-f475-4f5c-a8d6-8527a4a2d4ac_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535440186521780-public/17c3cf32-f475-4f5c-a8d6-8527a4a2d4ac_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535440186521780-private/17c3cf32-f475-4f5c-a8d6-8527a4a2d4ac.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=2v7yaFsWUL%2Buqj%2FjEBpGKrXdZloWwbDBGyKlH%2FyjvM0%3D",
           "fileSize": 1647869,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -514,19 +514,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "c4713e38-d528-4d19-95b3-72488cb133fc",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:45:20.0795714Z",
       "dateTaken": "2018-03-29T16:43:16Z",
       "lastModified": "2018-03-29T16:43:16Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -541,19 +541,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535440465393783-public/c4713e38-d528-4d19-95b3-72488cb133fc_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535440465393783-public/c4713e38-d528-4d19-95b3-72488cb133fc_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535440465393783-private/c4713e38-d528-4d19-95b3-72488cb133fc.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=1uzTAAsiELrn5%2FB8vlmtiBRCPV7%2BjHb%2BVwd%2FTgTVq9o%3D",
           "fileSize": 2126327,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -561,19 +561,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "476dda20-8d5e-4547-8eb0-8f419176188a",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:45:19.2428404Z",
       "dateTaken": "2018-03-29T16:44:00Z",
       "lastModified": "2018-03-29T16:44:00Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -588,19 +588,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2533274926247531-public/476dda20-8d5e-4547-8eb0-8f419176188a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2533274926247531-public/476dda20-8d5e-4547-8eb0-8f419176188a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2533274926247531-private/476dda20-8d5e-4547-8eb0-8f419176188a.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=45%2BXJUq%2Fm2vhN1%2FPGhot6SmQT3FnS1iuPBSQfzC1svE%3D",
           "fileSize": 1519935,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -608,19 +608,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "69cddf46-2ab8-4ac7-8bb3-c75aefda2a46",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:45:07.2273107Z",
       "dateTaken": "2018-03-29T16:44:02Z",
       "lastModified": "2018-03-29T16:44:02Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -635,19 +635,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2533274908029709-public/69cddf46-2ab8-4ac7-8bb3-c75aefda2a46_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2533274908029709-public/69cddf46-2ab8-4ac7-8bb3-c75aefda2a46_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2533274908029709-private/69cddf46-2ab8-4ac7-8bb3-c75aefda2a46.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=%2FAOV%2FmtFUTzyeDWmj89nohSffqd6v%2BpjwGu0GCOEgWM%3D",
           "fileSize": 786644,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -655,19 +655,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "61216043-301f-4b6b-9ae2-b1aff49b1522",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:45:01.0962965Z",
       "dateTaken": "2018-03-29T16:40:15Z",
       "lastModified": "2018-03-29T16:40:15Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -682,19 +682,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535470462896253-public/61216043-301f-4b6b-9ae2-b1aff49b1522_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535470462896253-public/61216043-301f-4b6b-9ae2-b1aff49b1522_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535470462896253-private/61216043-301f-4b6b-9ae2-b1aff49b1522.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=wBH568Kp0MEnVH9xQZqrTfxKg0uv%2FFBb0UVGUqOiCRY%3D",
           "fileSize": 891829,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -702,19 +702,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "ja-JP",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "dfc7dc1a-344a-4652-babf-e3d84fa52a71",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:44:51.8767161Z",
       "dateTaken": "2018-03-29T16:42:50Z",
       "lastModified": "2018-03-29T16:42:50Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -729,19 +729,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535406650249406-public/dfc7dc1a-344a-4652-babf-e3d84fa52a71_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535406650249406-public/dfc7dc1a-344a-4652-babf-e3d84fa52a71_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2535406650249406-private/dfc7dc1a-344a-4652-babf-e3d84fa52a71.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=bDByw9%2FFeqE1Kk%2BpuLqzRk2LN70wjmQBAcf%2Fw6KIwWA%3D",
           "fileSize": 1945161,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -749,19 +749,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "pt-BR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "ecedd889-9a68-40cf-bc49-2685ccd6611a",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:44:06.8474389Z",
       "dateTaken": "2018-03-29T16:43:47Z",
       "lastModified": "2018-03-29T16:43:47Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -776,19 +776,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274967133929-public/ecedd889-9a68-40cf-bc49-2685ccd6611a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274967133929-public/ecedd889-9a68-40cf-bc49-2685ccd6611a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2533274967133929-private/ecedd889-9a68-40cf-bc49-2685ccd6611a.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=bnCYBpDN9%2Fx6T05RJda5y3Q%2BjGaBeEhIzpi6R33kA5E%3D",
           "fileSize": 599505,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -796,19 +796,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "65c870a2-e3c5-4b06-9aeb-ead489985341",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:58.9946311Z",
       "dateTaken": "2018-03-29T16:43:47Z",
       "lastModified": "2018-03-29T16:43:47Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -823,19 +823,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535445095334060-public/65c870a2-e3c5-4b06-9aeb-ead489985341_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535445095334060-public/65c870a2-e3c5-4b06-9aeb-ead489985341_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535445095334060-private/65c870a2-e3c5-4b06-9aeb-ead489985341.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=QBjWv1AUzF%2BwqflLv6dP%2FZ8Dysc1fkw2wPlNoYWZqrw%3D",
           "fileSize": 3776825,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -843,19 +843,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "bd281d42-1157-447c-9297-e670b3508b81",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:55.781259Z",
       "dateTaken": "2018-03-29T16:40:04Z",
       "lastModified": "2018-03-29T16:40:04Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -870,19 +870,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535470462896253-public/bd281d42-1157-447c-9297-e670b3508b81_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535470462896253-public/bd281d42-1157-447c-9297-e670b3508b81_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535470462896253-private/bd281d42-1157-447c-9297-e670b3508b81.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=4%2FqSFllM%2BOI%2FVU4rNzcfU9sdHJ5R%2FuUrWKrM%2FOPfrrs%3D",
           "fileSize": 948349,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -890,19 +890,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "ja-JP",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "5adf8622-1c3e-4348-8376-89e9cab4d033",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:45.9711612Z",
       "dateTaken": "2018-03-29T16:41:36Z",
       "lastModified": "2018-03-29T16:41:36Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -917,19 +917,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535408696098971-public/5adf8622-1c3e-4348-8376-89e9cab4d033_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535408696098971-public/5adf8622-1c3e-4348-8376-89e9cab4d033_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535408696098971-private/5adf8622-1c3e-4348-8376-89e9cab4d033.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=hBRjiBsIX3s3uChyHgMTeV8YvBvYHPMBFXKOBeoMOjo%3D",
           "fileSize": 2062192,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -937,19 +937,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "8dde0e5a-de8b-47dc-af83-35306eeff7b3",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:44.5890063Z",
       "dateTaken": "2018-03-29T16:43:32Z",
       "lastModified": "2018-03-29T16:43:32Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -964,19 +964,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2533274967133929-public/8dde0e5a-de8b-47dc-af83-35306eeff7b3_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2533274967133929-public/8dde0e5a-de8b-47dc-af83-35306eeff7b3_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2533274967133929-private/8dde0e5a-de8b-47dc-af83-35306eeff7b3.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=dx5zlV4LeNV%2FZWoq9a7KvYD4lqguSnTTa4Q4Wajc5zw%3D",
           "fileSize": 575102,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -984,19 +984,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "a5820061-3401-4fdb-a8c7-33765bac7942",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:36.9918321Z",
       "dateTaken": "2018-03-29T16:41:35Z",
       "lastModified": "2018-03-29T16:41:35Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1011,19 +1011,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535453312150438-public/a5820061-3401-4fdb-a8c7-33765bac7942_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535453312150438-public/a5820061-3401-4fdb-a8c7-33765bac7942_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535453312150438-private/a5820061-3401-4fdb-a8c7-33765bac7942.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=enPduE0UNRqxZ%2FnVLbjl%2BBKGq%2B0ygqMwbngpatvBlGc%3D",
           "fileSize": 2061511,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1031,19 +1031,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "ed1d41f7-b7c2-41a2-a0c5-854b36ed980a",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:34.165464Z",
       "dateTaken": "2018-03-29T16:27:06Z",
       "lastModified": "2018-03-29T16:27:06Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1058,19 +1058,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274883840874-public/ed1d41f7-b7c2-41a2-a0c5-854b36ed980a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274883840874-public/ed1d41f7-b7c2-41a2-a0c5-854b36ed980a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2533274883840874-private/ed1d41f7-b7c2-41a2-a0c5-854b36ed980a.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=qs0DEDbt2bP1aoOAGQs2dTUubu84aqCz1plxojeHXvQ%3D",
           "fileSize": 2944375,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1078,19 +1078,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "24cd2979-6267-4022-aeb9-38033161e4ae",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:13.5470575Z",
       "dateTaken": "2018-03-29T16:42:48Z",
       "lastModified": "2018-03-29T16:42:48Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1105,19 +1105,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274967133929-public/24cd2979-6267-4022-aeb9-38033161e4ae_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274967133929-public/24cd2979-6267-4022-aeb9-38033161e4ae_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2533274967133929-private/24cd2979-6267-4022-aeb9-38033161e4ae.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=II9Rc7ixg85DXU9RDszcpLW2UviNEDEgmFr53hUdHxU%3D",
           "fileSize": 1882873,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1125,19 +1125,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "e185288b-186a-4b14-994e-fab8f6e7d097",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:10.8339014Z",
       "dateTaken": "2018-03-29T16:40:58Z",
       "lastModified": "2018-03-29T16:40:58Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1152,19 +1152,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274906081257-public/e185288b-186a-4b14-994e-fab8f6e7d097_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274906081257-public/e185288b-186a-4b14-994e-fab8f6e7d097_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274906081257-private/e185288b-186a-4b14-994e-fab8f6e7d097.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=ItB1u9mYZ1cvwWikc1HJE23l4PIB2DOrVrHXgnbti1M%3D",
           "fileSize": 2333255,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1172,19 +1172,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "cc225b1a-4dec-45ce-ac35-0eb6fa23d99b",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:03.4927003Z",
       "dateTaken": "2018-03-29T16:41:44Z",
       "lastModified": "2018-03-29T16:41:44Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1199,19 +1199,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535408866241487-public/cc225b1a-4dec-45ce-ac35-0eb6fa23d99b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535408866241487-public/cc225b1a-4dec-45ce-ac35-0eb6fa23d99b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535408866241487-private/cc225b1a-4dec-45ce-ac35-0eb6fa23d99b.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=3pzl%2BOJpwu8ydoiIJogjTZv08NxEnmbrAhvv8McKxRE%3D",
           "fileSize": 1110571,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1219,19 +1219,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "4c984e63-6a51-4902-92b5-6becf9f7cd26",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:43:03.0423486Z",
       "dateTaken": "2018-03-29T16:40:52Z",
       "lastModified": "2018-03-29T16:40:52Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1246,19 +1246,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274908029709-public/4c984e63-6a51-4902-92b5-6becf9f7cd26_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274908029709-public/4c984e63-6a51-4902-92b5-6becf9f7cd26_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2533274908029709-private/4c984e63-6a51-4902-92b5-6becf9f7cd26.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=HAJ8oUE5M8kcmhu2ywXhx%2FN%2FXZFkHu5BUWHuYIddv10%3D",
           "fileSize": 1188691,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1266,19 +1266,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "ecfa2fd6-8b8b-452d-a8d3-44010d85f708",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:54.0029069Z",
       "dateTaken": "2018-03-29T16:39:52Z",
       "lastModified": "2018-03-29T16:39:52Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1293,19 +1293,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535470462896253-public/ecfa2fd6-8b8b-452d-a8d3-44010d85f708_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535470462896253-public/ecfa2fd6-8b8b-452d-a8d3-44010d85f708_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2535470462896253-private/ecfa2fd6-8b8b-452d-a8d3-44010d85f708.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=U7veBa71RL8MnUbVNhpD6C3R8C5RSKdUxs95hA2S29w%3D",
           "fileSize": 926200,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1313,19 +1313,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "ja-JP",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "06a27b04-66a5-4451-8c05-28d5b9a9b282",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:49.6703673Z",
       "dateTaken": "2018-03-29T16:41:28Z",
       "lastModified": "2018-03-29T16:41:28Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1340,19 +1340,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535468497780656-public/06a27b04-66a5-4451-8c05-28d5b9a9b282_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535468497780656-public/06a27b04-66a5-4451-8c05-28d5b9a9b282_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2535468497780656-private/06a27b04-66a5-4451-8c05-28d5b9a9b282.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=JuixH1h4LBPoah7TQq4opLjvdbEjgX8lR9bZlkVt6vU%3D",
           "fileSize": 1146399,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1360,19 +1360,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "80510671-3d32-4f80-a60e-98542208b5db",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:47.9832709Z",
       "dateTaken": "2018-03-29T16:41:49Z",
       "lastModified": "2018-03-29T16:41:49Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1387,19 +1387,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535410526695664-public/80510671-3d32-4f80-a60e-98542208b5db_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535410526695664-public/80510671-3d32-4f80-a60e-98542208b5db_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535410526695664-private/80510671-3d32-4f80-a60e-98542208b5db.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=kbTqXkxHJFLX%2BDFduMpySJqG2AYR7n08BX2aw5gRwyk%3D",
           "fileSize": 1255356,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1407,19 +1407,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "b6b35774-6fc9-4876-a896-cb853c07a773",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:46.2875712Z",
       "dateTaken": "2018-03-29T16:42:27Z",
       "lastModified": "2018-03-29T16:42:27Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1434,19 +1434,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535408372397776-public/b6b35774-6fc9-4876-a896-cb853c07a773_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535408372397776-public/b6b35774-6fc9-4876-a896-cb853c07a773_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535408372397776-private/b6b35774-6fc9-4876-a896-cb853c07a773.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=EKPq5nIlyQyLa%2BGGyqVJA%2F9DT9y0wMyBRMT4A7Fo2Tg%3D",
           "fileSize": 2177266,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1454,19 +1454,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "c4cb8ed3-33b5-4c9e-8511-f906c9c0544f",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:34.0649861Z",
       "dateTaken": "2018-03-29T16:42:15Z",
       "lastModified": "2018-03-29T16:42:15Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1481,19 +1481,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535458946783939-public/c4cb8ed3-33b5-4c9e-8511-f906c9c0544f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535458946783939-public/c4cb8ed3-33b5-4c9e-8511-f906c9c0544f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535458946783939-private/c4cb8ed3-33b5-4c9e-8511-f906c9c0544f.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=SNA3DKoEXzFhaFZDW2iFoBuH4UduCnDQ8vONLAJ9OGU%3D",
           "fileSize": 1637721,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1501,19 +1501,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "145e3f48-5a8c-497c-85f3-269741c96da2",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:30.4274453Z",
       "dateTaken": "2018-03-29T16:28:14Z",
       "lastModified": "2018-03-29T16:28:14Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1528,19 +1528,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535423394542260-public/145e3f48-5a8c-497c-85f3-269741c96da2_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535423394542260-public/145e3f48-5a8c-497c-85f3-269741c96da2_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535423394542260-private/145e3f48-5a8c-497c-85f3-269741c96da2.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=SJO1L8xWmrf30lOf7xXUuRmx%2FMnymEPoBHomc6eoNcQ%3D",
           "fileSize": 10260168,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1548,19 +1548,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "0cc568c6-2b13-45ba-a573-9fe13fda96f7",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:42:08.5833172Z",
       "dateTaken": "2018-03-29T16:41:53Z",
       "lastModified": "2018-03-29T16:41:53Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1575,19 +1575,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535455535636018-public/0cc568c6-2b13-45ba-a573-9fe13fda96f7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535455535636018-public/0cc568c6-2b13-45ba-a573-9fe13fda96f7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535455535636018-private/0cc568c6-2b13-45ba-a573-9fe13fda96f7.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=c8fgRCkXvmjVqjN5bbhvMOxAuPvZSLLVa9nj9OA%2BGpM%3D",
           "fileSize": 771204,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1595,19 +1595,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "62ec5733-d6fc-4cbd-8e1e-95587854f6b4",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:41:50.2811059Z",
       "dateTaken": "2018-03-29T16:39:43Z",
       "lastModified": "2018-03-29T16:39:43Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1622,19 +1622,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535470462896253-public/62ec5733-d6fc-4cbd-8e1e-95587854f6b4_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535470462896253-public/62ec5733-d6fc-4cbd-8e1e-95587854f6b4_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535470462896253-private/62ec5733-d6fc-4cbd-8e1e-95587854f6b4.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=JyK0w%2B5DfenmHVNUml7zbrEzK%2FzXzsF6vjvayjp7giQ%3D",
           "fileSize": 897111,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1642,19 +1642,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "ja-JP",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "47e1bca5-f838-493c-95ee-1d880fa5dfe7",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:41:45.8788679Z",
       "dateTaken": "2018-03-29T16:40:42Z",
       "lastModified": "2018-03-29T16:40:42Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1669,19 +1669,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535466339854292-public/47e1bca5-f838-493c-95ee-1d880fa5dfe7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535466339854292-public/47e1bca5-f838-493c-95ee-1d880fa5dfe7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535466339854292-private/47e1bca5-f838-493c-95ee-1d880fa5dfe7.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=CT%2BGAFHmnpQeGYaJDun8dH9wr20iCfvF6dziwOmfeMM%3D",
           "fileSize": 848927,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1689,19 +1689,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "0409699f-41e2-4f56-89af-a48d5c002dc0",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:41:43.8802246Z",
       "dateTaken": "2018-03-29T16:40:37Z",
       "lastModified": "2018-03-29T16:40:37Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1716,19 +1716,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274908029709-public/0409699f-41e2-4f56-89af-a48d5c002dc0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274908029709-public/0409699f-41e2-4f56-89af-a48d5c002dc0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2533274908029709-private/0409699f-41e2-4f56-89af-a48d5c002dc0.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=M%2BuFE8N6dJA%2Bs0%2B8N6nv%2FdorCU4ZQDYjL4HH5D46kh4%3D",
           "fileSize": 884545,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1736,19 +1736,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "b6e941b4-4c65-4a63-8116-01962fb8b9f4",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:41:28.7026921Z",
       "dateTaken": "2018-03-29T16:41:03Z",
       "lastModified": "2018-03-29T16:41:03Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1763,19 +1763,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535438353142540-public/b6e941b4-4c65-4a63-8116-01962fb8b9f4_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535438353142540-public/b6e941b4-4c65-4a63-8116-01962fb8b9f4_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535438353142540-private/b6e941b4-4c65-4a63-8116-01962fb8b9f4.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=2vHBXr%2FzDJg4I6FQ%2BfpOlqmDt9oUawrCO2G4Uos4pzw%3D",
           "fileSize": 358923,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1783,19 +1783,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "5eec902f-a1eb-44df-b635-1399d4c7dcfc",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:40:47.6339494Z",
       "dateTaken": "2018-03-29T16:39:36Z",
       "lastModified": "2018-03-29T16:39:36Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1810,19 +1810,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535470462896253-public/5eec902f-a1eb-44df-b635-1399d4c7dcfc_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535470462896253-public/5eec902f-a1eb-44df-b635-1399d4c7dcfc_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535470462896253-private/5eec902f-a1eb-44df-b635-1399d4c7dcfc.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=lg4vMpNakHkgITMVYh2mHk6SvYMDTH9t6SZ6kpJz2eA%3D",
           "fileSize": 909513,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1830,19 +1830,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "ja-JP",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "a54cb674-5c41-46c6-8748-f7d0c053819c",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:40:40.6785658Z",
       "dateTaken": "2018-03-29T16:26:59Z",
       "lastModified": "2018-03-29T16:26:59Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1857,19 +1857,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274883840874-public/a54cb674-5c41-46c6-8748-f7d0c053819c_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274883840874-public/a54cb674-5c41-46c6-8748-f7d0c053819c_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274883840874-private/a54cb674-5c41-46c6-8748-f7d0c053819c.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=%2Bpqj7G4Xr5SdD%2Bln%2FxiijOgtrOoCNAlW%2BiSy9W3cwow%3D",
           "fileSize": 3069852,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1877,19 +1877,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "62603b99-1b31-47b5-97b8-f31ecb46d15d",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:40:32.8132174Z",
       "dateTaken": "2018-03-29T16:39:38Z",
       "lastModified": "2018-03-29T16:39:38Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1904,19 +1904,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535435187345770-public/62603b99-1b31-47b5-97b8-f31ecb46d15d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535435187345770-public/62603b99-1b31-47b5-97b8-f31ecb46d15d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535435187345770-private/62603b99-1b31-47b5-97b8-f31ecb46d15d.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=fAm3rn1xci06NCq%2B%2FKjUtXpkJjBGmYsdT2DxdKBT6VY%3D",
           "fileSize": 776025,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1924,19 +1924,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "e13c3c7e-1fc8-4837-bb59-e052fc640a1c",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:40:14.843756Z",
       "dateTaken": "2018-03-29T05:24:37Z",
       "lastModified": "2018-03-29T05:24:37Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1951,19 +1951,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2533274978045416-public/e13c3c7e-1fc8-4837-bb59-e052fc640a1c_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2533274978045416-public/e13c3c7e-1fc8-4837-bb59-e052fc640a1c_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2533274978045416-private/e13c3c7e-1fc8-4837-bb59-e052fc640a1c.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=p%2F57lA92ACwbzP2QoZqqnPRXuw1wL298LOi75snbxck%3D",
           "fileSize": 1756328,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -1971,19 +1971,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "e0ff1af4-101c-491c-98ce-c47e8baf036d",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:40:04.8967838Z",
       "dateTaken": "2018-03-29T16:39:41Z",
       "lastModified": "2018-03-29T16:39:41Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -1998,19 +1998,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535461083476677-public/e0ff1af4-101c-491c-98ce-c47e8baf036d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535461083476677-public/e0ff1af4-101c-491c-98ce-c47e8baf036d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535461083476677-private/e0ff1af4-101c-491c-98ce-c47e8baf036d.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=9LQ6dCO4lYy5hZS9M88xZ96T6dY2SCI31XXaamj%2F2eg%3D",
           "fileSize": 1482285,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2018,19 +2018,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "08d95cb6-f778-4efd-aefd-6313f6c84465",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:39:56.0700354Z",
       "dateTaken": "2018-03-29T16:38:07Z",
       "lastModified": "2018-03-29T16:38:07Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2045,19 +2045,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535418810587711-public/08d95cb6-f778-4efd-aefd-6313f6c84465_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535418810587711-public/08d95cb6-f778-4efd-aefd-6313f6c84465_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535418810587711-private/08d95cb6-f778-4efd-aefd-6313f6c84465.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=slAKX2ZYCf1B%2BRFV771Jn7XBRTcDs9%2Bd9Rj5eDqXXzE%3D",
           "fileSize": 1685594,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2065,19 +2065,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "a672bfaa-02d7-4d03-983d-265994070189",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:45.6825746Z",
       "dateTaken": "2018-03-29T16:37:41Z",
       "lastModified": "2018-03-29T16:37:41Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2092,19 +2092,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535411008561492-public/a672bfaa-02d7-4d03-983d-265994070189_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535411008561492-public/a672bfaa-02d7-4d03-983d-265994070189_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535411008561492-private/a672bfaa-02d7-4d03-983d-265994070189.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=%2BJhfIRBRfKSDF3HuG%2BiRQjbwmS3l8coR%2Fg2ZbVCYMVY%3D",
           "fileSize": 920546,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2112,19 +2112,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "b67c6ffd-6e08-4031-86d1-e62ac8f84ec3",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:41.5456803Z",
       "dateTaken": "2018-03-29T16:36:40Z",
       "lastModified": "2018-03-29T16:36:40Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2139,19 +2139,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535445314990635-public/b67c6ffd-6e08-4031-86d1-e62ac8f84ec3_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535445314990635-public/b67c6ffd-6e08-4031-86d1-e62ac8f84ec3_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535445314990635-private/b67c6ffd-6e08-4031-86d1-e62ac8f84ec3.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=cHe4J7tK5drppw4SElWyRFalJWyjh1zzqYvvzrGWBMA%3D",
           "fileSize": 1971280,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2159,19 +2159,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-CO",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "1e73f4fb-4a01-4b8d-9f55-b803e9d98c1b",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:39.4253851Z",
       "dateTaken": "2018-03-29T16:34:29Z",
       "lastModified": "2018-03-29T16:34:29Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2186,19 +2186,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535449514653600-public/1e73f4fb-4a01-4b8d-9f55-b803e9d98c1b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535449514653600-public/1e73f4fb-4a01-4b8d-9f55-b803e9d98c1b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535449514653600-private/1e73f4fb-4a01-4b8d-9f55-b803e9d98c1b.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=7o%2Buz2FH%2FvQ8x2QDZaQMvxt7mxCrxrU1%2Fnj6z%2B7v78A%3D",
           "fileSize": 2156962,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2206,19 +2206,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "157b65c3-1554-4e28-895f-831acb7c93e7",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:14.3722344Z",
       "dateTaken": "2018-03-29T16:38:07Z",
       "lastModified": "2018-03-29T16:38:07Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2233,19 +2233,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535465551004021-public/157b65c3-1554-4e28-895f-831acb7c93e7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535465551004021-public/157b65c3-1554-4e28-895f-831acb7c93e7_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2535465551004021-private/157b65c3-1554-4e28-895f-831acb7c93e7.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=LR0EeDFC1Xh%2FVM%2B5K1SQbJbOjYzpV6nBOJdJY05dtA0%3D",
           "fileSize": 38801,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2253,19 +2253,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "13d78b86-28af-467b-bcff-14c23160cb05",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:07.292146Z",
       "dateTaken": "2018-03-29T16:37:34Z",
       "lastModified": "2018-03-29T16:37:34Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2280,19 +2280,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533275050734479-public/13d78b86-28af-467b-bcff-14c23160cb05_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533275050734479-public/13d78b86-28af-467b-bcff-14c23160cb05_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2533275050734479-private/13d78b86-28af-467b-bcff-14c23160cb05.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=us%2BktVRxTZaXQRHmhP01pRdZqJfbmSbXNV6cJMEGNy8%3D",
           "fileSize": 856308,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2300,19 +2300,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-AR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "fc260241-1b7a-471a-8ed2-cd563f43fb19",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:06.8263886Z",
       "dateTaken": "2018-03-29T16:37:40Z",
       "lastModified": "2018-03-29T16:37:40Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2327,19 +2327,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535460770219038-public/fc260241-1b7a-471a-8ed2-cd563f43fb19_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535460770219038-public/fc260241-1b7a-471a-8ed2-cd563f43fb19_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535460770219038-private/fc260241-1b7a-471a-8ed2-cd563f43fb19.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=EgoW1lI0XeykXGUlcD6bjLbYujfAlbzoGpcH62BEcNw%3D",
           "fileSize": 1784442,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2347,19 +2347,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-ZA",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "dbe51d06-98dd-496a-8cc0-82223fff3cd0",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:38:01.3381804Z",
       "dateTaken": "2018-03-29T16:33:42Z",
       "lastModified": "2018-03-29T16:33:42Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2374,19 +2374,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535436410715739-public/dbe51d06-98dd-496a-8cc0-82223fff3cd0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535436410715739-public/dbe51d06-98dd-496a-8cc0-82223fff3cd0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535436410715739-private/dbe51d06-98dd-496a-8cc0-82223fff3cd0.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=wRFH2IA%2FuntWQGiAnzpjDheL6ErwCVjv1aKvRPa5B9E%3D",
           "fileSize": 1606334,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2394,19 +2394,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "4eabc749-4fec-4e76-a206-4da7137bb289",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:37:42.4715307Z",
       "dateTaken": "2018-03-29T16:26:46Z",
       "lastModified": "2018-03-29T16:26:46Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2421,19 +2421,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274883840874-public/4eabc749-4fec-4e76-a206-4da7137bb289_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274883840874-public/4eabc749-4fec-4e76-a206-4da7137bb289_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274883840874-private/4eabc749-4fec-4e76-a206-4da7137bb289.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=G7kUMlE%2FsTCkC5RCp8KZTSLZQg0bLS1WVy8SZWIkRZM%3D",
           "fileSize": 3385622,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2441,19 +2441,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "11d343bf-c2de-4562-ac24-967b040af278",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:37:18.3581427Z",
       "dateTaken": "2018-03-29T16:21:21Z",
       "lastModified": "2018-03-29T16:21:21Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2468,19 +2468,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535425889462548-public/11d343bf-c2de-4562-ac24-967b040af278_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535425889462548-public/11d343bf-c2de-4562-ac24-967b040af278_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535425889462548-private/11d343bf-c2de-4562-ac24-967b040af278.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=a28i59uPB3eUx8pNJCIxTRZjftipX5uR1c1B7X4BlGs%3D",
           "fileSize": 7682398,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2488,19 +2488,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "41b23be0-68a5-4f35-b791-30c7d705b042",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:37:15.5837028Z",
       "dateTaken": "2018-03-29T16:36:53Z",
       "lastModified": "2018-03-29T16:36:53Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2515,19 +2515,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535414297288979-public/41b23be0-68a5-4f35-b791-30c7d705b042_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535414297288979-public/41b23be0-68a5-4f35-b791-30c7d705b042_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535414297288979-private/41b23be0-68a5-4f35-b791-30c7d705b042.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=l%2FtYf6TOXPNH%2BztkD2V22j9xpFJ1pqT1u9YJKmXh3DM%3D",
           "fileSize": 3050945,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2535,19 +2535,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "6c705fd8-41c4-47d3-a319-783abaf430dd",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:54.9349556Z",
       "dateTaken": "2018-03-29T16:33:49Z",
       "lastModified": "2018-03-29T16:33:49Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2562,19 +2562,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535409404174743-public/6c705fd8-41c4-47d3-a319-783abaf430dd_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535409404174743-public/6c705fd8-41c4-47d3-a319-783abaf430dd_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535409404174743-private/6c705fd8-41c4-47d3-a319-783abaf430dd.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=7ccQynUmrkHJenGJfj36pLfkOfHq3uVKrDj0scNOmdQ%3D",
           "fileSize": 3095911,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2582,19 +2582,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-ES",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "68f6d1e3-c56f-4ca1-b3cf-558485e15ca0",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:41.8466298Z",
       "dateTaken": "2018-03-29T16:35:58Z",
       "lastModified": "2018-03-29T16:35:58Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2609,19 +2609,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2533274994194895-public/68f6d1e3-c56f-4ca1-b3cf-558485e15ca0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2533274994194895-public/68f6d1e3-c56f-4ca1-b3cf-558485e15ca0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2533274994194895-private/68f6d1e3-c56f-4ca1-b3cf-558485e15ca0.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=6gzQD8au8qB88KDul0bZE5WVOLWXdLKRYosyaSAahJg%3D",
           "fileSize": 1192745,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2629,19 +2629,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "77e1d90c-b50a-4d7c-adc6-00c73aacf761",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:36.5592653Z",
       "dateTaken": "2018-03-29T16:34:30Z",
       "lastModified": "2018-03-29T16:34:30Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2656,19 +2656,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535440465393783-public/77e1d90c-b50a-4d7c-adc6-00c73aacf761_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535440465393783-public/77e1d90c-b50a-4d7c-adc6-00c73aacf761_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535440465393783-private/77e1d90c-b50a-4d7c-adc6-00c73aacf761.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=hld%2F9Ir4MBa9AKe%2FZ2z0UQupOiwKmVAGXTzW8t8G8eA%3D",
           "fileSize": 2189142,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2676,19 +2676,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "abb000bf-4815-4e5a-95f5-2feb23c50ae6",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:28.6097002Z",
       "dateTaken": "2018-03-29T16:34:23Z",
       "lastModified": "2018-03-29T16:34:23Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2703,19 +2703,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535449514653600-public/abb000bf-4815-4e5a-95f5-2feb23c50ae6_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535449514653600-public/abb000bf-4815-4e5a-95f5-2feb23c50ae6_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2535449514653600-private/abb000bf-4815-4e5a-95f5-2feb23c50ae6.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=fuN484PStMnJkQhaE%2Bgr%2FhI%2F9W3J4HmAsJ0oRAdE8f0%3D",
           "fileSize": 2137653,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2723,19 +2723,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "e47919f4-9d78-4e02-989f-283cdc4706b8",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:21.2914912Z",
       "dateTaken": "2018-03-29T16:34:19Z",
       "lastModified": "2018-03-29T16:34:19Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2750,19 +2750,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535430636119696-public/e47919f4-9d78-4e02-989f-283cdc4706b8_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535430636119696-public/e47919f4-9d78-4e02-989f-283cdc4706b8_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535430636119696-private/e47919f4-9d78-4e02-989f-283cdc4706b8.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=5eY1K%2FgHb3Ioy%2B2B3uO4pMtpQKzs3PxPxz2knbrEozs%3D",
           "fileSize": 2072443,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2770,19 +2770,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "ec1bd610-4f64-4f6a-966d-d38cf88e8700",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:19.724452Z",
       "dateTaken": "2018-03-29T16:36:06Z",
       "lastModified": "2018-03-29T16:36:06Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2797,19 +2797,19 @@
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535459448896515-public/ec1bd610-4f64-4f6a-966d-d38cf88e8700_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3002.xboxlive.com/xuid-2535459448896515-public/ec1bd610-4f64-4f6a-966d-d38cf88e8700_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3002.xboxlive.com/xuid-2535459448896515-private/ec1bd610-4f64-4f6a-966d-d38cf88e8700.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Wnq%2FMvtXJRodZOKqUoLt2%2FGCe2nj3O6mbfZd%2B%2BntaX8%3D",
           "fileSize": 2033529,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2817,19 +2817,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "52b0f087-d367-461b-92c2-479d9fa5ee04",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:05.603079Z",
       "dateTaken": "2018-03-29T16:34:10Z",
       "lastModified": "2018-03-29T16:34:10Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2844,19 +2844,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535438698198833-public/52b0f087-d367-461b-92c2-479d9fa5ee04_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535438698198833-public/52b0f087-d367-461b-92c2-479d9fa5ee04_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535438698198833-private/52b0f087-d367-461b-92c2-479d9fa5ee04.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Wq6LPujYfr3eVYHV7vcrAxd2hka3bTnVBBHrvR9%2BP0Q%3D",
           "fileSize": 2182950,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2864,19 +2864,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "a6ec4609-8eb6-43a9-a752-992ca5f56dad",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:36:01.9612929Z",
       "dateTaken": "2018-03-28T23:36:55Z",
       "lastModified": "2018-03-28T23:36:55Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2891,19 +2891,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535421950612508-public/a6ec4609-8eb6-43a9-a752-992ca5f56dad_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535421950612508-public/a6ec4609-8eb6-43a9-a752-992ca5f56dad_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2535421950612508-private/a6ec4609-8eb6-43a9-a752-992ca5f56dad.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=6kYe%2Fc7DVCAiMa44UYbg83WSTHhqNmgf0uGdqVCP%2F1Y%3D",
           "fileSize": 4944356,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2911,19 +2911,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-ES",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "e4797d77-3c99-4952-929e-d381dc533175",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:35:55.8090332Z",
       "dateTaken": "2018-03-29T16:35:43Z",
       "lastModified": "2018-03-29T16:35:43Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2938,19 +2938,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274910629361-public/e4797d77-3c99-4952-929e-d381dc533175_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274910629361-public/e4797d77-3c99-4952-929e-d381dc533175_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274910629361-private/e4797d77-3c99-4952-929e-d381dc533175.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=TML2xSdYHdY%2FKUuEj7uNTnAD7Hxxxno6IfHuAge8BUY%3D",
           "fileSize": 7961,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -2958,19 +2958,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "c1403d99-2874-4142-90c8-ff43412edada",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:35:34.4997067Z",
       "dateTaken": "2018-03-29T16:33:03Z",
       "lastModified": "2018-03-29T16:33:03Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -2985,19 +2985,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535422439825873-public/c1403d99-2874-4142-90c8-ff43412edada_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535422439825873-public/c1403d99-2874-4142-90c8-ff43412edada_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535422439825873-private/c1403d99-2874-4142-90c8-ff43412edada.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=HNG5B6YXJ9RaFKR2f6nR51sPnoD35B9yJELNFnjCgGI%3D",
           "fileSize": 2638765,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -3005,19 +3005,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "3fe36ac7-1829-45e6-8eac-57bca1f14b08",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:35:32.9364742Z",
       "dateTaken": "2018-03-29T16:33:43Z",
       "lastModified": "2018-03-29T16:33:43Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3032,19 +3032,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535421318245084-public/3fe36ac7-1829-45e6-8eac-57bca1f14b08_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535421318245084-public/3fe36ac7-1829-45e6-8eac-57bca1f14b08_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535421318245084-private/3fe36ac7-1829-45e6-8eac-57bca1f14b08.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=yMXMVr2RzLA%2BVOimiaF2CwkKT3rIMKNnRNpSZkrq6YU%3D",
           "fileSize": 1812422,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -3052,19 +3052,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "5260027a-1905-4605-beae-2e5d24865cf2",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:35:07.6051255Z",
       "dateTaken": "2018-03-29T16:34:07Z",
       "lastModified": "2018-03-29T16:34:07Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3079,19 +3079,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533275003846454-public/5260027a-1905-4605-beae-2e5d24865cf2_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533275003846454-public/5260027a-1905-4605-beae-2e5d24865cf2_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2533275003846454-private/5260027a-1905-4605-beae-2e5d24865cf2.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=3K2vaeO4OpFLCJe5FaHzihjavxhvMtwic0PcW9VXxyE%3D",
           "fileSize": 1125393,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -3099,19 +3099,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "a376a211-9862-443b-aad3-a92b52825e95",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:34:40.0019331Z",
       "dateTaken": "2018-03-29T16:28:22Z",
       "lastModified": "2018-03-29T16:28:22Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3126,19 +3126,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535435098645979-public/a376a211-9862-443b-aad3-a92b52825e95_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535435098645979-public/a376a211-9862-443b-aad3-a92b52825e95_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535435098645979-private/a376a211-9862-443b-aad3-a92b52825e95.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=hF3fOars8fjNOzj1bTXg2rylc4Q5d62S1edC8khE5uk%3D",
           "fileSize": 3283680,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.5653857Z"
         }
       ],
@@ -3146,19 +3146,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "eee9efc2-9fbc-4f67-94ac-17a9032647bc",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:34:34.9182483Z",
       "dateTaken": "2018-03-29T16:26:36Z",
       "lastModified": "2018-03-29T16:26:36Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3173,19 +3173,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274883840874-public/eee9efc2-9fbc-4f67-94ac-17a9032647bc_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274883840874-public/eee9efc2-9fbc-4f67-94ac-17a9032647bc_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2533274883840874-private/eee9efc2-9fbc-4f67-94ac-17a9032647bc.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=5beFVMiPGeHCppDEbJxGDOLigVh4Vluy%2BLuid3yMFoo%3D",
           "fileSize": 2027864,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3193,19 +3193,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "67fb6910-631e-42d8-b3eb-2265e88f3437",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:34:22.3806066Z",
       "dateTaken": "2018-03-29T16:31:11Z",
       "lastModified": "2018-03-29T16:31:11Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3220,19 +3220,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274839163644-public/67fb6910-631e-42d8-b3eb-2265e88f3437_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2533274839163644-public/67fb6910-631e-42d8-b3eb-2265e88f3437_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2533274839163644-private/67fb6910-631e-42d8-b3eb-2265e88f3437.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=iMMJ2jwQu3EazomFL6ViEp6oApcZB5llfNk4e9knP2k%3D",
           "fileSize": 1089448,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3240,19 +3240,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "28af079c-b773-4b3b-8b07-c9fa3aa0113b",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:34:05.4324925Z",
       "dateTaken": "2018-03-29T16:33:56Z",
       "lastModified": "2018-03-29T16:33:56Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3267,19 +3267,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2533274808179963-public/28af079c-b773-4b3b-8b07-c9fa3aa0113b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2533274808179963-public/28af079c-b773-4b3b-8b07-c9fa3aa0113b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2533274808179963-private/28af079c-b773-4b3b-8b07-c9fa3aa0113b.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=e9gqvzF8izqczfKcqCJK5%2BL4QeAfS0xXq1an9B3ulHU%3D",
           "fileSize": 2581618,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3287,19 +3287,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "11ceca38-c671-4d7e-9e1a-1cf335d9e50d",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:34:04.6629429Z",
       "dateTaken": "2018-03-29T16:30:53Z",
       "lastModified": "2018-03-29T16:30:53Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3314,19 +3314,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274927234584-public/11ceca38-c671-4d7e-9e1a-1cf335d9e50d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274927234584-public/11ceca38-c671-4d7e-9e1a-1cf335d9e50d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274927234584-private/11ceca38-c671-4d7e-9e1a-1cf335d9e50d.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=pxqQ7RlLTtjHvmrPDeT7KQFMRE3Iuu9KeDazlBI5A1g%3D",
           "fileSize": 2916698,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3334,19 +3334,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "d6a2c0a1-2429-4d8f-afec-b29e58c8484e",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:34:03.047422Z",
       "dateTaken": "2018-03-29T16:33:41Z",
       "lastModified": "2018-03-29T16:33:41Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3361,19 +3361,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274816499607-public/d6a2c0a1-2429-4d8f-afec-b29e58c8484e_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274816499607-public/d6a2c0a1-2429-4d8f-afec-b29e58c8484e_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2533274816499607-private/d6a2c0a1-2429-4d8f-afec-b29e58c8484e.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=rTaUeSzMz8%2Fd4KK%2BPiXwIammVH2R8jmQ37U%2BMmIvPK4%3D",
           "fileSize": 9848,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3381,19 +3381,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "9628bac8-3c3e-4dd0-aa66-b57dd903b508",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:57.1468451Z",
       "dateTaken": "2018-03-29T16:32:12Z",
       "lastModified": "2018-03-29T16:32:12Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3408,19 +3408,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535429916537687-public/9628bac8-3c3e-4dd0-aa66-b57dd903b508_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535429916537687-public/9628bac8-3c3e-4dd0-aa66-b57dd903b508_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535429916537687-private/9628bac8-3c3e-4dd0-aa66-b57dd903b508.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=2WmeFnBkxiM4AcFsZTl5wfI%2FWR7h4sJhphYnntc7dzg%3D",
           "fileSize": 1662369,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3428,19 +3428,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "de-DE",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "f2d4e9ac-0f72-4853-a467-e4dcc094791a",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:32.1034817Z",
       "dateTaken": "2018-03-25T13:28:01Z",
       "lastModified": "2018-03-25T13:28:01Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3455,19 +3455,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535436169011959-public/f2d4e9ac-0f72-4853-a467-e4dcc094791a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535436169011959-public/f2d4e9ac-0f72-4853-a467-e4dcc094791a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535436169011959-private/f2d4e9ac-0f72-4853-a467-e4dcc094791a.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=pzZOk1fVEx41t6SYwCiysKmfmhx1id51vXO7smEWEeo%3D",
           "fileSize": 3036756,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3475,19 +3475,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "4301dbc4-06c0-4d4c-a4ca-3f59dfbf0222",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:30.7469857Z",
       "dateTaken": "2018-03-29T16:32:26Z",
       "lastModified": "2018-03-29T16:32:26Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3502,19 +3502,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535470962519064-public/4301dbc4-06c0-4d4c-a4ca-3f59dfbf0222_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535470962519064-public/4301dbc4-06c0-4d4c-a4ca-3f59dfbf0222_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535470962519064-private/4301dbc4-06c0-4d4c-a4ca-3f59dfbf0222.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=I6fLt59t7yP%2F357SXIGpH03RPuAThZQh4DH6X5Q9B2Q%3D",
           "fileSize": 1224404,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3522,19 +3522,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "e0c2bdcf-d102-4ad9-9f5a-007da0c05503",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:27.2873289Z",
       "dateTaken": "2018-03-29T16:27:56Z",
       "lastModified": "2018-03-29T16:27:56Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3549,19 +3549,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535468819705864-public/e0c2bdcf-d102-4ad9-9f5a-007da0c05503_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535468819705864-public/e0c2bdcf-d102-4ad9-9f5a-007da0c05503_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535468819705864-private/e0c2bdcf-d102-4ad9-9f5a-007da0c05503.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=AWd%2FHmVp9%2F8sHUY6LMFkdoySOQuqffSAiVknptL3uIw%3D",
           "fileSize": 3142395,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3569,19 +3569,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "708b33c3-135f-4f08-a817-fffde1109bbf",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:12.4396593Z",
       "dateTaken": "2018-03-29T16:32:56Z",
       "lastModified": "2018-03-29T16:32:56Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3596,19 +3596,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274920127066-public/708b33c3-135f-4f08-a817-fffde1109bbf_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274920127066-public/708b33c3-135f-4f08-a817-fffde1109bbf_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274920127066-private/708b33c3-135f-4f08-a817-fffde1109bbf.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=8ZzOyfizox%2F0%2BN2Or%2FxbOtrZzLsaQOCJN1yaKz4cQ5I%3D",
           "fileSize": 25653,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3616,19 +3616,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "9e0fb86d-14e1-49cc-bad4-c81e509f1f56",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:10.4086233Z",
       "dateTaken": "2018-03-29T16:31:55Z",
       "lastModified": "2018-03-29T16:31:55Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3643,19 +3643,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535429529090500-public/9e0fb86d-14e1-49cc-bad4-c81e509f1f56_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535429529090500-public/9e0fb86d-14e1-49cc-bad4-c81e509f1f56_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535429529090500-private/9e0fb86d-14e1-49cc-bad4-c81e509f1f56.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=XiIkTk54jcJuCAFwuu7AArnt0H5qnOMwkBDo9CHWgYM%3D",
           "fileSize": 1252094,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3663,19 +3663,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "1255476c-0c41-4353-b6cb-e6f68c0e19dd",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:33:05.8383255Z",
       "dateTaken": "2018-03-29T16:29:17Z",
       "lastModified": "2018-03-29T16:29:17Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3690,19 +3690,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535408219796855-public/1255476c-0c41-4353-b6cb-e6f68c0e19dd_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535408219796855-public/1255476c-0c41-4353-b6cb-e6f68c0e19dd_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535408219796855-private/1255476c-0c41-4353-b6cb-e6f68c0e19dd.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=qhBWz%2BihKY6WWBM8DXIx%2FEttm9XVdacEgNvMr%2BCcHoY%3D",
           "fileSize": 1885092,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3710,19 +3710,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "73a380d9-8a25-4cf1-97cd-33fa34efac06",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:32:44.2369504Z",
       "dateTaken": "2018-03-29T16:30:44Z",
       "lastModified": "2018-03-29T16:30:44Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3737,19 +3737,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274962575246-public/73a380d9-8a25-4cf1-97cd-33fa34efac06_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274962575246-public/73a380d9-8a25-4cf1-97cd-33fa34efac06_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2533274962575246-private/73a380d9-8a25-4cf1-97cd-33fa34efac06.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=aWaSsJv%2F4l%2FKSRIA25cVwHkvFfcfvXy2bBTTy1sVAGA%3D",
           "fileSize": 1902147,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3757,19 +3757,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "ee9b5393-b24a-4f2e-acde-3af3c71b2ab0",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:32:39.4543161Z",
       "dateTaken": "2018-03-29T16:26:19Z",
       "lastModified": "2018-03-29T16:26:19Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3784,19 +3784,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274883840874-public/ee9b5393-b24a-4f2e-acde-3af3c71b2ab0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2533274883840874-public/ee9b5393-b24a-4f2e-acde-3af3c71b2ab0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2533274883840874-private/ee9b5393-b24a-4f2e-acde-3af3c71b2ab0.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=VAfCalWE%2FiEIEAdw4SRuY%2FbyEQOFfcTKANwiM%2FfsiHs%3D",
           "fileSize": 2073846,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3804,19 +3804,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "9db1795e-1ee1-4dfe-acca-23e59e487cf0",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:32:22.3948713Z",
       "dateTaken": "2018-03-29T16:30:22Z",
       "lastModified": "2018-03-29T16:30:22Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3831,19 +3831,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2533274944404303-public/9db1795e-1ee1-4dfe-acca-23e59e487cf0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2533274944404303-public/9db1795e-1ee1-4dfe-acca-23e59e487cf0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2533274944404303-private/9db1795e-1ee1-4dfe-acca-23e59e487cf0.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=%2FOM8GdXSdEKLZ%2FAb38uf2TTXtco79W7DpdBBRTpiuo8%3D",
           "fileSize": 2095764,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3851,19 +3851,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "4c58658d-a264-4913-bb7d-0937326756d0",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:32:14.2715059Z",
       "dateTaken": "2018-03-29T16:30:34Z",
       "lastModified": "2018-03-29T16:30:34Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3878,19 +3878,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274811696714-public/4c58658d-a264-4913-bb7d-0937326756d0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2533274811696714-public/4c58658d-a264-4913-bb7d-0937326756d0_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2533274811696714-private/4c58658d-a264-4913-bb7d-0937326756d0.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=vNPXzq4RbDR%2B9006tOgWBIJIpwTkZskZxANUDGjIhxI%3D",
           "fileSize": 1685817,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3898,19 +3898,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "e66d2cc1-c978-4e2a-a18c-f22de83b4225",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:55.0231469Z",
       "dateTaken": "2018-03-29T16:29:45Z",
       "lastModified": "2018-03-29T16:29:45Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3925,19 +3925,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535419053724097-public/e66d2cc1-c978-4e2a-a18c-f22de83b4225_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535419053724097-public/e66d2cc1-c978-4e2a-a18c-f22de83b4225_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535419053724097-private/e66d2cc1-c978-4e2a-a18c-f22de83b4225.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=1iNGF2bMtDWU1XJJKe%2Bq5IzgvUMirufkpOpKIxav2uU%3D",
           "fileSize": 2255803,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3945,19 +3945,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-AR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "5d56c8ac-624a-4ce3-b53b-b59026adc869",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:44.0355251Z",
       "dateTaken": "2018-03-29T16:30:41Z",
       "lastModified": "2018-03-29T16:30:41Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -3972,19 +3972,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535466603534978-public/5d56c8ac-624a-4ce3-b53b-b59026adc869_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535466603534978-public/5d56c8ac-624a-4ce3-b53b-b59026adc869_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535466603534978-private/5d56c8ac-624a-4ce3-b53b-b59026adc869.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=dTw6XKzhIzlL7BiHodGz1xaCPYVYvurHwZHWGur3pzk%3D",
           "fileSize": 969626,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -3992,19 +3992,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "1e982bdd-ba94-4996-a2b3-122fd5b203fe",
       "resolutionHeight": 2160,
       "resolutionWidth": 3840,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:39.6349025Z",
       "dateTaken": "2018-03-29T16:20:56Z",
       "lastModified": "2018-03-29T16:20:56Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4019,19 +4019,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535425889462548-public/1e982bdd-ba94-4996-a2b3-122fd5b203fe_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535425889462548-public/1e982bdd-ba94-4996-a2b3-122fd5b203fe_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535425889462548-private/1e982bdd-ba94-4996-a2b3-122fd5b203fe.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=gAmGsQDm5I6LSIEA8kzTzd1wZYtpAHF%2BYRbamiQlinU%3D",
           "fileSize": 4329017,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4039,19 +4039,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "fr-FR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Scorpio"
     },
     {
       "screenshotId": "c0a45c22-cdd5-43df-ae57-9a051e5fd169",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:37.2718905Z",
       "dateTaken": "2018-03-29T04:00:11Z",
       "lastModified": "2018-03-29T04:00:11Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4066,19 +4066,19 @@
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535464603249049-public/c0a45c22-cdd5-43df-ae57-9a051e5fd169_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5002.xboxlive.com/xuid-2535464603249049-public/c0a45c22-cdd5-43df-ae57-9a051e5fd169_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5002.xboxlive.com/xuid-2535464603249049-private/c0a45c22-cdd5-43df-ae57-9a051e5fd169.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Xidht2FO8TugH3bUIFtlHzfNu9%2ByAvmMHCc3pczvy%2F0%3D",
           "fileSize": 2532409,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4086,19 +4086,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "0ff3f6a6-e840-4de7-9fe8-446ba1caf9f9",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:29.2368208Z",
       "dateTaken": "2018-03-29T16:28:05Z",
       "lastModified": "2018-03-29T16:28:05Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4113,19 +4113,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535435098645979-public/0ff3f6a6-e840-4de7-9fe8-446ba1caf9f9_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535435098645979-public/0ff3f6a6-e840-4de7-9fe8-446ba1caf9f9_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535435098645979-private/0ff3f6a6-e840-4de7-9fe8-446ba1caf9f9.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=LWDI97aQT4w2VVopDAWwWERkaIEUgOqJU%2BhSbHrgusQ%3D",
           "fileSize": 3321477,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4133,19 +4133,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "6bfc58e5-9754-4008-a340-cae96afa8bf9",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:03.7964118Z",
       "dateTaken": "2018-03-29T16:28:58Z",
       "lastModified": "2018-03-29T16:28:58Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4160,19 +4160,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535469797982132-public/6bfc58e5-9754-4008-a340-cae96afa8bf9_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535469797982132-public/6bfc58e5-9754-4008-a340-cae96afa8bf9_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535469797982132-private/6bfc58e5-9754-4008-a340-cae96afa8bf9.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=vT2M7Q7ZcjHJsRO3QsSxAhp%2BS%2BLmNbsYthjzag3pTrM%3D",
           "fileSize": 2184041,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4180,19 +4180,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "616d42ff-03cf-4034-b7ce-851fe4568c90",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:00.7151226Z",
       "dateTaken": "2018-03-29T16:29:01Z",
       "lastModified": "2018-03-29T16:29:01Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4207,19 +4207,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274929543164-public/616d42ff-03cf-4034-b7ce-851fe4568c90_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2533274929543164-public/616d42ff-03cf-4034-b7ce-851fe4568c90_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2533274929543164-private/616d42ff-03cf-4034-b7ce-851fe4568c90.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Rbc%2FqpMCDXcuxkAAylnAE0V%2FC2tdTn7WPKVVzP7cQ5c%3D",
           "fileSize": 1983456,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4227,19 +4227,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "c12cc746-fd72-43ac-9e1b-02faea9163d3",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:31:00.4052778Z",
       "dateTaken": "2018-03-29T16:29:30Z",
       "lastModified": "2018-03-29T16:29:30Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4254,19 +4254,19 @@
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535417997591356-public/c12cc746-fd72-43ac-9e1b-02faea9163d3_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t3001.xboxlive.com/xuid-2535417997591356-public/c12cc746-fd72-43ac-9e1b-02faea9163d3_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d3001.xboxlive.com/xuid-2535417997591356-private/c12cc746-fd72-43ac-9e1b-02faea9163d3.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=SrEgVLH7A%2BRAgaUTM4DthbutKU%2BXv1Waq3xlKFAo3S8%3D",
           "fileSize": 1336500,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4274,19 +4274,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "e6ccf561-7a43-47ae-bb9a-3ef4416cc58d",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:54.1800702Z",
       "dateTaken": "2018-03-29T16:30:07Z",
       "lastModified": "2018-03-29T16:30:07Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4301,19 +4301,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535438253423162-public/e6ccf561-7a43-47ae-bb9a-3ef4416cc58d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535438253423162-public/e6ccf561-7a43-47ae-bb9a-3ef4416cc58d_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535438253423162-private/e6ccf561-7a43-47ae-bb9a-3ef4416cc58d.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=lrlM4v2A8JDsWAzB1%2F2uehVpGSQafQsAsGh9VEfjI3Y%3D",
           "fileSize": 2167607,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4321,19 +4321,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "2f5bdc98-b1fa-4fe8-910c-bab6a233552f",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:44.0474437Z",
       "dateTaken": "2018-03-29T16:26:08Z",
       "lastModified": "2018-03-29T16:26:08Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4348,19 +4348,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2533274883840874-public/2f5bdc98-b1fa-4fe8-910c-bab6a233552f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2533274883840874-public/2f5bdc98-b1fa-4fe8-910c-bab6a233552f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2533274883840874-private/2f5bdc98-b1fa-4fe8-910c-bab6a233552f.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=TgwVausIET7%2FN%2B5Zy%2B8vSnr2R%2BzMiz37mAOXwRtBvNo%3D",
           "fileSize": 2809274,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4368,19 +4368,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-US",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "878ad50e-0f0d-46e4-974a-821cfc3aba9b",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:35.1174306Z",
       "dateTaken": "2018-03-29T16:28:28Z",
       "lastModified": "2018-03-29T16:28:28Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4395,19 +4395,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535410748661390-public/878ad50e-0f0d-46e4-974a-821cfc3aba9b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535410748661390-public/878ad50e-0f0d-46e4-974a-821cfc3aba9b_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535410748661390-private/878ad50e-0f0d-46e4-974a-821cfc3aba9b.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=zfK%2FSYeCse4Elu%2Bc%2BmXmSwAdVYDJnBHrUBiQyfTMDrc%3D",
           "fileSize": 1382330,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4415,19 +4415,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "pt-BR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "dabf48af-0abf-495e-a26c-130de61349b5",
       "resolutionHeight": 720,
       "resolutionWidth": 1280,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:34.2173355Z",
       "dateTaken": "2018-03-29T16:29:08Z",
       "lastModified": "2018-03-29T16:29:08Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4442,19 +4442,19 @@
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535411008561492-public/dabf48af-0abf-495e-a26c-130de61349b5_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4001.xboxlive.com/xuid-2535411008561492-public/dabf48af-0abf-495e-a26c-130de61349b5_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4001.xboxlive.com/xuid-2535411008561492-private/dabf48af-0abf-495e-a26c-130de61349b5.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=JVdpky9SF5HHaSr0fGLfVzXRphRxjujdViyBurYx%2FXk%3D",
           "fileSize": 944298,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4462,19 +4462,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "88c6cfd4-7f29-458f-a671-b2ca47211a76",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:31.9592929Z",
       "dateTaken": "2018-03-29T16:25:30Z",
       "lastModified": "2018-03-29T16:25:30Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4489,19 +4489,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535455629213764-public/88c6cfd4-7f29-458f-a671-b2ca47211a76_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2535455629213764-public/88c6cfd4-7f29-458f-a671-b2ca47211a76_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2535455629213764-private/88c6cfd4-7f29-458f-a671-b2ca47211a76.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=W%2FICsOsDLS%2FK9ok2lmhrP1A62GZ3PTFUwx%2BK7nnnKBw%3D",
           "fileSize": 2627246,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4509,19 +4509,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-AR",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "88224e29-a5be-4d73-b748-12ebfd06c83f",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:23.4537027Z",
       "dateTaken": "2018-03-29T16:25:38Z",
       "lastModified": "2018-03-29T16:25:38Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4536,19 +4536,19 @@
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535461520376795-public/88224e29-a5be-4d73-b748-12ebfd06c83f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2001.xboxlive.com/xuid-2535461520376795-public/88224e29-a5be-4d73-b748-12ebfd06c83f_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2001.xboxlive.com/xuid-2535461520376795-private/88224e29-a5be-4d73-b748-12ebfd06c83f.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=60spLw1NBD0D7cC%2BZmjQ3qvbq0Mf8GFIJnmUIcNdgdc%3D",
           "fileSize": 1261941,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4556,19 +4556,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "sv-SE",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "bed390b9-44dc-4eac-a3d2-5db5c761e9af",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:20.4973616Z",
       "dateTaken": "2018-03-29T16:29:11Z",
       "lastModified": "2018-03-29T16:29:11Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4583,19 +4583,19 @@
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535417997591356-public/bed390b9-44dc-4eac-a3d2-5db5c761e9af_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t4002.xboxlive.com/xuid-2535417997591356-public/bed390b9-44dc-4eac-a3d2-5db5c761e9af_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d4002.xboxlive.com/xuid-2535417997591356-private/bed390b9-44dc-4eac-a3d2-5db5c761e9af.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=Nx6dV1IUaNzs4kl6%2FilsukWr4cZWwVWLu5tQ6ckAfvE%3D",
           "fileSize": 1991544,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4603,19 +4603,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "en-GB",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Edmonton"
     },
     {
       "screenshotId": "847c4df1-e89a-432a-84b6-42a1e3d85b0a",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:15.5125817Z",
       "dateTaken": "2018-03-29T16:28:11Z",
       "lastModified": "2018-03-29T16:28:11Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4630,19 +4630,19 @@
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535443000156101-public/847c4df1-e89a-432a-84b6-42a1e3d85b0a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t2002.xboxlive.com/xuid-2535443000156101-public/847c4df1-e89a-432a-84b6-42a1e3d85b0a_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d2002.xboxlive.com/xuid-2535443000156101-private/847c4df1-e89a-432a-84b6-42a1e3d85b0a.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=uhBq3FD6NNTrkfW805S%2FTo7T0CvpgsVq7SOM0Vyfgsc%3D",
           "fileSize": 2302270,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4650,19 +4650,19 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     },
     {
       "screenshotId": "eec65a53-97f1-4348-bc47-c830c17c44c2",
       "resolutionHeight": 1080,
       "resolutionWidth": 1920,
-      "state": "Published",
+      "state": 6,
       "datePublished": "2018-03-29T16:30:00.2127669Z",
       "dateTaken": "2018-03-29T16:28:18Z",
       "lastModified": "2018-03-29T16:28:18Z",
       "userCaption": "",
-      "type": "UserGenerated",
+      "type": 8,
       "scid": "d1adc8aa-0a31-4407-90f2-7e9b54b0347c",
       "titleId": 219630713,
       "rating": 0.0,
@@ -4677,19 +4677,19 @@
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2533274882386618-public/eec65a53-97f1-4348-bc47-c830c17c44c2_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Small"
+          "thumbnailType": 1
         },
         {
           "uri": "https://screenshotscontent-t5001.xboxlive.com/xuid-2533274882386618-public/eec65a53-97f1-4348-bc47-c830c17c44c2_Thumbnail.PNG",
           "fileSize": 0,
-          "thumbnailType": "Large"
+          "thumbnailType": 2
         }
       ],
       "screenshotUris": [
         {
           "uri": "https://screenshotscontent-d5001.xboxlive.com/xuid-2533274882386618-private/eec65a53-97f1-4348-bc47-c830c17c44c2.PNG?sv=2015-12-11&sr=b&si=DefaultAccess&sig=896DYHU51jNR7JcbwCvFdxDDgEmaWYHJIyo%2BcrzZ7lg%3D",
           "fileSize": 1723096,
-          "uriType": "Download",
+          "uriType": 2,
           "expiration": "2018-03-29T17:46:56.581005Z"
         }
       ],
@@ -4697,7 +4697,7 @@
       "screenshotName": "",
       "titleName": "Halo 5: Guardians",
       "screenshotLocale": "es-MX",
-      "screenshotContentAttributes": "None",
+      "screenshotContentAttributes": 0,
       "deviceType": "Durango"
     }
   ],
