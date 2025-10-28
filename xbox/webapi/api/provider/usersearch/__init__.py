@@ -1,6 +1,7 @@
 """
 Usersearch - Search for gamertags / userprofiles
 """
+
 from xbox.webapi.api.provider.baseprovider import BaseProvider
 from xbox.webapi.api.provider.usersearch.models import UserSearchResponse
 

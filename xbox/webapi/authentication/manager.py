@@ -3,6 +3,7 @@ Authentication Manager
 
 Authenticate with Windows Live Server and Xbox Live.
 """
+
 import logging
 from typing import List, Optional
 

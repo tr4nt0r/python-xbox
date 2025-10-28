@@ -1,6 +1,7 @@
 """
 Example scripts that performs XBL authentication
 """
+
 import argparse
 import asyncio
 import http.server

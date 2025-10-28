@@ -2,7 +2,6 @@
 Special Exception subclasses
 """
 
-
 from xbox.webapi.common.ratelimits import RateLimit
 
 

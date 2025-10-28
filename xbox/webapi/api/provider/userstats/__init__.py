@@ -1,6 +1,7 @@
 """
 Userstats - Get game statistics
 """
+
 from typing import List, Optional
 
 from xbox.webapi.api.provider.ratelimitedprovider import RateLimitedProvider

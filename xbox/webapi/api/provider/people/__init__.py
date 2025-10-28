@@ -13,6 +13,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from xbox.webapi.api.client import XboxLiveClient
 
+
 class PeopleProvider(RateLimitedProvider):
     SOCIAL_URL = "https://social.xboxlive.com"
     HEADERS_SOCIAL = {"x-xbl-contract-version": "2"}
@@ -63,7 +64,10 @@ class PeopleProvider(RateLimitedProvider):
         return PeopleResponse(**resp.json())
 
     async def get_friends_by_xuid(
-        self, xuid: str, decoration_fields: list[PeopleDecoration] | None = None, **kwargs
+        self,
+        xuid: str,
+        decoration_fields: list[PeopleDecoration] | None = None,
+        **kwargs,
     ) -> PeopleResponse:
         """
         Get friendlist of own profile
@@ -116,7 +120,9 @@ class PeopleProvider(RateLimitedProvider):
         resp.raise_for_status()
         return PeopleResponse(**resp.json())
 
-    async def get_friend_recommendations(self, decoration_fields: list[PeopleDecoration] | None = None, **kwargs) -> PeopleResponse:
+    async def get_friend_recommendations(
+        self, decoration_fields: list[PeopleDecoration] | None = None, **kwargs
+    ) -> PeopleResponse:
         """
         Get recommended friends
 
@@ -127,7 +133,9 @@ class PeopleProvider(RateLimitedProvider):
             decoration_fields = [PeopleDecoration.DETAIL]
         decoration = self.SEPERATOR.join(decoration_fields)
 
-        url = f"{self.PEOPLE_URL}/users/me/people/recommendations/decoration/{decoration}"
+        url = (
+            f"{self.PEOPLE_URL}/users/me/people/recommendations/decoration/{decoration}"
+        )
         resp = await self.client.session.get(url, headers=self._headers, **kwargs)
         resp.raise_for_status()
         return PeopleResponse(**resp.json())

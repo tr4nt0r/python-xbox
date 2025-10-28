@@ -3,6 +3,7 @@ Request Signer
 
 Employed for generating the "Signature" header in authentication requests.
 """
+
 import base64
 from datetime import datetime, timezone
 import hashlib

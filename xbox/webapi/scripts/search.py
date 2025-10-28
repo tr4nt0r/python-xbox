@@ -1,6 +1,7 @@
 """
 Example script that utilizes EDSProvider to search XBL marketplace
 """
+
 import argparse
 import asyncio
 from pprint import pprint

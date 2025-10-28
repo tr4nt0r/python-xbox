@@ -33,7 +33,9 @@ class Image(PascalCaseModel):
     height: int
     image_position_info: Optional[str] = None
     image_purpose: str
-    unscaled_image_sha256_hash: Optional[str] = Field(None, alias="UnscaledImageSHA256Hash")
+    unscaled_image_sha256_hash: Optional[str] = Field(
+        None, alias="UnscaledImageSHA256Hash"
+    )
     uri: str
     width: int
 
@@ -250,6 +252,7 @@ class SkuProperties(PascalCaseModel):
     @field_validator("last_update_date", mode="before", check_fields=True)
     def validator(x):
         return x or None
+
 
 class Sku(PascalCaseModel):
     last_modified_date: datetime

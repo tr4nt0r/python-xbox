@@ -3,6 +3,7 @@ Achievements
 
 Get Xbox 360 and Xbox One Achievement data
 """
+
 from xbox.webapi.api.provider.achievements.models import (
     Achievement360ProgressResponse,
     Achievement360Response,
