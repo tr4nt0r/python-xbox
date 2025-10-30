@@ -95,6 +95,11 @@ dependencies = [
     "httpx==0.28.1",
     "ms_cv==0.1.1",
     "pydantic==2.12.3",
+    "pytest==8.4.2",
+    "pytest-asyncio==1.2.0",
+    "pytest-cov==7.0.0",
+    "freezegun==1.5.5",
+    "respx~=0.22",
 ]
 
 [tool.hatch.envs.hatch-test]
@@ -102,7 +107,8 @@ parallel = true
 extra-dependencies = [
   "pytest-cov~=6.2",
   "pytest-asyncio~=1.1",
-  "respx~=0.22"
+  "respx~=0.22",
+  "freezegun==1.5.5"
 ]
 extra-args = ["--cov=xbox/webapi/", "--cov-report=term-missing", "--cov-report=xml", "-vv"]
 
