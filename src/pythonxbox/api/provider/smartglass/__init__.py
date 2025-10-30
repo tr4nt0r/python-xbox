@@ -2,7 +2,7 @@
 SmartGlass - Control Registered Devices
 """
 
-from typing import List, Optional
+from typing import Optional
 from uuid import uuid4
 
 from httpx import Response
@@ -368,7 +368,7 @@ class SmartglassProvider(BaseProvider):
         device_id: str,
         command_type: str,
         command: str,
-        params: Optional[List[dict]] = None,
+        params: Optional[list[dict]] = None,
         **kwargs,
     ) -> CommandResponse:
         """

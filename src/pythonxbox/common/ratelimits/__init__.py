@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from datetime import datetime, timedelta
-from typing import List, Union
+from typing import Union
 
 from pythonxbox.common.ratelimits.models import (
     IncrementResult,
@@ -224,11 +224,11 @@ class CombinedRateLimit(RateLimit):
         return None
 
     # list -> List (typing.List) https://stackoverflow.com/a/63460173
-    def get_limits(self) -> List[SingleRateLimit]:
+    def get_limits(self) -> list[SingleRateLimit]:
         return self.__limits
 
     # list -> List (typing.List) https://stackoverflow.com/a/63460173
-    def get_limits_by_period(self, period: TimePeriod) -> List[SingleRateLimit]:
+    def get_limits_by_period(self, period: TimePeriod) -> list[SingleRateLimit]:
         # Filter the list for the given LimitType
         matches = filter(lambda limit: limit.get_time_period() == period, self.__limits)
         # Convert the filter object to a list and return it

@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List, Optional
+from typing import Optional
 from pydantic import RootModel
 
 from pythonxbox.common.models import CamelCaseModel
@@ -32,14 +32,14 @@ class ActivityRecord(CamelCaseModel):
 class TitleRecord(CamelCaseModel):
     id: Optional[str] = None
     name: Optional[str] = None
-    activity: Optional[List[ActivityRecord]] = None
+    activity: Optional[list[ActivityRecord]] = None
     lastModified: Optional[str] = None
     placement: Optional[str] = None
     state: Optional[str] = None
 
 
 class DeviceRecord(CamelCaseModel):
-    titles: Optional[List[TitleRecord]] = None
+    titles: Optional[list[TitleRecord]] = None
     type: Optional[str] = None
 
 
@@ -47,8 +47,8 @@ class PresenceItem(CamelCaseModel):
     xuid: str
     state: str
     last_seen: Optional[LastSeen] = None
-    devices: Optional[List[DeviceRecord]] = None
+    devices: Optional[list[DeviceRecord]] = None
 
 
-class PresenceBatchResponse(RootModel[List[PresenceItem]], CamelCaseModel):
-    root: List[PresenceItem]
+class PresenceBatchResponse(RootModel[list[PresenceItem]], CamelCaseModel):
+    root: list[PresenceItem]

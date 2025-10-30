@@ -1,7 +1,7 @@
 """Authentication Models."""
 
 from datetime import datetime, timedelta, timezone
-from typing import Dict, List, Optional
+from typing import Optional
 
 from pydantic import BaseModel, Field
 from pydantic.dataclasses import dataclass
@@ -24,7 +24,7 @@ class XTokenResponse(PascalCaseModel):
 
 class XADDisplayClaims(BaseModel):
     # {"xdi": {"did": "F.....", "dcs": "0"}}
-    xdi: Dict[str, str]
+    xdi: dict[str, str]
 
 
 class XADResponse(XTokenResponse):
@@ -32,7 +32,7 @@ class XADResponse(XTokenResponse):
 
 
 class XATDisplayClaims(BaseModel):
-    xti: Dict[str, str]
+    xti: dict[str, str]
 
 
 class XATResponse(XTokenResponse):
@@ -40,7 +40,7 @@ class XATResponse(XTokenResponse):
 
 
 class XAUDisplayClaims(BaseModel):
-    xui: List[Dict[str, str]]
+    xui: list[dict[str, str]]
 
 
 class XAUResponse(XTokenResponse):
@@ -48,7 +48,7 @@ class XAUResponse(XTokenResponse):
 
 
 class XSTSDisplayClaims(BaseModel):
-    xui: List[Dict[str, str]]
+    xui: list[dict[str, str]]
 
 
 class XSTSResponse(XTokenResponse):
@@ -116,7 +116,7 @@ class XalClientParameters:
 
 class SisuAuthenticationResponse(PascalCaseModel):
     msa_oauth_redirect: str
-    msa_request_parameters: Dict[str, str]
+    msa_request_parameters: dict[str, str]
 
 
 class SisuAuthorizationResponse(PascalCaseModel):
@@ -141,12 +141,12 @@ class TitleEndpoint(PascalCaseModel):
     sub_relying_party: Optional[str] = None
     token_type: Optional[str] = None
     signature_policy_index: Optional[int] = None
-    server_cert_index: Optional[List[int]] = None
+    server_cert_index: Optional[list[int]] = None
 
 
 class SignaturePolicy(PascalCaseModel):
     version: int
-    supported_algorithms: List[str]
+    supported_algorithms: list[str]
     max_body_bytes: int
 
 
@@ -157,7 +157,7 @@ class TitleEndpointCertificate(PascalCaseModel):
 
 
 class TitleEndpointsResponse(PascalCaseModel):
-    end_points: List[TitleEndpoint]
-    signature_policies: List[SignaturePolicy]
-    certs: List[TitleEndpointCertificate]
-    root_certs: List[str]
+    end_points: list[TitleEndpoint]
+    signature_policies: list[SignaturePolicy]
+    certs: list[TitleEndpointCertificate]
+    root_certs: list[str]

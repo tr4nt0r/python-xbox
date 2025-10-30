@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-from typing import Any, List, Optional
+from typing import Any, Optional
 
 from pythonxbox.common.models import CamelCaseModel, PascalCaseModel
 
@@ -47,26 +47,26 @@ class TitleHistory(CamelCaseModel):
 
 
 class Attribute(CamelCaseModel):
-    applicable_platforms: Optional[List[str]] = None
+    applicable_platforms: Optional[list[str]] = None
     maximum: Optional[int] = None
     minimum: Optional[int] = None
     name: str
 
 
 class Availability(PascalCaseModel):
-    actions: List[str]
+    actions: list[str]
     availability_id: str
-    platforms: List[str]
+    platforms: list[str]
     sku_id: str
 
 
 class Detail(CamelCaseModel):
-    attributes: List[Attribute]
-    availabilities: List[Availability]
-    capabilities: List[str]
+    attributes: list[Attribute]
+    availabilities: list[Availability]
+    capabilities: list[str]
     description: str
     developer_name: str | None = None
-    genres: Optional[List[str]] = None
+    genres: Optional[list[str]] = None
     publisher_name: str
     min_age: int | None = None
     release_date: Optional[datetime] = None
@@ -83,7 +83,7 @@ class Title(CamelCaseModel):
     windows_phone_product_id: Optional[str] = None
     name: str
     type: str
-    devices: List[str]
+    devices: list[str]
     display_image: str
     media_item_type: str
     modern_title_id: Optional[str] = None
@@ -91,7 +91,7 @@ class Title(CamelCaseModel):
     achievement: Optional[Achievement] = None
     stats: Optional[Stats] = None
     game_pass: Optional[GamePass] = None
-    images: Optional[List[Image]] = None
+    images: Optional[list[Image]] = None
     title_history: Optional[TitleHistory] = None
     detail: Optional[Detail] = None
     friends_who_played: Any = None
@@ -103,4 +103,4 @@ class Title(CamelCaseModel):
 
 class TitleHubResponse(CamelCaseModel):
     xuid: Optional[str] = None
-    titles: List[Title]
+    titles: list[Title]
