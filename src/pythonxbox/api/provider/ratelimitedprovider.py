@@ -4,7 +4,7 @@ RateLimitedProvider
 Subclassed by providers with rate limit support
 """
 
-from typing import Dict, Union
+from typing import Union
 
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.common.exceptions import XboxException
@@ -14,7 +14,7 @@ from pythonxbox.common.ratelimits.models import LimitType, ParsedRateLimit, Time
 
 class RateLimitedProvider(BaseProvider):
     # dict -> Dict (typing.dict) https://stackoverflow.com/a/63460173
-    RATE_LIMITS: Dict[str, Union[int, Dict[str, int]]]
+    RATE_LIMITS: dict[str, Union[int, dict[str, int]]]
 
     def __init__(self, client):
         """
@@ -61,7 +61,7 @@ class RateLimitedProvider(BaseProvider):
         )
 
     def __parse_rate_limit_key(
-        self, key: Union[int, Dict[str, int]], period: TimePeriod
+        self, key: Union[int, dict[str, int]], period: TimePeriod
     ) -> ParsedRateLimit:
         if isinstance(key, int) and not isinstance(key, bool):
             # bool is a subclass of int, hence the explicit check

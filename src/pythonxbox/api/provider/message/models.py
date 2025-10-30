@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, List, Optional
+from typing import Any, Optional
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -8,12 +8,12 @@ class Part(CamelCaseModel):
     content_type: str
     version: int
     text: Optional[str] = None
-    unsuitable_for: Optional[List] = None
+    unsuitable_for: Optional[list] = None
     locator: Optional[str] = None
 
 
 class Content(CamelCaseModel):
-    parts: List[Part]
+    parts: list[Part]
 
 
 class ContentPayload(CamelCaseModel):
@@ -41,7 +41,7 @@ class Conversation(CamelCaseModel):
     type: str
     conversation_id: str
     voice_id: str
-    participants: List[str]
+    participants: list[str]
     read_horizon: str
     delete_horizon: str
     is_read: bool
@@ -54,7 +54,7 @@ class Primary(CamelCaseModel):
     folder: str
     total_count: int
     unread_count: int
-    conversations: List[Conversation]
+    conversations: list[Conversation]
 
 
 class SafetySettings(CamelCaseModel):
@@ -70,7 +70,7 @@ class SafetySettings(CamelCaseModel):
 
 class InboxResponse(CamelCaseModel):
     primary: Primary
-    folders: List[Any]
+    folders: list[Any]
     safety_settings: SafetySettings
 
 
@@ -79,16 +79,16 @@ class ConversationResponse(CamelCaseModel):
     network_id: str
     type: str
     conversation_id: str
-    participants: Optional[List[str]] = None
+    participants: Optional[list[str]] = None
     read_horizon: str
     delete_horizon: str
     is_read: bool
     muted: bool
     folder: str
-    messages: Optional[List[Message]] = None
+    messages: Optional[list[Message]] = None
     continuation_token: Optional[str] = None
     voice_id: str
-    voice_roster: Optional[List[Any]] = None
+    voice_roster: Optional[list[Any]] = None
 
 
 class SendMessageResponse(CamelCaseModel):

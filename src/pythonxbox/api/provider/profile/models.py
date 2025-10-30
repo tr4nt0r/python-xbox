@@ -1,5 +1,4 @@
 from enum import Enum
-from typing import List
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -40,9 +39,9 @@ class Setting(CamelCaseModel):
 class ProfileUser(CamelCaseModel):
     id: str
     host_id: str
-    settings: List[Setting]
+    settings: list[Setting]
     is_sponsored_user: bool
 
 
 class ProfileResponse(CamelCaseModel):
-    profile_users: List[ProfileUser]
+    profile_users: list[ProfileUser]

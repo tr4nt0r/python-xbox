@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-from typing import List, Optional
+from typing import Optional
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -69,12 +69,12 @@ class SmartglassConsole(CamelCaseModel):
     console_streaming_enabled: bool
     digital_assistant_remote_control_enabled: bool
     remote_management_enabled: bool
-    storage_devices: Optional[List[StorageDevice]] = None
+    storage_devices: Optional[list[StorageDevice]] = None
 
 
 class SmartglassConsoleList(CamelCaseModel):
     agent_user_id: Optional[str] = None
-    result: List[SmartglassConsole]
+    result: list[SmartglassConsole]
     status: SmartglassApiStatus
 
 
@@ -88,7 +88,7 @@ class SmartglassConsoleStatus(CamelCaseModel):
     login_state: Optional[str] = None
     playback_state: PlaybackState
     power_state: PowerState
-    storage_devices: Optional[List[StorageDevice]] = None
+    storage_devices: Optional[list[StorageDevice]] = None
     status: SmartglassApiStatus
 
 
@@ -112,14 +112,14 @@ class InstalledPackage(CamelCaseModel):
 
 
 class InstalledPackagesList(CamelCaseModel):
-    result: List[InstalledPackage]
+    result: list[InstalledPackage]
     status: SmartglassApiStatus
     agent_user_id: Optional[str] = None
 
 
 class StorageDevicesList(CamelCaseModel):
     device_id: str
-    result: List[StorageDevice]
+    result: list[StorageDevice]
     status: SmartglassApiStatus
 
 
@@ -136,7 +136,7 @@ class OpStatusNode(CamelCaseModel):
 
 
 class OperationStatusResponse(CamelCaseModel):
-    op_status_list: List[OpStatusNode]
+    op_status_list: list[OpStatusNode]
     status: SmartglassApiStatus
 
 

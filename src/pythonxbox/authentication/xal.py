@@ -8,7 +8,7 @@ import base64
 import hashlib
 import logging
 import os
-from typing import Callable, Tuple
+from typing import Callable
 from urllib import parse
 import uuid
 
@@ -195,7 +195,7 @@ class XALManager:
 
     async def request_sisu_authentication(
         self, device_token_jwt: str, code_challenge: str, state: str
-    ) -> Tuple[SisuAuthenticationResponse, str]:
+    ) -> tuple[SisuAuthenticationResponse, str]:
         """
         Request Sisu authentication URL
 

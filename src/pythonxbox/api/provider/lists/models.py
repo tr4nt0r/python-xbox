@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Optional
 
 from pythonxbox.common.models import PascalCaseModel
 
@@ -31,5 +31,5 @@ class ListMetadata(PascalCaseModel):
 
 class ListsResponse(PascalCaseModel):
     impression_id: str
-    list_items: List[ListItem]
+    list_items: list[ListItem]
     list_metadata: ListMetadata

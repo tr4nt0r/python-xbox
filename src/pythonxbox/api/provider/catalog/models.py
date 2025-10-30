@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-from typing import Any, List, Optional, Union
+from typing import Any, Optional, Union
 
 from pydantic import Field, field_validator
 
@@ -62,9 +62,9 @@ class SearchTitle(PascalCaseModel):
 class ContentRating(PascalCaseModel):
     rating_system: str
     rating_id: str
-    rating_descriptors: List[str]
-    rating_disclaimers: List
-    interactive_elements: Optional[List] = None
+    rating_descriptors: list[str]
+    rating_disclaimers: list
+    interactive_elements: Optional[list] = None
 
 
 class UsageData(PascalCaseModel):
@@ -78,11 +78,11 @@ class UsageData(PascalCaseModel):
 
 
 class ProductProperties(PascalCaseModel):
-    attributes: Optional[List] = None
+    attributes: Optional[list] = None
     can_install_to_sd_card: Optional[bool] = Field(None, alias="CanInstallToSDCard")
     category: Optional[str] = None
     sub_category: Optional[str] = None
-    categories: Optional[List[str]] = None
+    categories: Optional[list[str]] = None
     extensions: Any = None
     is_accessible: Optional[bool] = None
     is_line_of_business_app: Optional[bool] = None
@@ -129,8 +129,8 @@ class FulfillmentData(PascalCaseModel):
 
 
 class HardwareProperties(PascalCaseModel):
-    minimum_hardware: List
-    recommended_hardware: List
+    minimum_hardware: list
+    recommended_hardware: list
     minimum_processor: Any = None
     recommended_processor: Any = None
     minimum_graphics: Any = None
@@ -140,7 +140,7 @@ class HardwareProperties(PascalCaseModel):
 class Application(PascalCaseModel):
     application_id: str
     declaration_order: int
-    extensions: List[str]
+    extensions: list[str]
 
 
 class FrameworkDependency(PascalCaseModel):
@@ -156,18 +156,18 @@ class PlatformDependency(PascalCaseModel):
 
 
 class Package(PascalCaseModel):
-    applications: Optional[List[Application]] = None
-    architectures: List[str]
-    capabilities: Optional[List[str]] = None
-    device_capabilities: Optional[List[str]] = None
-    experience_ids: Optional[List] = None
-    framework_dependencies: Optional[List[FrameworkDependency]] = None
-    hardware_dependencies: Optional[List] = None
-    hardware_requirements: Optional[List] = None
+    applications: Optional[list[Application]] = None
+    architectures: list[str]
+    capabilities: Optional[list[str]] = None
+    device_capabilities: Optional[list[str]] = None
+    experience_ids: Optional[list] = None
+    framework_dependencies: Optional[list[FrameworkDependency]] = None
+    hardware_dependencies: Optional[list] = None
+    hardware_requirements: Optional[list] = None
     hash: Optional[str] = None
     hash_algorithm: Optional[str] = None
     is_streaming_app: Optional[bool] = None
-    languages: Optional[List[str]] = None
+    languages: Optional[list[str]] = None
     max_download_size_in_bytes: int
     max_install_size_in_bytes: Optional[int] = None
     package_format: str
@@ -179,12 +179,12 @@ class Package(PascalCaseModel):
     key_id: Optional[str] = None
     package_rank: Optional[int] = None
     package_uri: Optional[str] = None
-    platform_dependencies: Optional[List[PlatformDependency]] = None
+    platform_dependencies: Optional[list[PlatformDependency]] = None
     platform_dependency_xml_blob: Optional[str] = None
     resource_id: Optional[str] = None
     version: Optional[str] = None
     package_download_uris: Any = None
-    driver_dependencies: Optional[List] = None
+    driver_dependencies: Optional[list] = None
     fulfillment_data: Optional[FulfillmentData] = None
 
 
@@ -199,8 +199,8 @@ class LegalText(PascalCaseModel):
 
 
 class SkuLocalizedProperty(PascalCaseModel):
-    contributors: Optional[List] = None
-    features: Optional[List] = None
+    contributors: Optional[list] = None
+    features: Optional[list] = None
     minimum_notes: Optional[str] = None
     recommended_notes: Optional[str] = None
     release_notes: Optional[str] = None
@@ -209,20 +209,20 @@ class SkuLocalizedProperty(PascalCaseModel):
     sku_title: str
     sku_button_title: Optional[str] = None
     delivery_date_overlay: Any = None
-    sku_display_rank: Optional[List] = None
+    sku_display_rank: Optional[list] = None
     text_resources: Any = None
-    images: Optional[List] = None
+    images: Optional[list] = None
     legal_text: Optional[LegalText] = None
     language: str
-    markets: List[str]
+    markets: list[str]
 
 
 class SkuMarketProperty(PascalCaseModel):
     first_available_date: Optional[Union[datetime, str]] = None
-    supported_languages: Optional[List[str]] = None
+    supported_languages: Optional[list[str]] = None
     package_ids: Any = None
     pi_filter: Any = Field(None, alias="PIFilter")
-    markets: List[str]
+    markets: list[str]
 
 
 class SkuProperties(PascalCaseModel):
@@ -233,18 +233,18 @@ class SkuProperties(PascalCaseModel):
     has_third_party_iaps: Optional[bool] = Field(None, alias="HasThirdPartyIAPs")
     last_update_date: Optional[datetime] = None
     hardware_properties: Optional[HardwareProperties] = None
-    hardware_requirements: Optional[List] = None
-    hardware_warning_list: Optional[List] = None
+    hardware_requirements: Optional[list] = None
+    hardware_warning_list: Optional[list] = None
     installation_terms: str
-    packages: Optional[List[Package]] = None
+    packages: Optional[list[Package]] = None
     version_string: Optional[str] = None
-    visible_to_b2b_service_ids: List = Field(alias="VisibleToB2BServiceIds")
+    visible_to_b2b_service_ids: list = Field(alias="VisibleToB2BServiceIds")
     xbox_xpa: Optional[bool] = Field(None, alias="XboxXPA")
-    bundled_skus: Optional[List] = None
+    bundled_skus: Optional[list] = None
     is_repurchasable: bool
     sku_display_rank: int
     display_physical_store_inventory: Any = None
-    additional_identifiers: List
+    additional_identifiers: list
     is_trial: bool
     is_pre_order: bool
     is_bundle: bool
@@ -256,8 +256,8 @@ class SkuProperties(PascalCaseModel):
 
 class Sku(PascalCaseModel):
     last_modified_date: datetime
-    localized_properties: List[SkuLocalizedProperty]
-    market_properties: List[SkuMarketProperty]
+    localized_properties: list[SkuLocalizedProperty]
+    market_properties: list[SkuMarketProperty]
     product_id: str
     properties: SkuProperties
     sku_a_schema: str
@@ -275,19 +275,19 @@ class AllowedPlatform(PascalCaseModel):
 
 
 class ClientConditions(PascalCaseModel):
-    allowed_platforms: List[AllowedPlatform]
+    allowed_platforms: list[AllowedPlatform]
 
 
 class Conditions(PascalCaseModel):
     client_conditions: ClientConditions
     end_date: datetime
-    resource_set_ids: List[str]
+    resource_set_ids: list[str]
     start_date: datetime
 
 
 class PIFilter(PascalCaseModel):
-    exclusion_properties: List
-    inclusion_properties: List
+    exclusion_properties: list
+    inclusion_properties: list
 
 
 class Price(PascalCaseModel):
@@ -300,7 +300,7 @@ class Price(PascalCaseModel):
 
 
 class OrderManagementData(PascalCaseModel):
-    granted_entitlement_keys: Optional[List] = None
+    granted_entitlement_keys: Optional[list] = None
     pi_filter: Optional[PIFilter] = Field(None, alias="PIFilter")
     price: Price
 
@@ -310,22 +310,22 @@ class AvailabilityProperties(PascalCaseModel):
 
 
 class SatisfyingEntitlementKey(PascalCaseModel):
-    entitlement_keys: List[str]
-    licensing_key_ids: List[str]
+    entitlement_keys: list[str]
+    licensing_key_ids: list[str]
 
 
 class LicensingData(PascalCaseModel):
-    satisfying_entitlement_keys: List[SatisfyingEntitlementKey]
+    satisfying_entitlement_keys: list[SatisfyingEntitlementKey]
 
 
 class Availability(PascalCaseModel):
-    actions: List[str]
+    actions: list[str]
     availability_a_schema: Optional[str] = None
     availability_b_schema: Optional[str] = None
     availability_id: Optional[str] = None
     conditions: Optional[Conditions] = None
     last_modified_date: Optional[datetime] = None
-    markets: Optional[List[str]] = None
+    markets: Optional[list[str]] = None
     order_management_data: Optional[OrderManagementData] = None
     properties: Optional[AvailabilityProperties] = None
     sku_id: Optional[str] = None
@@ -336,7 +336,7 @@ class Availability(PascalCaseModel):
 
 class DisplaySkuAvailability(PascalCaseModel):
     sku: Optional[Sku] = None
-    availabilities: List[Availability]
+    availabilities: list[Availability]
 
 
 class LocalizedProperty(PascalCaseModel):
@@ -346,63 +346,63 @@ class LocalizedProperty(PascalCaseModel):
     publisher_website_uri: Optional[str] = None
     support_uri: Optional[str] = None
     eligibility_properties: Optional[Any] = None
-    franchises: Optional[List] = None
-    images: List[Image]
-    videos: Optional[List[Video]] = None
+    franchises: Optional[list] = None
+    images: list[Image]
+    videos: Optional[list[Video]] = None
     product_description: Optional[str] = None
     product_title: str
     short_title: Optional[str] = None
     sort_title: Optional[str] = None
     friendly_title: Optional[str] = None
     short_description: Optional[str] = None
-    search_titles: Optional[List[SearchTitle]] = None
+    search_titles: Optional[list[SearchTitle]] = None
     voice_title: Optional[str] = None
     render_group_details: Optional[Any] = None
-    product_display_ranks: Optional[List] = None
+    product_display_ranks: Optional[list] = None
     interactive_model_config: Optional[Any] = None
     interactive_3d_enabled: Optional[bool] = Field(None, alias="Interactive3DEnabled")
     language: Optional[str] = None
-    markets: Optional[List[str]] = None
+    markets: Optional[list[str]] = None
 
 
 class MarketProperty(PascalCaseModel):
     original_release_date: Optional[datetime] = None
     original_release_friendly_name: Optional[str] = None
     minimum_user_age: Optional[int] = None
-    content_ratings: Optional[List[ContentRating]] = None
-    related_products: Optional[List] = None
-    usage_data: List[UsageData]
+    content_ratings: Optional[list[ContentRating]] = None
+    related_products: Optional[list] = None
+    usage_data: list[UsageData]
     bundle_config: Optional[Any] = None
-    markets: Optional[List[str]] = None
+    markets: Optional[list[str]] = None
 
 
 class Product(PascalCaseModel):
     last_modified_date: Optional[datetime] = None
-    localized_properties: List[LocalizedProperty]
-    market_properties: List[MarketProperty]
+    localized_properties: list[LocalizedProperty]
+    market_properties: list[MarketProperty]
     product_a_schema: Optional[str] = None
     product_b_schema: Optional[str] = None
     product_id: str
     properties: Optional[ProductProperties] = None
-    alternate_ids: Optional[List[AlternateId]] = None
+    alternate_ids: Optional[list[AlternateId]] = None
     domain_data_version: Optional[Any] = None
     ingestion_source: Optional[str] = None
     is_microsoft_product: Optional[bool] = None
     preferred_sku_id: Optional[str] = None
     product_type: Optional[str] = None
     validation_data: Optional[ValidationData] = None
-    merchandizing_tags: Optional[List] = None
+    merchandizing_tags: Optional[list] = None
     part_d: Optional[str] = None
     product_family: str
     schema_version: Optional[str] = None
     product_kind: str
-    display_sku_availabilities: List[DisplaySkuAvailability]
+    display_sku_availabilities: list[DisplaySkuAvailability]
 
 
 class CatalogResponse(PascalCaseModel):
-    big_ids: Optional[List[str]] = None
+    big_ids: Optional[list[str]] = None
     has_more_pages: Optional[bool] = None
-    products: List[Product]
+    products: list[Product]
     total_result_count: Optional[int] = None
 
 
@@ -411,7 +411,7 @@ class SearchProduct(PascalCaseModel):
     height: Optional[int] = None
     image_type: Optional[str] = None
     width: Optional[int] = None
-    platform_properties: List
+    platform_properties: list
     icon: Optional[str] = None
     product_id: str
     type: str
@@ -420,9 +420,9 @@ class SearchProduct(PascalCaseModel):
 
 class CatalogSearchResult(PascalCaseModel):
     product_family_name: str
-    products: List[SearchProduct]
+    products: list[SearchProduct]
 
 
 class CatalogSearchResponse(PascalCaseModel):
-    results: List[CatalogSearchResult]
+    results: list[CatalogSearchResult]
     total_result_count: int

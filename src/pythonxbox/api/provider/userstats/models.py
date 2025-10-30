@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Optional
 
 from pythonxbox.common.models import LowerCaseModel, PascalCaseModel
 
@@ -32,15 +32,15 @@ class Stat(LowerCaseModel):
 class StatListsCollectionItem(LowerCaseModel):
     arrange_by_field: str
     arrange_by_field_id: str
-    stats: List[Stat]
+    stats: list[Stat]
 
 
 class Group(LowerCaseModel):
     name: str
     title_id: Optional[str] = None
-    statlistscollection: List[StatListsCollectionItem]
+    statlistscollection: list[StatListsCollectionItem]
 
 
 class UserStatsResponse(LowerCaseModel):
-    groups: Optional[List[Group]] = None
-    statlistscollection: List[StatListsCollectionItem]
+    groups: Optional[list[Group]] = None
+    statlistscollection: list[StatListsCollectionItem]

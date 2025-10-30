@@ -2,8 +2,6 @@
 Store Catalog - Lookup Product Information
 """
 
-from typing import List
-
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.catalog.models import (
     AlternateIdType,
@@ -20,7 +18,7 @@ class CatalogProvider(BaseProvider):
 
     async def get_products(
         self,
-        big_ids: List[str],
+        big_ids: list[str],
         fields: FieldsTemplate = FieldsTemplate.DETAILS,
         **kwargs,
     ) -> CatalogResponse:
