@@ -56,7 +56,7 @@ ignore = []
 
 [tool.ruff.lint.isort]
 force-sort-within-sections = true
-known-first-party = ["aiontfy"]
+known-first-party = ["pythonxbox"]
 combine-as-imports = true
 split-on-trailing-comma = false
 
