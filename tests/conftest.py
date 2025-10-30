@@ -1,4 +1,4 @@
-from datetime import datetime, timezone
+from datetime import datetime, UTC
 import uuid
 
 from ecdsa.keys import SigningKey, VerifyingKey
@@ -77,4 +77,4 @@ def synthetic_request_signer(ecdsa_signing_key) -> RequestSigner:
 
 @pytest.fixture(scope="session")
 def synthetic_timestamp() -> datetime:
-    return datetime.fromtimestamp(1586999965, timezone.utc)
+    return datetime.fromtimestamp(1586999965, UTC)

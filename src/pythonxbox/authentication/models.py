@@ -1,6 +1,6 @@
 """Authentication Models."""
 
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, UTC
 
 from pydantic import BaseModel, Field
 from pydantic.dataclasses import dataclass
@@ -9,7 +9,7 @@ from pythonxbox.common.models import PascalCaseModel
 
 
 def utc_now():
-    return datetime.now(timezone.utc)
+    return datetime.now(UTC)
 
 
 class XTokenResponse(PascalCaseModel):
