@@ -5,7 +5,7 @@ Employed for generating the "Signature" header in authentication requests.
 """
 
 import base64
-from datetime import datetime, timezone
+from datetime import datetime, UTC
 import hashlib
 import struct
 
@@ -101,7 +101,7 @@ class RequestSigner:
         timestamp: datetime = None,
     ) -> str:
         if timestamp is None:
-            timestamp = datetime.now(timezone.utc)
+            timestamp = datetime.now(UTC)
 
         signature = self._sign_raw(
             method, path_and_query, body, authorization, timestamp
