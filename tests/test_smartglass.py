@@ -1,7 +1,7 @@
 from httpx import Response
 import pytest
 
-from xbox.webapi.api.provider.smartglass.models import InputKeyType, VolumeDirection
+from pythonxbox.api.provider.smartglass.models import InputKeyType, VolumeDirection
 
 from tests.common import get_response_json
 

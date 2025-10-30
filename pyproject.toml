@@ -32,11 +32,11 @@ dynamic = ["version"]
 Homepage = "https://github.com/tr4nt0r/python-xbox"
 
 [project.scripts]
-xbox-authenticate = "xbox.webapi.scripts.authenticate:main"
-xbox-change-gt = "xbox.webapi.scripts.change_gamertag:main"
-xbox-friends = "xbox.webapi.scripts.friends:main"
-xbox-searchlive = "xbox.webapi.scripts.search:main"
-xbox-xal = "xbox.webapi.scripts.xal:main"
+xbox-authenticate = "pythonxbox.scripts.authenticate:main"
+xbox-change-gt = "pythonxbox.scripts.change_gamertag:main"
+xbox-friends = "pythonxbox.scripts.friends:main"
+xbox-searchlive = "pythonxbox.scripts.search:main"
+xbox-xal = "pythonxbox.scripts.xal:main"
 
 [tool.ruff]
 line-length = 88
@@ -78,14 +78,14 @@ tests = [
 [tool.hatch.version]
 source = "regex_commit"
 commit_extra_args = ["-e"]
-path = "xbox/webapi/__init__.py"
+path = "src/pythonxbox/__init__.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/xbox",
+    "src/pythonxbox",
 ]
 [tool.hatch.build.targets.wheel]
-packages = ["xbox"]
+packages = ["src/pythonxbox"]
 
 [tool.hatch.envs.default]
 python = "3.13"
@@ -110,12 +110,12 @@ extra-dependencies = [
   "respx~=0.22",
   "freezegun==1.5.5"
 ]
-extra-args = ["--cov=xbox/webapi/", "--cov-report=term-missing", "--cov-report=xml", "-vv"]
+extra-args = ["--cov=src/", "--cov-report=term-missing", "--cov-report=xml", "-vv"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
-pythonpath = ["xbox/webapi"]
+pythonpath = ["src"]
 
 [[tool.hatch.envs.hatch-test.matrix]]
 python = ["3.14", "3.13", "3.12", "3.11"]

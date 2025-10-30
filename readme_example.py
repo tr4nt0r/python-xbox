@@ -3,11 +3,11 @@ import sys
 
 from httpx import HTTPStatusError
 
-from xbox.webapi.api.client import XboxLiveClient
-from xbox.webapi.authentication.manager import AuthenticationManager
-from xbox.webapi.authentication.models import OAuth2TokenResponse
-from xbox.webapi.common.signed_session import SignedSession
-from xbox.webapi.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
+from pythonxbox.webapi.api.client import XboxLiveClient
+from pythonxbox.webapi.authentication.manager import AuthenticationManager
+from pythonxbox.webapi.authentication.models import OAuth2TokenResponse
+from pythonxbox.webapi.common.signed_session import SignedSession
+from pythonxbox.webapi.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
 
 """
 This uses the global default client identification by OpenXbox

@@ -6,10 +6,10 @@ from httpx import Response
 import pytest
 
 from tests.common import get_response_json
-from xbox.webapi.api.provider.ratelimitedprovider import RateLimitedProvider
-from xbox.webapi.common.exceptions import RateLimitExceededException, XboxException
-from xbox.webapi.common.ratelimits import CombinedRateLimit
-from xbox.webapi.common.ratelimits.models import TimePeriod
+from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
+from pythonxbox.common.exceptions import RateLimitExceededException, XboxException
+from pythonxbox.common.ratelimits import CombinedRateLimit
+from pythonxbox.common.ratelimits.models import TimePeriod
 
 
 def helper_test_combinedratelimit(

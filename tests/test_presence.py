@@ -1,7 +1,7 @@
 from httpx import Response
 import pytest
 
-from xbox.webapi.api.provider.presence.models import PresenceState
+from pythonxbox.api.provider.presence.models import PresenceState
 
 from tests.common import get_response_json
 
