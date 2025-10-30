@@ -9,7 +9,7 @@ class TitleFields(str, Enum):
     SERVICE_CONFIG_ID = "scid"
     ACHIEVEMENT = "achievement"
     STATS = "stats"
-    GAME_PASS = "gamepass"
+    GAME_PASS = "gamepass"  # noqa: S105
     IMAGE = "image"
     DETAIL = "detail"
     FRIENDS_WHO_PLAYED = "friendswhoplayed"
