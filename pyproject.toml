@@ -5,7 +5,6 @@ authors = [
     {name = "OpenXbox"},
 ]
 dependencies = [
-    "appdirs",
     "ecdsa",
     "httpx",
     "ms_cv",
@@ -30,6 +29,11 @@ dynamic = ["version"]
 
 [project.urls]
 Homepage = "https://github.com/tr4nt0r/python-xbox"
+
+[project.optional-dependencies]
+cli = [
+    "platformdirs>=4.5.0"
+]
 
 [project.scripts]
 xbox-authenticate = "pythonxbox.scripts.authenticate:main"
@@ -90,7 +94,7 @@ packages = ["src/pythonxbox"]
 [tool.hatch.envs.default]
 python = "3.13"
 dependencies = [
-    "appdirs==1.4.4",
+    "platformdirs==4.5.0",
     "ecdsa==0.19.1",
     "httpx==0.28.1",
     "ms_cv==0.1.1",

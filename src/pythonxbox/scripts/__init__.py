@@ -1,6 +1,6 @@
 import os
 
-from appdirs import user_data_dir
+from platformdirs import user_data_dir
 
 CLIENT_ID = "388ea51c-0b25-4029-aae2-17df49d23905"
 # No secret needed, we registered as "Desktop App" in Azure AD
