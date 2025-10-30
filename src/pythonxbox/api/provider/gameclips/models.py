@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import Optional
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -51,7 +50,7 @@ class GameClip(CamelCaseModel):
 
 
 class PagingInfo(CamelCaseModel):
-    continuation_token: Optional[str] = None
+    continuation_token: str | None = None
 
 
 class GameclipsResponse(CamelCaseModel):

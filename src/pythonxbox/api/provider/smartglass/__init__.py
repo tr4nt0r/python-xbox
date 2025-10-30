@@ -2,7 +2,6 @@
 SmartGlass - Control Registered Devices
 """
 
-from typing import Optional
 from uuid import uuid4
 
 from httpx import Response
@@ -56,7 +55,7 @@ class SmartglassProvider(BaseProvider):
         return SmartglassConsoleList(**resp.json())
 
     async def get_installed_apps(
-        self, device_id: Optional[str] = None, **kwargs
+        self, device_id: str | None = None, **kwargs
     ) -> InstalledPackagesList:
         """
         Get Installed Apps
@@ -344,7 +343,7 @@ class SmartglassProvider(BaseProvider):
         return await self._send_one_shot_command(device_id, "TV", "ShowGuide", **kwargs)
 
     async def _fetch_list(
-        self, list_name: str, params: Optional[dict] = None, **kwargs
+        self, list_name: str, params: dict | None = None, **kwargs
     ) -> Response:
         """
         Fetch arbitrary list
@@ -368,7 +367,7 @@ class SmartglassProvider(BaseProvider):
         device_id: str,
         command_type: str,
         command: str,
-        params: Optional[list[dict]] = None,
+        params: list[dict] | None = None,
         **kwargs,
     ) -> CommandResponse:
         """

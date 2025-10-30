@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -7,9 +7,9 @@ from pythonxbox.common.models import CamelCaseModel
 class Part(CamelCaseModel):
     content_type: str
     version: int
-    text: Optional[str] = None
-    unsuitable_for: Optional[list] = None
-    locator: Optional[str] = None
+    text: str | None = None
+    unsuitable_for: list | None = None
+    locator: str | None = None
 
 
 class Content(CamelCaseModel):
@@ -21,14 +21,14 @@ class ContentPayload(CamelCaseModel):
 
 
 class Message(CamelCaseModel):
-    content_payload: Optional[ContentPayload] = None
+    content_payload: ContentPayload | None = None
     timestamp: datetime
     last_update_timestamp: datetime
     type: str
     network_id: str
     conversation_type: str
     conversation_id: str
-    owner: Optional[int] = None
+    owner: int | None = None
     sender: str
     message_id: str
     is_deleted: bool
@@ -79,16 +79,16 @@ class ConversationResponse(CamelCaseModel):
     network_id: str
     type: str
     conversation_id: str
-    participants: Optional[list[str]] = None
+    participants: list[str] | None = None
     read_horizon: str
     delete_horizon: str
     is_read: bool
     muted: bool
     folder: str
-    messages: Optional[list[Message]] = None
-    continuation_token: Optional[str] = None
+    messages: list[Message] | None = None
+    continuation_token: str | None = None
     voice_id: str
-    voice_roster: Optional[list[Any]] = None
+    voice_roster: list[Any] | None = None
 
 
 class SendMessageResponse(CamelCaseModel):

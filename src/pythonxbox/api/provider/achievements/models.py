@@ -1,5 +1,5 @@
 from datetime import datetime, time
-from typing import Any, Optional
+from typing import Any
 
 from pydantic import BaseModel
 
@@ -7,7 +7,7 @@ from pythonxbox.common.models import CamelCaseModel
 
 
 class PagingInfo(CamelCaseModel):
-    continuation_token: Optional[str] = None
+    continuation_token: str | None = None
     total_records: int
 
 
@@ -62,7 +62,7 @@ class TitleAssociation(BaseModel):
 
 class Requirement(CamelCaseModel):
     id: str
-    current: Optional[str] = None
+    current: str | None = None
     target: str
     operation_type: str
     value_type: str

@@ -8,7 +8,6 @@ import base64
 from datetime import datetime, timezone
 import hashlib
 import struct
-from typing import Optional
 
 from ecdsa import NIST256p, SigningKey, VerifyingKey
 
@@ -78,7 +77,7 @@ class RequestSigner:
         self,
         signature: bytes,
         digest: bytes,
-        verifying_key: Optional[VerifyingKey] = None,
+        verifying_key: VerifyingKey | None = None,
     ) -> bool:
         """
         Verify signature against digest

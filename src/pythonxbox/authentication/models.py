@@ -1,7 +1,6 @@
 """Authentication Models."""
 
 from datetime import datetime, timedelta, timezone
-from typing import Optional
 
 from pydantic import BaseModel, Field
 from pydantic.dataclasses import dataclass
@@ -88,7 +87,7 @@ class OAuth2TokenResponse(BaseModel):
     expires_in: int
     scope: str
     access_token: str
-    refresh_token: Optional[str] = None
+    refresh_token: str | None = None
     user_id: str
     issued: datetime = Field(default_factory=utc_now)
 
@@ -126,7 +125,7 @@ class SisuAuthorizationResponse(PascalCaseModel):
     authorization_token: XSTSResponse
     web_page: str
     sandbox: str
-    use_modern_gamertag: Optional[bool] = None
+    use_modern_gamertag: bool | None = None
 
 
 """Signature related models"""
@@ -136,12 +135,12 @@ class TitleEndpoint(PascalCaseModel):
     protocol: str
     host: str
     host_type: str
-    path: Optional[str] = None
-    relying_party: Optional[str] = None
-    sub_relying_party: Optional[str] = None
-    token_type: Optional[str] = None
-    signature_policy_index: Optional[int] = None
-    server_cert_index: Optional[list[int]] = None
+    path: str | None = None
+    relying_party: str | None = None
+    sub_relying_party: str | None = None
+    token_type: str | None = None
+    signature_policy_index: int | None = None
+    server_cert_index: list[int] | None = None
 
 
 class SignaturePolicy(PascalCaseModel):
@@ -152,7 +151,7 @@ class SignaturePolicy(PascalCaseModel):
 
 class TitleEndpointCertificate(PascalCaseModel):
     thumbprint: str
-    is_issuer: Optional[bool] = None
+    is_issuer: bool | None = None
     root_cert_index: int
 
 
