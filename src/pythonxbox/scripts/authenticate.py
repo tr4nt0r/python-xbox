@@ -96,7 +96,7 @@ async def do_auth(
 
         with open(token_filepath, mode="w") as f:
             print(f"Finished authentication, writing tokens to {token_filepath}")
-            f.write(auth_mgr.oauth.json())
+            f.write(auth_mgr.oauth.model_dump_json())
 
 
 async def async_main():
