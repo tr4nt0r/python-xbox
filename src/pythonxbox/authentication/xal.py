@@ -8,7 +8,7 @@ import base64
 import hashlib
 import logging
 import os
-from typing import Callable
+from collections.abc import Callable
 from urllib import parse
 import uuid
 

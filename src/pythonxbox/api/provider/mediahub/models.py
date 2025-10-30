@@ -1,23 +1,21 @@
-from typing import Optional
-
 from pythonxbox.common.models import CamelCaseModel
 
 
 class ContentSegment(CamelCaseModel):
     segment_id: int
     creation_type: str
-    creator_channel_id: Optional[str] = None
+    creator_channel_id: str | None = None
     creator_xuid: int
     record_date: str
     duration_in_seconds: int
     offset: int
-    secondary_title_id: Optional[int] = None
+    secondary_title_id: int | None = None
     title_id: int
 
 
 class ContentLocator(CamelCaseModel):
-    expiration: Optional[str] = None
-    file_size: Optional[int] = None
+    expiration: str | None = None
+    file_size: int | None = None
     locator_type: str
     uri: str
 

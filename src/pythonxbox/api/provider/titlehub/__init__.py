@@ -2,8 +2,6 @@
 Titlehub - Get Title history and info
 """
 
-from typing import Optional
-
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.titlehub.models import TitleFields, TitleHubResponse
 
@@ -31,8 +29,8 @@ class TitlehubProvider(BaseProvider):
     async def get_title_history(
         self,
         xuid: str,
-        fields: Optional[list[TitleFields]] = None,
-        max_items: Optional[int] = 5,
+        fields: list[TitleFields] | None = None,
+        max_items: int | None = 5,
         **kwargs,
     ) -> TitleHubResponse:
         """
@@ -63,7 +61,7 @@ class TitlehubProvider(BaseProvider):
         return TitleHubResponse(**resp.json())
 
     async def _get_title_info(
-        self, moniker: str, fields: Optional[list[TitleFields]] = None, **kwargs
+        self, moniker: str, fields: list[TitleFields] | None = None, **kwargs
     ) -> TitleHubResponse:
         if not fields:
             fields = [
@@ -81,7 +79,7 @@ class TitlehubProvider(BaseProvider):
         return TitleHubResponse(**resp.json())
 
     async def get_title_info(
-        self, title_id: str, fields: Optional[list[TitleFields]] = None, **kwargs
+        self, title_id: str, fields: list[TitleFields] | None = None, **kwargs
     ) -> TitleHubResponse:
         """
         Get info for specific title
@@ -96,7 +94,7 @@ class TitlehubProvider(BaseProvider):
         return await self._get_title_info(f"titleid({title_id})", fields, **kwargs)
 
     async def get_title_info_by_pfn(
-        self, pfn: str, fields: Optional[list[TitleFields]] = None, **kwargs
+        self, pfn: str, fields: list[TitleFields] | None = None, **kwargs
     ) -> TitleHubResponse:
         """
         Get info for specific title by PFN
@@ -111,7 +109,7 @@ class TitlehubProvider(BaseProvider):
         return await self._get_title_info(f"pfn({pfn})", fields, **kwargs)
 
     async def get_titles_batch(
-        self, pfns: list[str], fields: Optional[list[TitleFields]] = None, **kwargs
+        self, pfns: list[str], fields: list[TitleFields] | None = None, **kwargs
     ) -> TitleHubResponse:
         """
         Get Title info via PFN ids

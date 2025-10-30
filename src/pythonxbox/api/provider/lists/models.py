@@ -1,15 +1,13 @@
-from typing import Optional
-
 from pythonxbox.common.models import PascalCaseModel
 
 
 class Item(PascalCaseModel):
     item_id: str
     content_type: str
-    title: Optional[str] = None
+    title: str | None = None
     device_type: str
-    provider: Optional[str] = None
-    provider_id: Optional[str] = None
+    provider: str | None = None
+    provider_id: str | None = None
 
 
 class ListItem(PascalCaseModel):

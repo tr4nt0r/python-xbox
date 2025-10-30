@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -48,7 +48,7 @@ class Screenshot(CamelCaseModel):
 
 
 class PagingInfo(CamelCaseModel):
-    continuation_token: Optional[str] = None
+    continuation_token: str | None = None
 
 
 class ScreenshotResponse(CamelCaseModel):
