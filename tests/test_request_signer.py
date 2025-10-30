@@ -84,7 +84,7 @@ def test_synthetic_verify_digest(
     signature = base64.b64decode(
         "Fe3R7GuZfvGA350cH7hWgg4HIHjaD9lGYiwxki6bNyGnB8dMEIfEmBiuNuGUfWjY5lL2h44X/VMGOkPIezVb7Q=="
     )
-    invalid_signature = b"\xFF" + bytes(signature)[1:]
+    invalid_signature = b"\xff" + bytes(signature)[1:]
     success = synthetic_request_signer.verify_digest(signature, message)
     success_via_vk = synthetic_request_signer.verify_digest(
         signature, message, ecdsa_verifying_key

@@ -147,7 +147,7 @@ async def helper_reach_and_wait_for_burst(
     start_time,
     burst_limit: int,
     expected_counter: int,
-    frozen_datetime: FrozenDateTimeFactory
+    frozen_datetime: FrozenDateTimeFactory,
 ):
     # Make as many requests as possible without exceeding the BURST limit.
     for _ in range(burst_limit):
@@ -178,6 +178,7 @@ async def helper_reach_and_wait_for_burst(
 @pytest.mark.asyncio
 async def test_ratelimits_exceeded_sustain_only(respx_mock, xbl_client):
     with freeze_time("2025-10-30T00:00:00-00:00") as frozen_datetime:
+
         async def make_request():
             route = respx_mock.get("https://social.xboxlive.com").mock(
                 return_value=Response(200, json=get_response_json("people_summary_own"))
@@ -197,14 +198,22 @@ async def test_ratelimits_exceeded_sustain_only(respx_mock, xbl_client):
 
         # Exceed the burst limit and wait for it to reset (10 requests)
         await helper_reach_and_wait_for_burst(
-            make_request, start_time, burst_limit=burst_max_request_num, expected_counter=10, frozen_datetime=frozen_datetime
+            make_request,
+            start_time,
+            burst_limit=burst_max_request_num,
+            expected_counter=10,
+            frozen_datetime=frozen_datetime,
         )
 
         # Repeat: Exceed the burst limit and wait for it to reset (10 requests)
         # Counter (the sustain one will be returned)
         #         For (CombinedRateLimit).get_counter(), the highest counter is returned. (sustain in this case)
         await helper_reach_and_wait_for_burst(
-            make_request, start_time, burst_limit=burst_max_request_num, expected_counter=20, frozen_datetime=frozen_datetime
+            make_request,
+            start_time,
+            burst_limit=burst_max_request_num,
+            expected_counter=20,
+            frozen_datetime=frozen_datetime,
         )
 
         # Now, make the rest of the requests (10 left, 20/30 done!)
@@ -212,7 +221,7 @@ async def test_ratelimits_exceeded_sustain_only(respx_mock, xbl_client):
             await make_request()
 
         # Wait for the burst limit to 'reset'.
-        frozen_datetime.tick(timedelta(seconds=TimePeriod.BURST.value+1))
+        frozen_datetime.tick(timedelta(seconds=TimePeriod.BURST.value + 1))
         # Now, we have made 30 requests.
         # The counters should be as follows:
         # - BURST: 0* (will reset on next check)

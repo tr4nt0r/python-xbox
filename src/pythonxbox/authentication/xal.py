@@ -134,7 +134,7 @@ class XALManager:
 
         if self.client_params.device_type.lower() == "android":
             # {decf45e4-945d-4379-b708-d4ee92c12d99}
-            device_id = "{%s}" % device_id
+            device_id = f"{{{device_id}}}"
         else:
             # iOSs
             # DECF45E4-945D-4379-B708-D4EE92C12D99

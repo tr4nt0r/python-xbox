@@ -47,8 +47,12 @@ line-length = 88
 target-version = "py38"
 
 [tool.ruff.lint]
-select = ["E4", "E7", "E9", "F"]
+select = ["E4", "E7", "E9", "F", "UP"]
 ignore = []
+
+
+[tool.ruff.lint.per-file-ignores]
+"**/scripts/*" = ["UP"]
 
 [tool.ruff.lint.isort]
 force-sort-within-sections = true
