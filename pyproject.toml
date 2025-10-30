@@ -1,6 +1,6 @@
 [project]
-name = "xbox-webapi"
-description = "A library to authenticate with Windows Live/Xbox Live and use their API"
+name = "python-xbox"
+description = "A library to authenticate with Xbox Network and use their API"
 authors = [
     {name = "OpenXbox"},
 ]
@@ -29,7 +29,7 @@ classifiers = [
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/OpenXbox/xbox-webapi-python"
+Homepage = "https://github.com/tr4nt0r/python-xbox"
 
 [project.scripts]
 xbox-authenticate = "xbox.webapi.scripts.authenticate:main"
