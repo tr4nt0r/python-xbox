@@ -1,5 +1,4 @@
 from enum import Enum
-from typing import List, Optional
 from pydantic import RootModel
 
 from pythonxbox.common.models import CamelCaseModel
@@ -19,36 +18,36 @@ class PresenceState(str, Enum):
 
 class LastSeen(CamelCaseModel):
     device_type: str
-    title_id: Optional[str] = None
+    title_id: str | None = None
     title_name: str
     timestamp: str
 
 
 class ActivityRecord(CamelCaseModel):
-    richPresence: Optional[str] = None
-    media: Optional[str] = None
+    richPresence: str | None = None
+    media: str | None = None
 
 
 class TitleRecord(CamelCaseModel):
-    id: Optional[str] = None
-    name: Optional[str] = None
-    activity: Optional[List[ActivityRecord]] = None
-    lastModified: Optional[str] = None
-    placement: Optional[str] = None
-    state: Optional[str] = None
+    id: str | None = None
+    name: str | None = None
+    activity: list[ActivityRecord] | None = None
+    lastModified: str | None = None
+    placement: str | None = None
+    state: str | None = None
 
 
 class DeviceRecord(CamelCaseModel):
-    titles: Optional[List[TitleRecord]] = None
-    type: Optional[str] = None
+    titles: list[TitleRecord] | None = None
+    type: str | None = None
 
 
 class PresenceItem(CamelCaseModel):
     xuid: str
     state: str
-    last_seen: Optional[LastSeen] = None
-    devices: Optional[List[DeviceRecord]] = None
+    last_seen: LastSeen | None = None
+    devices: list[DeviceRecord] | None = None
 
 
-class PresenceBatchResponse(RootModel[List[PresenceItem]], CamelCaseModel):
-    root: List[PresenceItem]
+class PresenceBatchResponse(RootModel[list[PresenceItem]], CamelCaseModel):
+    root: list[PresenceItem]

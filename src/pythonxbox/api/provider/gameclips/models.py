@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import List, Optional
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -36,8 +35,8 @@ class GameClip(CamelCaseModel):
     saved_by_user: bool
     achievement_id: str
     greatest_moment_id: str
-    thumbnails: List[Thumbnail]
-    game_clip_uris: List[GameClipUri]
+    thumbnails: list[Thumbnail]
+    game_clip_uris: list[GameClipUri]
     xuid: str
     clip_name: str
     title_name: str
@@ -51,9 +50,9 @@ class GameClip(CamelCaseModel):
 
 
 class PagingInfo(CamelCaseModel):
-    continuation_token: Optional[str] = None
+    continuation_token: str | None = None
 
 
 class GameclipsResponse(CamelCaseModel):
-    game_clips: List[GameClip]
+    game_clips: list[GameClip]
     paging_info: PagingInfo

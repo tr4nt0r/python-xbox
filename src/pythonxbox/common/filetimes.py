@@ -25,7 +25,7 @@
 """Tools to convert between Python datetime instances and Microsoft times."""
 
 from calendar import timegm
-from datetime import datetime, timezone, tzinfo, timedelta
+from datetime import datetime, timedelta, UTC
 
 # http://support.microsoft.com/kb/167296
 # How To Convert a UNIX time_t to a Win32 FILETIME or SYSTEMTIME
@@ -37,22 +37,6 @@ ZERO = timedelta(0)
 HOUR = timedelta(hours=1)
 
 
-class UTC(tzinfo):
-    """UTC"""
-
-    def utcoffset(self, dt: datetime) -> timedelta:
-        return ZERO
-
-    def tzname(self, dt: datetime) -> str:
-        return "UTC"
-
-    def dst(self, dt: datetime) -> timedelta:
-        return ZERO
-
-
-utc = UTC()
-
-
 def dt_to_filetime(dt: datetime) -> int:
     """Converts a datetime to Microsoft filetime format. If the object is
     time zone-naive, it is forced to UTC before conversion.
@@ -60,7 +44,7 @@ def dt_to_filetime(dt: datetime) -> int:
     >>> "%.0f" % dt_to_filetime(datetime(2009, 7, 25, 23, 0))
     '128930364000000000'
 
-    >>> "%.0f" % dt_to_filetime(datetime(1970, 1, 1, 0, 0, tzinfo=utc))
+    >>> "%.0f" % dt_to_filetime(datetime(1970, 1, 1, 0, 0, tzinfo=UTC))
     '116444736000000000'
 
     >>> "%.0f" % dt_to_filetime(datetime(1970, 1, 1, 0, 0))
@@ -70,7 +54,7 @@ def dt_to_filetime(dt: datetime) -> int:
     128930364000001000
     """
     if (dt.tzinfo is None) or (dt.tzinfo.utcoffset(dt) is None):
-        dt = dt.replace(tzinfo=utc)
+        dt = dt.replace(tzinfo=UTC)
     ft = EPOCH_AS_FILETIME + (timegm(dt.timetuple()) * HUNDREDS_OF_NANOSECONDS)
     return ft + (dt.microsecond * 10)
 
@@ -91,7 +75,7 @@ def filetime_to_dt(ft: int) -> datetime:
     # Get seconds and remainder in terms of Unix epoch
     (s, ns100) = divmod(ft - EPOCH_AS_FILETIME, HUNDREDS_OF_NANOSECONDS)
     # Convert to datetime object
-    dt = datetime.fromtimestamp(s, timezone.utc)
+    dt = datetime.fromtimestamp(s, UTC)
     # Add remainder in as microseconds. Python 3.2 requires an integer
     dt = dt.replace(microsecond=(ns100 // 10))
     return dt

@@ -1,37 +1,35 @@
-from typing import List, Optional
-
 from pythonxbox.common.models import CamelCaseModel
 
 
 class ContentSegment(CamelCaseModel):
     segment_id: int
     creation_type: str
-    creator_channel_id: Optional[str] = None
+    creator_channel_id: str | None = None
     creator_xuid: int
     record_date: str
     duration_in_seconds: int
     offset: int
-    secondary_title_id: Optional[int] = None
+    secondary_title_id: int | None = None
     title_id: int
 
 
 class ContentLocator(CamelCaseModel):
-    expiration: Optional[str] = None
-    file_size: Optional[int] = None
+    expiration: str | None = None
+    file_size: int | None = None
     locator_type: str
     uri: str
 
 
 class GameclipContent(CamelCaseModel):
     content_id: str
-    content_locators: List[ContentLocator]
-    content_segments: List[ContentSegment]
+    content_locators: list[ContentLocator]
+    content_segments: list[ContentSegment]
     creation_type: str
     duration_in_seconds: int
     local_id: str
     owner_xuid: int
     sandbox_id: str
-    shared_to: List[int]
+    shared_to: list[int]
     title_id: int
     title_name: str
     upload_date: str
@@ -45,25 +43,25 @@ class GameclipContent(CamelCaseModel):
     view_count: int
     content_state: str
     enforcement_state: str
-    sessions: List[str]
-    tournaments: List[str]
+    sessions: list[str]
+    tournaments: list[str]
 
 
 class MediahubGameclips(CamelCaseModel):
-    values: List[GameclipContent]
+    values: list[GameclipContent]
 
 
 class ScreenshotContent(CamelCaseModel):
     content_id: str
     capture_date: str
-    content_locators: List[ContentLocator]
+    content_locators: list[ContentLocator]
     local_id: str
     owner_xuid: int
     resolution_height: int
     resolution_width: int
     date_uploaded: str
     sandbox_id: str
-    shared_to: List[int]
+    shared_to: list[int]
     title_id: int
     title_name: str
     upload_language: str
@@ -76,9 +74,9 @@ class ScreenshotContent(CamelCaseModel):
     view_count: int
     content_state: str
     enforcement_state: str
-    sessions: List[str]
-    tournaments: List[str]
+    sessions: list[str]
+    tournaments: list[str]
 
 
 class MediahubScreenshots(CamelCaseModel):
-    values: List[ScreenshotContent]
+    values: list[ScreenshotContent]

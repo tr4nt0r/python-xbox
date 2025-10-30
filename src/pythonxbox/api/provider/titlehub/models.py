@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-from typing import Any, List, Optional
+from typing import Any
 
 from pythonxbox.common.models import CamelCaseModel, PascalCaseModel
 
@@ -9,7 +9,7 @@ class TitleFields(str, Enum):
     SERVICE_CONFIG_ID = "scid"
     ACHIEVEMENT = "achievement"
     STATS = "stats"
-    GAME_PASS = "gamepass"
+    GAME_PASS = "gamepass"  # noqa: S105
     IMAGE = "image"
     DETAIL = "detail"
     FRIENDS_WHO_PLAYED = "friendswhoplayed"
@@ -47,60 +47,60 @@ class TitleHistory(CamelCaseModel):
 
 
 class Attribute(CamelCaseModel):
-    applicable_platforms: Optional[List[str]] = None
-    maximum: Optional[int] = None
-    minimum: Optional[int] = None
+    applicable_platforms: list[str] | None = None
+    maximum: int | None = None
+    minimum: int | None = None
     name: str
 
 
 class Availability(PascalCaseModel):
-    actions: List[str]
+    actions: list[str]
     availability_id: str
-    platforms: List[str]
+    platforms: list[str]
     sku_id: str
 
 
 class Detail(CamelCaseModel):
-    attributes: List[Attribute]
-    availabilities: List[Availability]
-    capabilities: List[str]
+    attributes: list[Attribute]
+    availabilities: list[Availability]
+    capabilities: list[str]
     description: str
     developer_name: str | None = None
-    genres: Optional[List[str]] = None
+    genres: list[str] | None = None
     publisher_name: str
     min_age: int | None = None
-    release_date: Optional[datetime] = None
-    short_description: Optional[str] = None
-    vui_display_name: Optional[str] = None
+    release_date: datetime | None = None
+    short_description: str | None = None
+    vui_display_name: str | None = None
     xbox_live_gold_required: bool
 
 
 class Title(CamelCaseModel):
     title_id: str
-    pfn: Optional[str] = None
-    bing_id: Optional[str] = None
-    service_config_id: Optional[str] = None
-    windows_phone_product_id: Optional[str] = None
+    pfn: str | None = None
+    bing_id: str | None = None
+    service_config_id: str | None = None
+    windows_phone_product_id: str | None = None
     name: str
     type: str
-    devices: List[str]
+    devices: list[str]
     display_image: str
     media_item_type: str
-    modern_title_id: Optional[str] = None
+    modern_title_id: str | None = None
     is_bundle: bool
-    achievement: Optional[Achievement] = None
-    stats: Optional[Stats] = None
-    game_pass: Optional[GamePass] = None
-    images: Optional[List[Image]] = None
-    title_history: Optional[TitleHistory] = None
-    detail: Optional[Detail] = None
+    achievement: Achievement | None = None
+    stats: Stats | None = None
+    game_pass: GamePass | None = None
+    images: list[Image] | None = None
+    title_history: TitleHistory | None = None
+    detail: Detail | None = None
     friends_who_played: Any = None
     alternate_title_ids: Any = None
     content_boards: Any = None
-    xbox_live_tier: Optional[str] = None
-    is_streamable: Optional[bool] = None
+    xbox_live_tier: str | None = None
+    is_streamable: bool | None = None
 
 
 class TitleHubResponse(CamelCaseModel):
-    xuid: Optional[str] = None
-    titles: List[Title]
+    xuid: str | None = None
+    titles: list[Title]

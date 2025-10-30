@@ -2,8 +2,6 @@
 Userstats - Get game statistics
 """
 
-from typing import List, Optional
-
 from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 from pythonxbox.api.provider.userstats.models import (
     GeneralStatsField,
@@ -26,7 +24,7 @@ class UserStatsProvider(RateLimitedProvider):
         self,
         xuid: str,
         service_config_id: str,
-        stats_fields: Optional[List[GeneralStatsField]] = None,
+        stats_fields: list[GeneralStatsField] | None = None,
         **kwargs,
     ) -> UserStatsResponse:
         """
@@ -58,7 +56,7 @@ class UserStatsProvider(RateLimitedProvider):
         self,
         xuid: str,
         service_config_id: str,
-        stats_fields: Optional[List[GeneralStatsField]] = None,
+        stats_fields: list[GeneralStatsField] | None = None,
         **kwargs,
     ) -> UserStatsResponse:
         """
@@ -90,9 +88,9 @@ class UserStatsProvider(RateLimitedProvider):
 
     async def get_stats_batch(
         self,
-        xuids: List[str],
+        xuids: list[str],
         title_id: str,
-        stats_fields: Optional[List[GeneralStatsField]] = None,
+        stats_fields: list[GeneralStatsField] | None = None,
         **kwargs,
     ) -> UserStatsResponse:
         """
@@ -128,9 +126,9 @@ class UserStatsProvider(RateLimitedProvider):
 
     async def get_stats_batch_by_scid(
         self,
-        xuids: List[str],
+        xuids: list[str],
         service_config_id: str,
-        stats_fields: Optional[List[GeneralStatsField]] = None,
+        stats_fields: list[GeneralStatsField] | None = None,
         **kwargs,
     ) -> UserStatsResponse:
         """

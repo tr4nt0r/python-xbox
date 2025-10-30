@@ -1,5 +1,5 @@
 from datetime import datetime, time
-from typing import Any, List, Optional
+from typing import Any
 
 from pydantic import BaseModel
 
@@ -7,7 +7,7 @@ from pythonxbox.common.models import CamelCaseModel
 
 
 class PagingInfo(CamelCaseModel):
-    continuation_token: Optional[str] = None
+    continuation_token: str | None = None
     total_records: int
 
 
@@ -37,20 +37,20 @@ class Title360(CamelCaseModel):
     sequence: int
     title_id: int
     title_type: int
-    platforms: List[int]
+    platforms: list[int]
     name: str
     total_achievements: int
     total_gamerscore: int
 
 
 class Achievement360Response(CamelCaseModel):
-    achievements: List[Achievement360]
+    achievements: list[Achievement360]
     paging_info: PagingInfo
     version: datetime
 
 
 class Achievement360ProgressResponse(CamelCaseModel):
-    titles: List[Title360]
+    titles: list[Title360]
     paging_info: PagingInfo
     version: datetime
 
@@ -62,7 +62,7 @@ class TitleAssociation(BaseModel):
 
 class Requirement(CamelCaseModel):
     id: str
-    current: Optional[str] = None
+    current: str | None = None
     target: str
     operation_type: str
     value_type: str
@@ -70,7 +70,7 @@ class Requirement(CamelCaseModel):
 
 
 class Progression(CamelCaseModel):
-    requirements: List[Requirement]
+    requirements: list[Requirement]
     time_unlocked: datetime
 
 
@@ -93,11 +93,11 @@ class Achievement(CamelCaseModel):
     id: str
     service_config_id: str
     name: str
-    title_associations: List[TitleAssociation]
+    title_associations: list[TitleAssociation]
     progress_state: str
     progression: Progression
-    media_assets: List[MediaAsset]
-    platforms: List[str]
+    media_assets: list[MediaAsset]
+    platforms: list[str]
     is_secret: bool
     description: str
     locked_description: str
@@ -105,14 +105,14 @@ class Achievement(CamelCaseModel):
     achievement_type: str
     participation_type: str
     time_window: Any = None
-    rewards: List[Reward]
+    rewards: list[Reward]
     estimated_time: time
     deeplink: Any = None
     is_revoked: bool
 
 
 class AchievementResponse(CamelCaseModel):
-    achievements: List[Achievement]
+    achievements: list[Achievement]
     paging_info: PagingInfo
 
 
@@ -129,5 +129,5 @@ class Title(CamelCaseModel):
 
 
 class RecentProgressResponse(CamelCaseModel):
-    titles: List[Title]
+    titles: list[Title]
     paging_info: PagingInfo

@@ -1,6 +1,5 @@
 from abc import ABCMeta, abstractmethod
 from datetime import datetime, timedelta
-from typing import List, Union
 
 from pythonxbox.common.ratelimits.models import (
     IncrementResult,
@@ -29,7 +28,7 @@ class RateLimit(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def get_reset_after(self) -> Union[datetime, None]:
+    def get_reset_after(self) -> datetime | None:
         # Docstrings are defined in child classes due to their differing implementations.
         pass
 
@@ -68,7 +67,7 @@ class SingleRateLimit(RateLimit):
         self.__exceeded: bool = False
         self.__counter = 0
         # No requests so far, so reset_after is None.
-        self.__reset_after: Union[datetime, None] = None
+        self.__reset_after: datetime | None = None
 
     def get_counter(self) -> int:
         """
@@ -86,7 +85,7 @@ class SingleRateLimit(RateLimit):
     def get_limit_type(self) -> "LimitType":
         return self.__type
 
-    def get_reset_after(self) -> Union[datetime, None]:
+    def get_reset_after(self) -> datetime | None:
         """
         This getter returns the current state of the reset_after counter.
 
@@ -186,7 +185,7 @@ class CombinedRateLimit(RateLimit):
 
     # We don't want a datetime response for a limit that has not been exceeded.
     # Otherwise eg. 10 burst requests -> 300s timeout (should be 30 (burst exceeded), 300s (not exceeded)
-    def get_reset_after(self) -> Union[datetime, None]:
+    def get_reset_after(self) -> datetime | None:
         """
         This getter returns either a `datetime` object or `None` object depending on the status of the rate limit.
 
@@ -224,11 +223,11 @@ class CombinedRateLimit(RateLimit):
         return None
 
     # list -> List (typing.List) https://stackoverflow.com/a/63460173
-    def get_limits(self) -> List[SingleRateLimit]:
+    def get_limits(self) -> list[SingleRateLimit]:
         return self.__limits
 
     # list -> List (typing.List) https://stackoverflow.com/a/63460173
-    def get_limits_by_period(self, period: TimePeriod) -> List[SingleRateLimit]:
+    def get_limits_by_period(self, period: TimePeriod) -> list[SingleRateLimit]:
         # Filter the list for the given LimitType
         matches = filter(lambda limit: limit.get_time_period() == period, self.__limits)
         # Convert the filter object to a list and return it

@@ -1,5 +1,3 @@
-from typing import List
-
 from pythonxbox.common.models import CamelCaseModel
 
 
@@ -16,4 +14,4 @@ class UserResult(CamelCaseModel):
 
 
 class UserSearchResponse(CamelCaseModel):
-    results: List[UserResult]
+    results: list[UserResult]

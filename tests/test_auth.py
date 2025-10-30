@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, UTC
 
 from httpx import Response
 import pytest
@@ -41,7 +41,7 @@ async def test_request_tokens(respx_mock, auth_mgr):
 @pytest.mark.asyncio
 async def test_refresh_tokens(respx_mock, auth_mgr):
     # Expire Tokens
-    expired = datetime.now(timezone.utc) - timedelta(days=10)
+    expired = datetime.now(UTC) - timedelta(days=10)
     auth_mgr.oauth.issued = expired
     auth_mgr.user_token.not_after = expired
     auth_mgr.xsts_token.not_after = expired
@@ -63,7 +63,7 @@ async def test_refresh_tokens(respx_mock, auth_mgr):
 
 @pytest.mark.asyncio
 async def test_refresh_tokens_still_valid(auth_mgr):
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     auth_mgr.oauth.issued = now
     auth_mgr.user_token.not_after = now + timedelta(days=1)
     auth_mgr.xsts_token.not_after = now + timedelta(days=1)
@@ -73,11 +73,11 @@ async def test_refresh_tokens_still_valid(auth_mgr):
 @pytest.mark.asyncio
 async def test_refresh_tokens_user_still_valid(respx_mock, auth_mgr):
     # Expire Tokens
-    expired = datetime.now(timezone.utc) - timedelta(days=10)
+    expired = datetime.now(UTC) - timedelta(days=10)
     auth_mgr.oauth.issued = expired
     auth_mgr.xsts_token.not_after = expired
 
-    auth_mgr.user_token.not_after = datetime.now(timezone.utc) + timedelta(days=1)
+    auth_mgr.user_token.not_after = datetime.now(UTC) + timedelta(days=1)
     route1 = respx_mock.post("https://login.live.com").mock(
         return_value=Response(200, json=get_response_json("auth_oauth2_token"))
     )

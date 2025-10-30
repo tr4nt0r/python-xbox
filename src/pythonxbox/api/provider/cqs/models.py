@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Optional
+from typing import Any
 
 from pythonxbox.common.models import PascalCaseModel
 
@@ -16,12 +16,12 @@ class ListChannel(PascalCaseModel):
     channel_number: str
     start_date: str
     end_date: str
-    images: List[Image]
-    is_HD: Optional[bool] = None
+    images: list[Image]
+    is_HD: bool | None = None
 
 
 class CqsChannelListResponse(PascalCaseModel):
-    channels: List[ListChannel]
+    channels: list[ListChannel]
 
 
 class Genre(PascalCaseModel):
@@ -40,20 +40,20 @@ class Program(PascalCaseModel):
     end_date: str
     name: str
     is_repeat: bool
-    parental_control: Optional[Dict[str, Any]] = None
-    genres: List[Genre]
+    parental_control: dict[str, Any] | None = None
+    genres: list[Genre]
     category_id: int
-    description: Optional[str] = None
-    parent_series: Optional[ParentSeries] = None
-    images: Optional[List[Image]] = None
+    description: str | None = None
+    parent_series: ParentSeries | None = None
+    images: list[Image] | None = None
 
 
 class ScheduleChannel(PascalCaseModel):
     id: str
     name: str
-    images: List[Image]
-    programs: List[Program]
+    images: list[Image]
+    programs: list[Program]
 
 
 class CqsScheduleResponse(PascalCaseModel):
-    channels: List[ScheduleChannel]
+    channels: list[ScheduleChannel]

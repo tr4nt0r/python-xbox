@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, List, Optional
+from typing import Any
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -37,8 +37,8 @@ class Screenshot(CamelCaseModel):
     saved_by_user: bool
     achievement_id: str
     greatest_moment_id: Any = None
-    thumbnails: List[Thumbnail]
-    screenshot_uris: List[ScreenshotUri]
+    thumbnails: list[Thumbnail]
+    screenshot_uris: list[ScreenshotUri]
     xuid: str
     screenshot_name: str
     title_name: str
@@ -48,9 +48,9 @@ class Screenshot(CamelCaseModel):
 
 
 class PagingInfo(CamelCaseModel):
-    continuation_token: Optional[str] = None
+    continuation_token: str | None = None
 
 
 class ScreenshotResponse(CamelCaseModel):
-    screenshots: List[Screenshot]
+    screenshots: list[Screenshot]
     paging_info: PagingInfo

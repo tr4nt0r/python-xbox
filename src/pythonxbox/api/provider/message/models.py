@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Any, List, Optional
+from typing import Any
 
 from pythonxbox.common.models import CamelCaseModel
 
@@ -7,13 +7,13 @@ from pythonxbox.common.models import CamelCaseModel
 class Part(CamelCaseModel):
     content_type: str
     version: int
-    text: Optional[str] = None
-    unsuitable_for: Optional[List] = None
-    locator: Optional[str] = None
+    text: str | None = None
+    unsuitable_for: list | None = None
+    locator: str | None = None
 
 
 class Content(CamelCaseModel):
-    parts: List[Part]
+    parts: list[Part]
 
 
 class ContentPayload(CamelCaseModel):
@@ -21,14 +21,14 @@ class ContentPayload(CamelCaseModel):
 
 
 class Message(CamelCaseModel):
-    content_payload: Optional[ContentPayload] = None
+    content_payload: ContentPayload | None = None
     timestamp: datetime
     last_update_timestamp: datetime
     type: str
     network_id: str
     conversation_type: str
     conversation_id: str
-    owner: Optional[int] = None
+    owner: int | None = None
     sender: str
     message_id: str
     is_deleted: bool
@@ -41,7 +41,7 @@ class Conversation(CamelCaseModel):
     type: str
     conversation_id: str
     voice_id: str
-    participants: List[str]
+    participants: list[str]
     read_horizon: str
     delete_horizon: str
     is_read: bool
@@ -54,7 +54,7 @@ class Primary(CamelCaseModel):
     folder: str
     total_count: int
     unread_count: int
-    conversations: List[Conversation]
+    conversations: list[Conversation]
 
 
 class SafetySettings(CamelCaseModel):
@@ -70,7 +70,7 @@ class SafetySettings(CamelCaseModel):
 
 class InboxResponse(CamelCaseModel):
     primary: Primary
-    folders: List[Any]
+    folders: list[Any]
     safety_settings: SafetySettings
 
 
@@ -79,16 +79,16 @@ class ConversationResponse(CamelCaseModel):
     network_id: str
     type: str
     conversation_id: str
-    participants: Optional[List[str]] = None
+    participants: list[str] | None = None
     read_horizon: str
     delete_horizon: str
     is_read: bool
     muted: bool
     folder: str
-    messages: Optional[List[Message]] = None
-    continuation_token: Optional[str] = None
+    messages: list[Message] | None = None
+    continuation_token: str | None = None
     voice_id: str
-    voice_roster: Optional[List[Any]] = None
+    voice_roster: list[Any] | None = None
 
 
 class SendMessageResponse(CamelCaseModel):

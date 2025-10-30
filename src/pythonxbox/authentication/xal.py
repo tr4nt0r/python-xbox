@@ -8,7 +8,7 @@ import base64
 import hashlib
 import logging
 import os
-from typing import Callable, Tuple
+from collections.abc import Callable
 from urllib import parse
 import uuid
 
@@ -134,7 +134,7 @@ class XALManager:
 
         if self.client_params.device_type.lower() == "android":
             # {decf45e4-945d-4379-b708-d4ee92c12d99}
-            device_id = "{%s}" % device_id
+            device_id = f"{{{device_id}}}"
         else:
             # iOSs
             # DECF45E4-945D-4379-B708-D4EE92C12D99
@@ -195,7 +195,7 @@ class XALManager:
 
     async def request_sisu_authentication(
         self, device_token_jwt: str, code_challenge: str, state: str
-    ) -> Tuple[SisuAuthenticationResponse, str]:
+    ) -> tuple[SisuAuthenticationResponse, str]:
         """
         Request Sisu authentication URL
 

@@ -5,10 +5,9 @@ Employed for generating the "Signature" header in authentication requests.
 """
 
 import base64
-from datetime import datetime, timezone
+from datetime import datetime, UTC
 import hashlib
 import struct
-from typing import Optional
 
 from ecdsa import NIST256p, SigningKey, VerifyingKey
 
@@ -78,7 +77,7 @@ class RequestSigner:
         self,
         signature: bytes,
         digest: bytes,
-        verifying_key: Optional[VerifyingKey] = None,
+        verifying_key: VerifyingKey | None = None,
     ) -> bool:
         """
         Verify signature against digest
@@ -102,7 +101,7 @@ class RequestSigner:
         timestamp: datetime = None,
     ) -> str:
         if timestamp is None:
-            timestamp = datetime.now(timezone.utc)
+            timestamp = datetime.now(UTC)
 
         signature = self._sign_raw(
             method, path_and_query, body, authorization, timestamp

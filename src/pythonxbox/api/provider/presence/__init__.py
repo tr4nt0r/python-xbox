@@ -2,8 +2,6 @@
 Presence - Get online status of friends
 """
 
-from typing import List
-
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.presence.models import (
     PresenceBatchResponse,
@@ -43,11 +41,11 @@ class PresenceProvider(BaseProvider):
 
     async def get_presence_batch(
         self,
-        xuids: List[str],
+        xuids: list[str],
         online_only: bool = False,
         presence_level: PresenceLevel = PresenceLevel.USER,
         **kwargs,
-    ) -> List[PresenceItem]:
+    ) -> list[PresenceItem]:
         """
         Get presence for list of xuids
 

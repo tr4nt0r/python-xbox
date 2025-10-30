@@ -4,10 +4,8 @@ Profile
 Get Userprofiles by XUID or Gamertag
 """
 
-from typing import List
-
-from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 from pythonxbox.api.provider.profile.models import ProfileResponse, ProfileSettings
+from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 
 
 class ProfileProvider(RateLimitedProvider):
@@ -17,7 +15,7 @@ class ProfileProvider(RateLimitedProvider):
 
     RATE_LIMITS = {"burst": 10, "sustain": 30}
 
-    async def get_profiles(self, xuid_list: List[str], **kwargs) -> ProfileResponse:
+    async def get_profiles(self, xuid_list: list[str], **kwargs) -> ProfileResponse:
         """
         Get profile info for list of xuids
 

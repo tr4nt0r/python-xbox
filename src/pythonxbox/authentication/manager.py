@@ -5,7 +5,6 @@ Authenticate with Windows Live Server and Xbox Live.
 """
 
 import logging
-from typing import List, Optional
 
 import httpx
 
@@ -29,7 +28,7 @@ class AuthenticationManager:
         client_id: str,
         client_secret: str,
         redirect_uri: str,
-        scopes: Optional[List[str]] = None,
+        scopes: list[str] | None = None,
     ):
         if not isinstance(client_session, (SignedSession, httpx.AsyncClient)):
             raise DeprecationWarning(
@@ -41,13 +40,13 @@ class AuthenticationManager:
         self._client_id: str = client_id
         self._client_secret: str = client_secret
         self._redirect_uri: str = redirect_uri
-        self._scopes: List[str] = scopes or DEFAULT_SCOPES
+        self._scopes: list[str] = scopes or DEFAULT_SCOPES
 
         self.oauth: OAuth2TokenResponse = None
         self.user_token: XAUResponse = None
         self.xsts_token: XSTSResponse = None
 
-    def generate_authorization_url(self, state: Optional[str] = None) -> str:
+    def generate_authorization_url(self, state: str | None = None) -> str:
         """Generate Windows Live Authorization URL."""
         query_params = {
             "client_id": self._client_id,

@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 from pythonxbox.common.models import LowerCaseModel, PascalCaseModel
 
 
@@ -8,19 +6,19 @@ class GeneralStatsField:
 
 
 class GroupProperties(PascalCaseModel):
-    ordinal: Optional[str] = None
-    sort_order: Optional[str] = None
-    display_name: Optional[str] = None
-    display_format: Optional[str] = None
-    display_semantic: Optional[str] = None
+    ordinal: str | None = None
+    sort_order: str | None = None
+    display_name: str | None = None
+    display_format: str | None = None
+    display_semantic: str | None = None
 
 
 class Properties(PascalCaseModel):
-    display_name: Optional[str] = None
+    display_name: str | None = None
 
 
 class Stat(LowerCaseModel):
-    group_properties: Optional[GroupProperties] = None
+    group_properties: GroupProperties | None = None
     xuid: str
     scid: str
     name: str
@@ -32,15 +30,15 @@ class Stat(LowerCaseModel):
 class StatListsCollectionItem(LowerCaseModel):
     arrange_by_field: str
     arrange_by_field_id: str
-    stats: List[Stat]
+    stats: list[Stat]
 
 
 class Group(LowerCaseModel):
     name: str
-    title_id: Optional[str] = None
-    statlistscollection: List[StatListsCollectionItem]
+    title_id: str | None = None
+    statlistscollection: list[StatListsCollectionItem]
 
 
 class UserStatsResponse(LowerCaseModel):
-    groups: Optional[List[Group]] = None
-    statlistscollection: List[StatListsCollectionItem]
+    groups: list[Group] | None = None
+    statlistscollection: list[StatListsCollectionItem]

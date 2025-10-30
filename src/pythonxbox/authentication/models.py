@@ -1,7 +1,6 @@
 """Authentication Models."""
 
-from datetime import datetime, timedelta, timezone
-from typing import Dict, List, Optional
+from datetime import datetime, timedelta, UTC
 
 from pydantic import BaseModel, Field
 from pydantic.dataclasses import dataclass
@@ -10,7 +9,7 @@ from pythonxbox.common.models import PascalCaseModel
 
 
 def utc_now():
-    return datetime.now(timezone.utc)
+    return datetime.now(UTC)
 
 
 class XTokenResponse(PascalCaseModel):
@@ -24,7 +23,7 @@ class XTokenResponse(PascalCaseModel):
 
 class XADDisplayClaims(BaseModel):
     # {"xdi": {"did": "F.....", "dcs": "0"}}
-    xdi: Dict[str, str]
+    xdi: dict[str, str]
 
 
 class XADResponse(XTokenResponse):
@@ -32,7 +31,7 @@ class XADResponse(XTokenResponse):
 
 
 class XATDisplayClaims(BaseModel):
-    xti: Dict[str, str]
+    xti: dict[str, str]
 
 
 class XATResponse(XTokenResponse):
@@ -40,7 +39,7 @@ class XATResponse(XTokenResponse):
 
 
 class XAUDisplayClaims(BaseModel):
-    xui: List[Dict[str, str]]
+    xui: list[dict[str, str]]
 
 
 class XAUResponse(XTokenResponse):
@@ -48,7 +47,7 @@ class XAUResponse(XTokenResponse):
 
 
 class XSTSDisplayClaims(BaseModel):
-    xui: List[Dict[str, str]]
+    xui: list[dict[str, str]]
 
 
 class XSTSResponse(XTokenResponse):
@@ -88,7 +87,7 @@ class OAuth2TokenResponse(BaseModel):
     expires_in: int
     scope: str
     access_token: str
-    refresh_token: Optional[str] = None
+    refresh_token: str | None = None
     user_id: str
     issued: datetime = Field(default_factory=utc_now)
 
@@ -116,7 +115,7 @@ class XalClientParameters:
 
 class SisuAuthenticationResponse(PascalCaseModel):
     msa_oauth_redirect: str
-    msa_request_parameters: Dict[str, str]
+    msa_request_parameters: dict[str, str]
 
 
 class SisuAuthorizationResponse(PascalCaseModel):
@@ -126,7 +125,7 @@ class SisuAuthorizationResponse(PascalCaseModel):
     authorization_token: XSTSResponse
     web_page: str
     sandbox: str
-    use_modern_gamertag: Optional[bool] = None
+    use_modern_gamertag: bool | None = None
 
 
 """Signature related models"""
@@ -136,28 +135,28 @@ class TitleEndpoint(PascalCaseModel):
     protocol: str
     host: str
     host_type: str
-    path: Optional[str] = None
-    relying_party: Optional[str] = None
-    sub_relying_party: Optional[str] = None
-    token_type: Optional[str] = None
-    signature_policy_index: Optional[int] = None
-    server_cert_index: Optional[List[int]] = None
+    path: str | None = None
+    relying_party: str | None = None
+    sub_relying_party: str | None = None
+    token_type: str | None = None
+    signature_policy_index: int | None = None
+    server_cert_index: list[int] | None = None
 
 
 class SignaturePolicy(PascalCaseModel):
     version: int
-    supported_algorithms: List[str]
+    supported_algorithms: list[str]
     max_body_bytes: int
 
 
 class TitleEndpointCertificate(PascalCaseModel):
     thumbprint: str
-    is_issuer: Optional[bool] = None
+    is_issuer: bool | None = None
     root_cert_index: int
 
 
 class TitleEndpointsResponse(PascalCaseModel):
-    end_points: List[TitleEndpoint]
-    signature_policies: List[SignaturePolicy]
-    certs: List[TitleEndpointCertificate]
-    root_certs: List[str]
+    end_points: list[TitleEndpoint]
+    signature_policies: list[SignaturePolicy]
+    certs: list[TitleEndpointCertificate]
+    root_certs: list[str]
