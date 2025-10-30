@@ -1,7 +1,7 @@
 from httpx import Response
 import pytest
 
-from xbox.webapi.api.provider.catalog.models import AlternateIdType, FieldsTemplate
+from pythonxbox.api.provider.catalog.models import AlternateIdType, FieldsTemplate
 
 from tests.common import get_response_json
 

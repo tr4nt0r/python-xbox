@@ -3,7 +3,7 @@ from binascii import unhexlify
 import pytest
 from ecdsa.keys import VerifyingKey, BadSignatureError
 
-from xbox.webapi.common.request_signer import RequestSigner
+from pythonxbox.common.request_signer import RequestSigner
 
 
 def test_synthetic_proof_key(synthetic_request_signer: RequestSigner):

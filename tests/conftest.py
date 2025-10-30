@@ -5,20 +5,20 @@ from ecdsa.keys import SigningKey, VerifyingKey
 import pytest
 import pytest_asyncio
 
-from xbox.webapi.api.client import XboxLiveClient
-from xbox.webapi.authentication.manager import AuthenticationManager
-from xbox.webapi.authentication.models import (
+from pythonxbox.api.client import XboxLiveClient
+from pythonxbox.authentication.manager import AuthenticationManager
+from pythonxbox.authentication.models import (
     OAuth2TokenResponse,
     XAUResponse,
     XSTSResponse,
 )
-from xbox.webapi.authentication.xal import (
+from pythonxbox.authentication.xal import (
     APP_PARAMS_GAMEPASS_BETA,
     CLIENT_PARAMS_ANDROID,
     XALManager,
 )
-from xbox.webapi.common.request_signer import RequestSigner
-from xbox.webapi.common.signed_session import SignedSession
+from pythonxbox.common.request_signer import RequestSigner
+from pythonxbox.common.signed_session import SignedSession
 
 from tests.common import get_response
 

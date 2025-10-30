@@ -1,7 +1,7 @@
 from httpx import HTTPStatusError, Response
 import pytest
 
-from xbox.webapi.api.provider.account.models import (
+from pythonxbox.api.provider.account.models import (
     ChangeGamertagResult,
     ClaimGamertagResult,
 )
