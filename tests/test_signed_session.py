@@ -1,7 +1,7 @@
 from httpx import Request, Response
 import pytest
 
-from xbox.webapi.common.signed_session import SignedSession
+from pythonxbox.common.signed_session import SignedSession
 
 from tests.common import get_response_json
 

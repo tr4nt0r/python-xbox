@@ -1,4 +1,4 @@
-from xbox.webapi.api.client import XboxLiveClient
+from pythonxbox.api.client import XboxLiveClient
 
 
 def test_authorization_header(auth_mgr):
