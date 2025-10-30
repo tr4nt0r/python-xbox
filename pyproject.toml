@@ -82,10 +82,10 @@ path = "xbox/webapi/__init__.py"
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "/xbox/webapi",
+    "/xbox",
 ]
 [tool.hatch.build.targets.wheel]
-packages = ["xbox/webapi"]
+packages = ["xbox"]
 
 [tool.hatch.envs.default]
 python = "3.13"
