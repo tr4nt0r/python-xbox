@@ -1,15 +1,15 @@
-import asyncio
 from datetime import datetime, timedelta
 
+from freezegun import freeze_time
+from freezegun.api import FrozenDateTimeFactory
 from httpx import Response
 import pytest
 
+from tests.common import get_response_json
 from xbox.webapi.api.provider.ratelimitedprovider import RateLimitedProvider
 from xbox.webapi.common.exceptions import RateLimitExceededException, XboxException
 from xbox.webapi.common.ratelimits import CombinedRateLimit
 from xbox.webapi.common.ratelimits.models import TimePeriod
-
-from tests.common import get_response_json
 
 
 def helper_test_combinedratelimit(
@@ -143,7 +143,11 @@ async def test_ratelimits_exceeded_burst_only(respx_mock, xbl_client):
 
 
 async def helper_reach_and_wait_for_burst(
-    make_request, start_time, burst_limit: int, expected_counter: int
+    make_request,
+    start_time,
+    burst_limit: int,
+    expected_counter: int,
+    frozen_datetime: FrozenDateTimeFactory
 ):
     # Make as many requests as possible without exceeding the BURST limit.
     for _ in range(burst_limit):
@@ -164,79 +168,80 @@ async def helper_reach_and_wait_for_burst(
     burst_resets_after = ex.rate_limit.get_reset_after()
 
     # Wait for the burst limit timeout to elapse.
-    await asyncio.sleep(TimePeriod.BURST.value)  # 15 seconds
+    frozen_datetime.tick(timedelta(seconds=TimePeriod.BURST.value))
 
     # Assert that the reset_after value has passed.
-    assert burst_resets_after < datetime.now()
+    assert burst_resets_after == datetime.now()
+    frozen_datetime.tick(timedelta(seconds=1))
 
 
 @pytest.mark.asyncio
 async def test_ratelimits_exceeded_sustain_only(respx_mock, xbl_client):
-    async def make_request():
-        route = respx_mock.get("https://social.xboxlive.com").mock(
-            return_value=Response(200, json=get_response_json("people_summary_own"))
+    with freeze_time("2025-10-30T00:00:00-00:00") as frozen_datetime:
+        async def make_request():
+            route = respx_mock.get("https://social.xboxlive.com").mock(
+                return_value=Response(200, json=get_response_json("people_summary_own"))
+            )
+            await xbl_client.people.get_friends_summary_own()
+
+            assert route.called
+
+        # Record the start time to ensure that the timeouts are the correct length
+        start_time = datetime.now()
+
+        # Get the max requests for this route.
+        max_request_num = xbl_client.people.RATE_LIMITS["sustain"]  # 30
+        burst_max_request_num = xbl_client.people.RATE_LIMITS["burst"]  # 10
+
+        # In this case, the BURST limit is three times that of SUSTAIN, so we need to exceed the burst limit three times.
+
+        # Exceed the burst limit and wait for it to reset (10 requests)
+        await helper_reach_and_wait_for_burst(
+            make_request, start_time, burst_limit=burst_max_request_num, expected_counter=10, frozen_datetime=frozen_datetime
         )
-        await xbl_client.people.get_friends_summary_own()
 
-        assert route.called
+        # Repeat: Exceed the burst limit and wait for it to reset (10 requests)
+        # Counter (the sustain one will be returned)
+        #         For (CombinedRateLimit).get_counter(), the highest counter is returned. (sustain in this case)
+        await helper_reach_and_wait_for_burst(
+            make_request, start_time, burst_limit=burst_max_request_num, expected_counter=20, frozen_datetime=frozen_datetime
+        )
 
-    # Record the start time to ensure that the timeouts are the correct length
-    start_time = datetime.now()
+        # Now, make the rest of the requests (10 left, 20/30 done!)
+        for _ in range(10):
+            await make_request()
 
-    # Get the max requests for this route.
-    max_request_num = xbl_client.people.RATE_LIMITS["sustain"]  # 30
-    burst_max_request_num = xbl_client.people.RATE_LIMITS["burst"]  # 10
+        # Wait for the burst limit to 'reset'.
+        frozen_datetime.tick(timedelta(seconds=TimePeriod.BURST.value+1))
+        # Now, we have made 30 requests.
+        # The counters should be as follows:
+        # - BURST: 0* (will reset on next check)
+        # - SUSTAIN: 30
+        # The next request we make should exceed the SUSTAIN rate limit.
 
-    # In this case, the BURST limit is three times that of SUSTAIN, so we need to exceed the burst limit three times.
+        # Make another request, ensure that it raises the exception.
+        with pytest.raises(RateLimitExceededException) as exception:
+            await make_request()
 
-    # Exceed the burst limit and wait for it to reset (10 requests)
-    await helper_reach_and_wait_for_burst(
-        make_request, start_time, burst_limit=burst_max_request_num, expected_counter=10
-    )
+        # Get the error instance from pytest
+        ex: RateLimitExceededException = exception.value
 
-    # Repeat: Exceed the burst limit and wait for it to reset (10 requests)
-    # Counter (the sustain one will be returned)
-    #         For (CombinedRateLimit).get_counter(), the highest counter is returned. (sustain in this case)
-    await helper_reach_and_wait_for_burst(
-        make_request, start_time, burst_limit=burst_max_request_num, expected_counter=20
-    )
+        # Get the SingleRateLimit objects from the exception
+        rl: CombinedRateLimit = ex.rate_limit
+        burst = rl.get_limits_by_period(TimePeriod.BURST)[0]
+        sustain = rl.get_limits_by_period(TimePeriod.SUSTAIN)[0]
 
-    # Now, make the rest of the requests (10 left, 20/30 done!)
-    for _ in range(10):
-        await make_request()
+        # Assert that we have only exceeded the sustain limit.
+        assert not burst.is_exceeded()
+        assert sustain.is_exceeded()
 
-    # Wait for the burst limit to 'reset'.
-    await asyncio.sleep(TimePeriod.BURST.value)  # 15 seconds
+        # Assert that the counter matches the max request num (should not have incremented above max value)
+        assert ex.rate_limit.get_counter() == max_request_num
 
-    # Now, we have made 30 requests.
-    # The counters should be as follows:
-    # - BURST: 0* (will reset on next check)
-    # - SUSTAIN: 30
-    # The next request we make should exceed the SUSTAIN rate limit.
+        # Get the timeout we were issued
+        try_again_in = ex.rate_limit.get_reset_after()
 
-    # Make another request, ensure that it raises the exception.
-    with pytest.raises(RateLimitExceededException) as exception:
-        await make_request()
-
-    # Get the error instance from pytest
-    ex: RateLimitExceededException = exception.value
-
-    # Get the SingleRateLimit objects from the exception
-    rl: CombinedRateLimit = ex.rate_limit
-    burst = rl.get_limits_by_period(TimePeriod.BURST)[0]
-    sustain = rl.get_limits_by_period(TimePeriod.SUSTAIN)[0]
-
-    # Assert that we have only exceeded the sustain limit.
-    assert not burst.is_exceeded()
-    assert sustain.is_exceeded()
-
-    # Assert that the counter matches the max request num (should not have incremented above max value)
-    assert ex.rate_limit.get_counter() == max_request_num
-
-    # Get the timeout we were issued
-    try_again_in = ex.rate_limit.get_reset_after()
-
-    # Assert that the timeout is the correct length
-    # The SUSTAIN counter has not been reset during this test, so the try again in should be 300 seconds since we started this test.
-    delta: timedelta = try_again_in - start_time
-    assert delta.seconds == TimePeriod.SUSTAIN.value  # 300 seconds (5 minutes)
+        # Assert that the timeout is the correct length
+        # The SUSTAIN counter has not been reset during this test, so the try again in should be 300 seconds since we started this test.
+        delta: timedelta = try_again_in - start_time
+        assert delta.seconds == TimePeriod.SUSTAIN.value  # 300 seconds (5 minutes)
