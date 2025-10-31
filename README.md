@@ -1,11 +1,12 @@
-# Xbox-WebAPI
+# python-xbox
 
-[![PyPi - latest](https://img.shields.io/pypi/v/xbox-webapi.svg)](https://pypi.python.org/pypi/xbox-webapi/)
-[![Documentation status](https://readthedocs.org/projects/xbox-webapi-python/badge/?version=latest)](http://xbox-webapi-python.readthedocs.io/en/latest/?badge=latest)
-[![Build status](https://img.shields.io/github/actions/workflow/status/OpenXbox/xbox-webapi-python/build.yml?branch=master)](https://github.com/OpenXbox/xbox-webapi-python/actions?query=workflow%3Abuild)
-[![Discord chat channel](https://img.shields.io/badge/discord-OpenXbox-blue.svg)](https://openxbox.org/discord)
+[![PyPi - latest](https://img.shields.io/pypi/v/python-xbox.svg)](https://pypi.python.org/pypi/python-xbox/)
+[![Build](https://github.com/tr4nt0r/python-xbox/actions/workflows/build.yml/badge.svg)](https://github.com/tr4nt0r/python-xbox/actions/workflows/build.yml)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/python-xbox?style=flat&label=pypi%20downloads)
+[!["Buy Me A Coffee"](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/tr4nt0r)
+[![GitHub Sponsor](https://img.shields.io/badge/GitHub-Sponsor-blue?logo=github)](https://github.com/sponsors/tr4nt0r)
 
-Xbox-WebAPI is a python library to authenticate with Xbox Live via your Microsoft Account and provides Xbox related Web-API.
+python-xbox is a python library to authenticate with Xbox Network via your Microsoft Account and provides Xbox related Web-API.
 
 Authentication is supported via OAuth2.
 
@@ -19,21 +20,22 @@ Authentication is supported via OAuth2.
 
 ## Dependencies
 
-- Python >= 3.8
+- Python >= 3.11
 
 ## How to use
 
-Install
+### Install
 
-```text
-pip install xbox-webapi
+```bash
+pip install python-xbox
 ```
 
-Authentication
+### Authentication
 
-**Note: You must use non child account (> 18 years old)**
+> [!NOTE]
+> You must use non child account (> 18 years old)
 
-Token save location: If tokenfile is not provided via cmdline, fallback of `<appdirs.user_data_dir>/tokens.json` is used as save-location
+Token save location: If tokenfile is not provided via cmdline, fallback of `<platformdirs.user_data_dir>/tokens.json` is used as save-location
 
 Specifically:
 
@@ -43,32 +45,32 @@ Mac OSX: `/Users/<username>/Library/Application Support/xbox/tokens.json`
 
 Linux: `/home/<username>/.local/share/xbox`
 
-For more information, see: <https://pypi.org/project/appdirs> and module: `xbox.webapi.scripts.constants`
+For more information, see: <https://pypi.org/project/platformdirs> and module: `python-xbox.scripts.constants`
 
-```
+```bash
 xbox-authenticate --client-id <client-id> --client-secret <client-secret>
 ```
 
 Example: Search Xbox Live via cmdline tool
 
-```text
+```bash
   # Search Xbox One Catalog
   xbox-searchlive "Some game title"
 ```
 
 API usage
 
-```py
+```python
 import asyncio
 import sys
 
 from httpx import HTTPStatusError
 
-from xbox.webapi.api.client import XboxLiveClient
-from xbox.webapi.authentication.manager import AuthenticationManager
-from xbox.webapi.authentication.models import OAuth2TokenResponse
-from xbox.webapi.common.signed_session import SignedSession
-from xbox.webapi.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
+from pythonxbox.api.client import XboxLiveClient
+from pythonxbox.authentication.manager import AuthenticationManager
+from pythonxbox.authentication.models import OAuth2TokenResponse
+from pythonxbox.common.signed_session import SignedSession
+from pythonxbox.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
 
 """
 This uses the global default client identification by OpenXbox
@@ -80,7 +82,7 @@ client_secret = CLIENT_SECRET
 tokens_file = TOKENS_FILE
 
 """
-For doing authentication, see xbox/webapi/scripts/authenticate.py
+For doing authentication, see pythonxbox/scripts/authenticate.py
 """
 
 
@@ -94,7 +96,7 @@ async def async_main():
 
         """
         Read in tokens that you received from the `xbox-authenticate`-script previously
-        See `xbox/webapi/scripts/authenticate.py`
+        See `pythonxbox/scripts/authenticate.py`
         """
         try:
             with open(tokens_file) as f:
@@ -172,8 +174,7 @@ asyncio.run(async_main())
 
 ## Credits
 
-This package uses parts of [Cookiecutter](https://github.com/audreyr/cookiecutter)
-and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+This library is derived from [xbox-webapi](https://github.com/OpenXbox/xbox-webapi-python) library from the [OpenXbox](https://github.com/openxbox) project
 The authentication code is based on [joealcorn/xbox](https://github.com/joealcorn/xbox)
 
 Informations on endpoints gathered from:
