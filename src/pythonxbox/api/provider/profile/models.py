@@ -1,9 +1,9 @@
-from enum import Enum
+from enum import StrEnum
 
 from pythonxbox.common.models import CamelCaseModel
 
 
-class ProfileSettings(str, Enum):
+class ProfileSettings(StrEnum):
     """
     Profile settings, used as parameter for Profile API
     """

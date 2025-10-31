@@ -1,5 +1,5 @@
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 from typing import Any
 
 from pydantic import Field, field_validator
@@ -7,18 +7,18 @@ from pydantic import Field, field_validator
 from pythonxbox.common.models import PascalCaseModel
 
 
-class AlternateIdType(str, Enum):
+class AlternateIdType(StrEnum):
     LEGACY_XBOX_PRODUCT_ID = "LegacyXboxProductId"
     XBOX_TITLE_ID = "XboxTitleId"
     PACKAGE_FAMILY_NAME = "PackageFamilyName"
 
 
-class FieldsTemplate(str, Enum):
+class FieldsTemplate(StrEnum):
     BROWSE = "browse"
     DETAILS = "details"
 
 
-class PlatformType(str, Enum):
+class PlatformType(StrEnum):
     XBOX = "windows.xbox"
     DESKTOP = "windows.desktop"
 

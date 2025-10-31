@@ -1,12 +1,12 @@
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 
 from pythonxbox.common.models import CamelCaseModel
 
 # Responses
 
 
-class ConsoleType(str, Enum):
+class ConsoleType(StrEnum):
     XboxOne = "XboxOne"
     XboxOneS = "XboxOneS"
     XboxOneSDigital = "XboxOneSDigital"
@@ -15,7 +15,7 @@ class ConsoleType(str, Enum):
     XboxSeriesX = "XboxSeriesX"
 
 
-class PowerState(str, Enum):
+class PowerState(StrEnum):
     Unknown = "Unknown"
     On = "On"
     Off = "Off"
@@ -23,14 +23,14 @@ class PowerState(str, Enum):
     SystemUpdate = "SystemUpdate"
 
 
-class PlaybackState(str, Enum):
+class PlaybackState(StrEnum):
     Unknown = "Unknown"
     Playing = "Playing"
     Paused = "Paused"
     Stopped = "Stopped"
 
 
-class ErrorCode(str, Enum):
+class ErrorCode(StrEnum):
     OK = "OK"
     CurrentConsoleNotFound = "CurrentConsoleNotFound"
     RemoteManagementDisabled = "RemoteManagementDisabled"
@@ -38,7 +38,7 @@ class ErrorCode(str, Enum):
     XboxNotPaired = "XboxNotPaired"
 
 
-class OpStatus(str, Enum):
+class OpStatus(StrEnum):
     Paused = "Paused"
     OffConsoleError = "OffConsoleError"
     Pending = "Pending"
@@ -162,12 +162,12 @@ class CommandResponse(CamelCaseModel):
 # Requests
 
 
-class VolumeDirection(str, Enum):
+class VolumeDirection(StrEnum):
     Up = "Up"
     Down = "Down"
 
 
-class InputKeyType(str, Enum):
+class InputKeyType(StrEnum):
     Guide = "Guide"
     Menu = "Menu"
     View = "View"
@@ -182,5 +182,5 @@ class InputKeyType(str, Enum):
     Nexus = "Nexus"
 
 
-class GuideTab(str, Enum):
+class GuideTab(StrEnum):
     Guide = "Guide"
