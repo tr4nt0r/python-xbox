@@ -1,11 +1,11 @@
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 from typing import Any
 
 from pythonxbox.common.models import CamelCaseModel, PascalCaseModel
 
 
-class TitleFields(str, Enum):
+class TitleFields(StrEnum):
     SERVICE_CONFIG_ID = "scid"
     ACHIEVEMENT = "achievement"
     STATS = "stats"

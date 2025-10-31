@@ -1,17 +1,17 @@
-from enum import Enum
+from enum import StrEnum
 from pydantic import RootModel
 
 from pythonxbox.common.models import CamelCaseModel
 
 
-class PresenceLevel(str, Enum):
+class PresenceLevel(StrEnum):
     USER = "user"
     DEVICE = "device"
     TITLE = "title"
     ALL = "all"
 
 
-class PresenceState(str, Enum):
+class PresenceState(StrEnum):
     ACTIVE = "Active"
     CLOAKED = "Cloaked"
 
