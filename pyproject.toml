@@ -2,6 +2,7 @@
 name = "python-xbox"
 description = "A library to authenticate with Xbox Network and use their API"
 authors = [
+    {name = "Manfred Dennerlein Rodelo", email = "manfred@dennerlein.name"},
     {name = "OpenXbox"},
 ]
 dependencies = [
@@ -15,7 +16,7 @@ readme = "README.md"
 license = "MIT"
 keywords = ["xbox one live api"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
@@ -23,12 +24,13 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/tr4nt0r/python-xbox"
+Source = "https://github.com/tr4nt0r/python-xbox"
 
 [project.optional-dependencies]
 cli = [
