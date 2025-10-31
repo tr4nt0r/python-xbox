@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_profile_by_xuid(respx_mock, xbl_client):
+async def test_profile_by_xuid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://profile.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("profile_by_xuid"))
     )
@@ -17,7 +21,9 @@ async def test_profile_by_xuid(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_profile_by_gamertag(respx_mock, xbl_client):
+async def test_profile_by_gamertag(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://profile.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("profile_by_gamertag"))
     )
@@ -29,7 +35,9 @@ async def test_profile_by_gamertag(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_profiles_batch(respx_mock, xbl_client):
+async def test_profiles_batch(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://profile.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("profile_batch"))
     )

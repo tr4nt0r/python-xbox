@@ -59,7 +59,7 @@ class SingleRateLimit(RateLimit):
     This class is mainly used by the CombinedRateLimit class.
     """
 
-    def __init__(self, time_period: TimePeriod, type: LimitType, limit: int):
+    def __init__(self, time_period: TimePeriod, type: LimitType, limit: int) -> None:
         self.__time_period = time_period
         self.__type = type
         self.__limit = limit
@@ -122,14 +122,14 @@ class SingleRateLimit(RateLimit):
         return IncrementResult(counter=self.__counter, exceeded=self.__exceeded)
 
     # Should be called after every inc of the counter
-    def __check_if_exceeded(self):
+    def __check_if_exceeded(self) -> None:
         if not self.__exceeded:
             if self.__counter >= self.__limit:
                 self.__exceeded = True
                 # reset-after is now dependent on the time since the first request of this cycle.
                 # self.__set_reset_after()
 
-    def __reset_counter_if_required(self):
+    def __reset_counter_if_required(self) -> None:
         # Check to make sure reset_after is not None
         # - This is the case if this function is called before the counter
         #   is incremented after a reset / new instantiation
@@ -139,7 +139,7 @@ class SingleRateLimit(RateLimit):
                 self.__counter = 0
                 self.__reset_after = None
 
-    def __set_reset_after(self):
+    def __set_reset_after(self) -> None:
         self.__reset_after = datetime.now() + timedelta(
             seconds=self.get_time_period().value
         )
@@ -151,7 +151,7 @@ class CombinedRateLimit(RateLimit):
 
     """
 
-    def __init__(self, *parsed_limits: ParsedRateLimit, type: LimitType):
+    def __init__(self, *parsed_limits: ParsedRateLimit, type: LimitType) -> None:
         # *parsed_limits is a tuple
 
         # Create a SingleRateLimit instance for each limit

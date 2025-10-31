@@ -1,6 +1,8 @@
 from httpx import HTTPStatusError, Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from pythonxbox.api.provider.account.models import (
     ChangeGamertagResult,
     ClaimGamertagResult,
@@ -8,7 +10,9 @@ from pythonxbox.api.provider.account.models import (
 
 
 @pytest.mark.asyncio
-async def test_claim_gamertag(respx_mock, xbl_client):
+async def test_claim_gamertag(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://user.mgt.xboxlive.com").mock(
         return_value=Response(200)
     )
@@ -19,7 +23,9 @@ async def test_claim_gamertag(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_claim_gamertag_error(respx_mock, xbl_client):
+async def test_claim_gamertag_error(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://user.mgt.xboxlive.com").mock(
         return_value=Response(500)
     )
@@ -31,7 +37,9 @@ async def test_claim_gamertag_error(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_change_gamertag(respx_mock, xbl_client):
+async def test_change_gamertag(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://accounts.xboxlive.com").mock(
         return_value=Response(200)
     )
@@ -42,7 +50,9 @@ async def test_change_gamertag(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_change_gamertag_error(respx_mock, xbl_client):
+async def test_change_gamertag_error(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://accounts.xboxlive.com").mock(
         return_value=Response(500)
     )

@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_channel_list_download(respx_mock, xbl_client):
+async def test_channel_list_download(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://cqs.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("cqs_get_channel_list"))
     )
@@ -19,7 +23,9 @@ async def test_channel_list_download(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_schedule_download(respx_mock, xbl_client):
+async def test_schedule_download(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://cqs.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("cqs_get_schedule"))
     )

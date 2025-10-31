@@ -2,15 +2,19 @@
 Titlehub - Get Title history and info
 """
 
+from typing import TYPE_CHECKING
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.titlehub.models import TitleFields, TitleHubResponse
+
+if TYPE_CHECKING:
+    from pythonxbox.api.client import XboxLiveClient
 
 
 class TitlehubProvider(BaseProvider):
     TITLEHUB_URL = "https://titlehub.xboxlive.com"
     SEPARATOR = ","
 
-    def __init__(self, client):
+    def __init__(self, client: "XboxLiveClient") -> None:
         """
         Initialize Baseclass, set 'Accept-Language' header from client instance
 

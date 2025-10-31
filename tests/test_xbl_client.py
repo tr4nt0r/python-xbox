@@ -1,7 +1,8 @@
 from pythonxbox.api.client import XboxLiveClient
+from pythonxbox.authentication.manager import AuthenticationManager
 
 
-def test_authorization_header(auth_mgr):
+def test_authorization_header(auth_mgr: AuthenticationManager) -> None:
     client = XboxLiveClient(auth_mgr)
 
     assert (

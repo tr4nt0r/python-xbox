@@ -50,7 +50,7 @@ def user_prompt_authentication(auth_url: str) -> str:
     return redirect_url
 
 
-async def do_auth(device_id: uuid.UUID, token_filepath: str):
+async def do_auth(device_id: uuid.UUID, token_filepath: str) -> None:
     async with SignedSession() as session:
         app_params = APP_PARAMS_GAMEPASS_BETA
         client_params = CLIENT_PARAMS_ANDROID
@@ -85,7 +85,7 @@ async def do_auth(device_id: uuid.UUID, token_filepath: str):
             json.dump(store, f, default=pydantic_encoder)
 
 
-async def async_main():
+async def async_main() -> None:
     parser = argparse.ArgumentParser(description="Authenticate with XBL via XAL")
     parser.add_argument(
         "--tokens",
@@ -105,7 +105,7 @@ async def async_main():
     await do_auth(args.device_id, args.tokens)
 
 
-def main():
+def main() -> None:
     asyncio.run(async_main())
 
 

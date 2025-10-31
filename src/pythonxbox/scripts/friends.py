@@ -17,7 +17,7 @@ from pythonxbox.common.signed_session import SignedSession
 from pythonxbox.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
 
 
-async def async_main():
+async def async_main() -> None:
     parser = argparse.ArgumentParser(description="Change your gamertag")
     parser.add_argument(
         "--tokens",
@@ -72,7 +72,7 @@ async def async_main():
         pprint(resp.dict())
 
 
-def main():
+def main() -> None:
     asyncio.run(async_main())
 
 

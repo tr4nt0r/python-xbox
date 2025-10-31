@@ -81,7 +81,7 @@ class XALManager:
         device_id: uuid.UUID,
         app_params: XalAppParameters,
         client_params: XalClientParameters,
-    ):
+    ) -> None:
         self.session = session
         self.device_id = device_id
         self.app_params = app_params
@@ -89,7 +89,7 @@ class XALManager:
         self.cv = CorrelationVector()
 
     @staticmethod
-    def _get_random_bytes(length) -> bytes:
+    def _get_random_bytes(length: int) -> bytes:
         return os.urandom(length)
 
     @staticmethod

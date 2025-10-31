@@ -1,13 +1,17 @@
 from httpx import Request, Response
 import pytest
 
+from pythonxbox.common.request_signer import RequestSigner
 from pythonxbox.common.signed_session import SignedSession
 
 from tests.common import get_response_json
+from respx import MockRouter
 
 
 @pytest.mark.asyncio
-async def test_sending_signed_request(synthetic_request_signer, respx_mock):
+async def test_sending_signed_request(
+    synthetic_request_signer: RequestSigner, respx_mock: MockRouter
+) -> None:
     route = respx_mock.post("https://xsts.auth.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("auth_xsts_token"))
     )
@@ -36,7 +40,9 @@ async def test_sending_signed_request(synthetic_request_signer, respx_mock):
 
 
 @pytest.mark.asyncio
-async def test_sending_signed(synthetic_request_signer, respx_mock):
+async def test_sending_signed(
+    synthetic_request_signer: RequestSigner, respx_mock: MockRouter
+) -> None:
     route = respx_mock.post("https://xsts.auth.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("auth_xsts_token"))
     )

@@ -4,7 +4,13 @@ Language definitions
 
 
 class XboxLiveLanguage:
-    def __init__(self, name, short_id, identifier, locale):
+    def __init__(
+        self,
+        name: str,
+        short_id: str,
+        identifier: str,
+        locale: str,
+    ) -> None:
         """
         Initialize a new instance of :class:`XboxLiveLanguage`
 

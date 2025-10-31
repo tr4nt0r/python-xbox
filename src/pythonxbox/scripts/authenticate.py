@@ -25,7 +25,7 @@ class AuthCallbackRequestHandler(http.server.BaseHTTPRequestHandler):
     Handles the auth callback that's received when Windows Live auth flow completed
     """
 
-    def do_GET(self):
+    def do_GET(self) -> None:
         try:
             url_path = self.requestline.split(" ")[1]
             query_params = parse_qs(urlparse(url_path).query)
@@ -73,7 +73,7 @@ class AuthCallbackRequestHandler(http.server.BaseHTTPRequestHandler):
 
 async def do_auth(
     client_id: str, client_secret: str, redirect_uri: str, token_filepath: str
-):
+) -> None:
     async with SignedSession() as session:
         auth_mgr = AuthenticationManager(
             session, client_id, client_secret, redirect_uri
@@ -99,7 +99,7 @@ async def do_auth(
             f.write(auth_mgr.oauth.model_dump_json())
 
 
-async def async_main():
+async def async_main() -> None:
     parser = argparse.ArgumentParser(description="Authenticate with XBL")
     parser.add_argument(
         "--tokens",
@@ -151,7 +151,7 @@ async def async_main():
         )
 
 
-def main():
+def main() -> None:
     asyncio.run(async_main())
 
 

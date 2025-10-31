@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_userstats_by_scid(respx_mock, xbl_client):
+async def test_userstats_by_scid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://userstats.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("userstats_by_scid"))
     )
@@ -19,7 +23,9 @@ async def test_userstats_by_scid(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_userstats_by_scid_with_metadata(respx_mock, xbl_client):
+async def test_userstats_by_scid_with_metadata(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://userstats.xboxlive.com").mock(
         return_value=Response(
             200, json=get_response_json("userstats_by_scid_with_metadata")
@@ -35,7 +41,9 @@ async def test_userstats_by_scid_with_metadata(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_userstats_batch(respx_mock, xbl_client):
+async def test_userstats_batch(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://userstats.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("userstats_batch"))
     )
@@ -49,7 +57,9 @@ async def test_userstats_batch(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_userstats_batch_by_scid(respx_mock, xbl_client):
+async def test_userstats_batch_by_scid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://userstats.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("userstats_batch_by_scid"))
     )

@@ -14,7 +14,7 @@ from pythonxbox.authentication.manager import AuthenticationManager
 from pythonxbox.common.signed_session import SignedSession
 
 
-async def async_main():
+async def async_main() -> None:
     parser = argparse.ArgumentParser(description="Search for Content on XBL")
     parser.add_argument("search_query", help="Name to search for")
 
@@ -35,7 +35,7 @@ async def async_main():
         pprint(resp.dict())
 
 
-def main():
+def main() -> None:
     asyncio.run(async_main())
 
 

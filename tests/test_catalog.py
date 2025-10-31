@@ -1,13 +1,14 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from pythonxbox.api.provider.catalog.models import AlternateIdType, FieldsTemplate
-
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_get_products(respx_mock, xbl_client):
+async def test_get_products(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.get("https://displaycatalog.mp.microsoft.com").mock(
         return_value=Response(200, json=get_response_json("catalog_browse"))
     )
@@ -18,7 +19,9 @@ async def test_get_products(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_products_detail(respx_mock, xbl_client):
+async def test_get_products_detail(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://displaycatalog.mp.microsoft.com").mock(
         return_value=Response(200, json=get_response_json("catalog_browse_details"))
     )
@@ -32,7 +35,9 @@ async def test_get_products_detail(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_product_from_alternate_id(respx_mock, xbl_client):
+async def test_get_product_from_alternate_id(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://displaycatalog.mp.microsoft.com").mock(
         return_value=Response(200, json=get_response_json("catalog_product_lookup"))
     )
@@ -45,7 +50,9 @@ async def test_get_product_from_alternate_id(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_product_from_alternate_id_legacy(respx_mock, xbl_client):
+async def test_get_product_from_alternate_id_legacy(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://displaycatalog.mp.microsoft.com").mock(
         return_value=Response(
             200, json=get_response_json("catalog_product_lookup_legacy")
@@ -60,7 +67,9 @@ async def test_get_product_from_alternate_id_legacy(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_product_search(respx_mock, xbl_client):
+async def test_product_search(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://displaycatalog.mp.microsoft.com").mock(
         return_value=Response(200, json=get_response_json("catalog_search"))
     )

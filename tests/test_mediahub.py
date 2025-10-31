@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_media_screenshots_own(respx_mock, xbl_client):
+async def test_media_screenshots_own(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://mediahub.xboxlive.com/screenshots/search").mock(
         return_value=Response(200, json=get_response_json("mediahub_screenshots_own"))
     )
@@ -16,7 +20,9 @@ async def test_media_screenshots_own(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_media_gameclips_own(respx_mock, xbl_client):
+async def test_media_gameclips_own(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://mediahub.xboxlive.com/gameclips/search").mock(
         return_value=Response(200, json=get_response_json("mediahub_gameclips_own"))
     )

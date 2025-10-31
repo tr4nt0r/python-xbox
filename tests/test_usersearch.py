@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_profile_by_xuid(respx_mock, xbl_client):
+async def test_profile_by_xuid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://usersearch.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("usersearch_live_search"))
     )

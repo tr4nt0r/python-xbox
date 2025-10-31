@@ -2,6 +2,7 @@
 SmartGlass - Control Registered Devices
 """
 
+from typing import TYPE_CHECKING
 from uuid import uuid4
 
 from httpx import Response
@@ -19,6 +20,9 @@ from pythonxbox.api.provider.smartglass.models import (
     VolumeDirection,
 )
 
+if TYPE_CHECKING:
+    from pythonxbox.api.client import XboxLiveClient
+
 
 class SmartglassProvider(BaseProvider):
     SG_URL = "https://xccs.xboxlive.com"
@@ -27,7 +31,7 @@ class SmartglassProvider(BaseProvider):
         "skillplatform": "RemoteManagement",
     }
 
-    def __init__(self, client):
+    def __init__(self, client: "XboxLiveClient") -> None:
         """
         Initialize Baseclass, create smartglass session id
 
