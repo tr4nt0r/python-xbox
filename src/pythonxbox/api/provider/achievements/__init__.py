@@ -21,7 +21,7 @@ class AchievementsProvider(RateLimitedProvider):
     RATE_LIMITS = {"burst": 100, "sustain": 300}
 
     async def get_achievements_detail_item(
-        self, xuid, service_config_id, achievement_id, **kwargs
+        self, xuid: str, service_config_id: str, achievement_id: str, **kwargs
     ) -> AchievementResponse:
         """
         Get achievement detail for specific item
@@ -45,7 +45,7 @@ class AchievementsProvider(RateLimitedProvider):
         return AchievementResponse(**resp.json())
 
     async def get_achievements_xbox360_all(
-        self, xuid, title_id, **kwargs
+        self, xuid: str, title_id: str, **kwargs
     ) -> Achievement360Response:
         """
         Get all achievements for specific X360 title Id
@@ -70,7 +70,7 @@ class AchievementsProvider(RateLimitedProvider):
         return Achievement360Response(**resp.json())
 
     async def get_achievements_xbox360_earned(
-        self, xuid, title_id, **kwargs
+        self, xuid: str, title_id: str, **kwargs
     ) -> Achievement360Response:
         """
         Get earned achievements for specific X360 title id
@@ -95,7 +95,7 @@ class AchievementsProvider(RateLimitedProvider):
         return Achievement360Response(**resp.json())
 
     async def get_achievements_xbox360_recent_progress_and_info(
-        self, xuid, **kwargs
+        self, xuid: str, **kwargs
     ) -> Achievement360ProgressResponse:
         """
         Get recent achievement progress and information
@@ -117,7 +117,7 @@ class AchievementsProvider(RateLimitedProvider):
         return Achievement360ProgressResponse(**resp.json())
 
     async def get_achievements_xboxone_gameprogress(
-        self, xuid, title_id, **kwargs
+        self, xuid: str, title_id: str, **kwargs
     ) -> AchievementResponse:
         """
         Get gameprogress for Xbox One title
@@ -142,7 +142,7 @@ class AchievementsProvider(RateLimitedProvider):
         return AchievementResponse(**resp.json())
 
     async def get_achievements_xboxone_recent_progress_and_info(
-        self, xuid, **kwargs
+        self, xuid: str, **kwargs
     ) -> RecentProgressResponse:
         """
         Get recent achievement progress and information

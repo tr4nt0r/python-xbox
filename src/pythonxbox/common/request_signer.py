@@ -20,10 +20,12 @@ DEFAULT_SIGNING_POLICY = SignaturePolicy(
 
 
 class RequestSigner:
-    def __init__(self, signing_key=None, signing_policy=None):
-        self.signing_key: SigningKey = signing_key or SigningKey.generate(
-            curve=NIST256p
-        )
+    def __init__(
+        self,
+        signing_key: SigningKey | None = None,
+        signing_policy: SignaturePolicy | None = None,
+    ) -> None:
+        self.signing_key = signing_key or SigningKey.generate(curve=NIST256p)
         self.signing_policy = signing_policy or DEFAULT_SIGNING_POLICY
 
         pk_point = self.signing_key.verifying_key.pubkey.point
@@ -44,7 +46,7 @@ class RequestSigner:
         return SigningKey.from_pem(signing_key)
 
     @classmethod
-    def from_pem(cls, pem_string: str):
+    def from_pem(cls, pem_string: str) -> SigningKey:
         request_signer = RequestSigner.import_signing_key(pem_string)
         return cls(request_signer)
 
@@ -184,5 +186,5 @@ class RequestSigner:
         return encoded
 
     @staticmethod
-    def __encode_ec_coord(coord) -> str:
+    def __encode_ec_coord(coord: int) -> str:
         return RequestSigner.__base64_escaped(coord.to_bytes(32, "big"))

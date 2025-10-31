@@ -1,11 +1,13 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_get_inbox(respx_mock, xbl_client):
+async def test_get_inbox(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.get("https://xblmessaging.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("message_get_inbox"))
     )
@@ -15,7 +17,9 @@ async def test_get_inbox(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_conversation(respx_mock, xbl_client):
+async def test_get_conversation(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xblmessaging.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("message_get_conversation"))
     )
@@ -25,7 +29,9 @@ async def test_get_conversation(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_new_conversation(respx_mock, xbl_client):
+async def test_get_new_conversation(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xblmessaging.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("message_new_conversation"))
     )
@@ -35,7 +41,9 @@ async def test_get_new_conversation(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_delete_conversation(respx_mock, xbl_client):
+async def test_delete_conversation(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.put("https://xblmessaging.xboxlive.com").mock(
         return_value=Response(200)
     )
@@ -48,7 +56,9 @@ async def test_delete_conversation(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_delete_message(respx_mock, xbl_client):
+async def test_delete_message(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.delete("https://xblmessaging.xboxlive.com").mock(
         return_value=Response(200)
     )
@@ -61,7 +71,7 @@ async def test_delete_message(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_send_message(respx_mock, xbl_client):
+async def test_send_message(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.post("https://xblmessaging.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("message_send_message"))
     )
@@ -73,7 +83,7 @@ async def test_send_message(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_message_send_too_long(xbl_client):
+async def test_message_send_too_long(xbl_client: XboxLiveClient) -> None:
     message = "x" * 257
     with pytest.raises(ValueError) as err:
         await xbl_client.message.send_message("12345", message)

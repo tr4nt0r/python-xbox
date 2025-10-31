@@ -3,11 +3,11 @@ import sys
 
 from httpx import HTTPStatusError
 
-from pythonxbox.webapi.api.client import XboxLiveClient
-from pythonxbox.webapi.authentication.manager import AuthenticationManager
-from pythonxbox.webapi.authentication.models import OAuth2TokenResponse
-from pythonxbox.webapi.common.signed_session import SignedSession
-from pythonxbox.webapi.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
+from pythonxbox.api.client import XboxLiveClient
+from pythonxbox.authentication.manager import AuthenticationManager
+from pythonxbox.authentication.models import OAuth2TokenResponse
+from pythonxbox.common.signed_session import SignedSession
+from pythonxbox.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
 
 """
 This uses the global default client identification by OpenXbox
@@ -23,7 +23,7 @@ For doing authentication, see xbox/webapi/scripts/authenticate.py
 """
 
 
-async def async_main():
+async def async_main() -> None:
     # Create a HTTP client session
     async with SignedSession() as session:
         """

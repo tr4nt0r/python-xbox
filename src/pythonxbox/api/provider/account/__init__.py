@@ -12,7 +12,9 @@ class AccountProvider(BaseProvider):
     HEADERS_USER_MGT = {"x-xbl-contract-version": "1"}
     HEADERS_ACCOUNT = {"x-xbl-contract-version": "2"}
 
-    async def claim_gamertag(self, xuid, gamertag, **kwargs) -> ClaimGamertagResult:
+    async def claim_gamertag(
+        self, xuid: str, gamertag: str, **kwargs
+    ) -> ClaimGamertagResult:
         """
         Claim gamertag
 
@@ -40,7 +42,7 @@ class AccountProvider(BaseProvider):
             resp.raise_for_status()
 
     async def change_gamertag(
-        self, xuid, gamertag, preview=False, **kwargs
+        self, xuid: str, gamertag: str, preview: bool = False, **kwargs
     ) -> ChangeGamertagResult:
         """
         Change your gamertag.

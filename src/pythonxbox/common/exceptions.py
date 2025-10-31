@@ -2,7 +2,9 @@
 Special Exception subclasses
 """
 
+from typing import Any
 from pythonxbox.common.ratelimits import RateLimit
+from httpx import Response
 
 
 class XboxException(Exception):
@@ -18,7 +20,7 @@ class AuthenticationException(XboxException):
 
 
 class TwoFactorAuthRequired(XboxException):
-    def __init__(self, message, server_data):
+    def __init__(self, message: str, server_data: dict[str, Any]) -> None:
         """
         Raised when 2FA is required
 
@@ -31,7 +33,7 @@ class TwoFactorAuthRequired(XboxException):
 
 
 class InvalidRequest(XboxException):
-    def __init__(self, message, response):
+    def __init__(self, message: str, response: Response) -> None:
         """
         Raised when something is wrong with the request
 
@@ -51,7 +53,7 @@ class NotFoundException(XboxException):
 
 
 class RateLimitExceededException(XboxException):
-    def __init__(self, message, rate_limit: RateLimit):
+    def __init__(self, message: str, rate_limit: RateLimit) -> None:
         self.message = message
         self.rate_limit = rate_limit
         self.try_again_in = rate_limit.get_reset_after()

@@ -8,7 +8,7 @@ from pydantic.dataclasses import dataclass
 from pythonxbox.common.models import PascalCaseModel
 
 
-def utc_now():
+def utc_now() -> datetime:
     return datetime.now(UTC)
 
 

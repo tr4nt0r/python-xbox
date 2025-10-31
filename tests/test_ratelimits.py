@@ -1,20 +1,23 @@
+from collections.abc import Callable
 from datetime import datetime, timedelta
 
 from freezegun import freeze_time
 from freezegun.api import FrozenDateTimeFactory
 from httpx import Response
 import pytest
+from respx import MockRouter
 
-from tests.common import get_response_json
+from pythonxbox.api.client import XboxLiveClient
 from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 from pythonxbox.common.exceptions import RateLimitExceededException, XboxException
 from pythonxbox.common.ratelimits import CombinedRateLimit
 from pythonxbox.common.ratelimits.models import TimePeriod
+from tests.common import get_response_json
 
 
 def helper_test_combinedratelimit(
     crl: CombinedRateLimit, burstLimit: int, sustainLimit: int
-):
+) -> None:
     burst = crl.get_limits_by_period(TimePeriod.BURST)
     sustain = crl.get_limits_by_period(TimePeriod.SUSTAIN)
 
@@ -30,7 +33,9 @@ def helper_test_combinedratelimit(
     assert sustain[0].get_limit() == sustainLimit
 
 
-def test_ratelimitedprovider_rate_limits_same_rw_values(xbl_client):
+def test_ratelimitedprovider_rate_limits_same_rw_values(
+    xbl_client: XboxLiveClient,
+) -> None:
     class child_class(RateLimitedProvider):
         RATE_LIMITS = {"burst": 1, "sustain": 2}
 
@@ -40,7 +45,9 @@ def test_ratelimitedprovider_rate_limits_same_rw_values(xbl_client):
     helper_test_combinedratelimit(instance.rate_limit_write, 1, 2)
 
 
-def test_ratelimitedprovider_rate_limits_diff_rw_values(xbl_client):
+def test_ratelimitedprovider_rate_limits_diff_rw_values(
+    xbl_client: XboxLiveClient,
+) -> None:
     class child_class(RateLimitedProvider):
         RATE_LIMITS = {
             "burst": {"read": 1, "write": 2},
@@ -53,7 +60,7 @@ def test_ratelimitedprovider_rate_limits_diff_rw_values(xbl_client):
     helper_test_combinedratelimit(instance.rate_limit_write, 2, 4)
 
 
-def test_ratelimitedprovider_rate_limits_mixed(xbl_client):
+def test_ratelimitedprovider_rate_limits_mixed(xbl_client: XboxLiveClient) -> None:
     class burst_diff(RateLimitedProvider):
         RATE_LIMITS = {"burst": {"read": 1, "write": 2}, "sustain": 3}
 
@@ -73,7 +80,9 @@ def test_ratelimitedprovider_rate_limits_mixed(xbl_client):
     helper_test_combinedratelimit(sustain_diff_inst.rate_limit_write, 4, 6)
 
 
-def test_ratelimitedprovider_rate_limits_missing_values_correct_type(xbl_client):
+def test_ratelimitedprovider_rate_limits_missing_values_correct_type(
+    xbl_client: XboxLiveClient,
+) -> None:
     class child_class(RateLimitedProvider):
         RATE_LIMITS = {"incorrect": "values"}
 
@@ -84,7 +93,7 @@ def test_ratelimitedprovider_rate_limits_missing_values_correct_type(xbl_client)
     assert "RATE_LIMITS object missing required keys" in ex.args[0]
 
 
-def test_ratelimitedprovider_rate_limits_not_set(xbl_client):
+def test_ratelimitedprovider_rate_limits_not_set(xbl_client: XboxLiveClient) -> None:
     class child_class(RateLimitedProvider):
         pass
 
@@ -95,7 +104,9 @@ def test_ratelimitedprovider_rate_limits_not_set(xbl_client):
     assert "RateLimitedProvider as parent class but RATE_LIMITS not set!" in ex.args[0]
 
 
-def test_ratelimitedprovider_rate_limits_incorrect_key_type(xbl_client):
+def test_ratelimitedprovider_rate_limits_incorrect_key_type(
+    xbl_client: XboxLiveClient,
+) -> None:
     class child_class(RateLimitedProvider):
         RATE_LIMITS = {"burst": True, "sustain": False}
 
@@ -107,8 +118,10 @@ def test_ratelimitedprovider_rate_limits_incorrect_key_type(xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_ratelimits_exceeded_burst_only(respx_mock, xbl_client):
-    async def make_request():
+async def test_ratelimits_exceeded_burst_only(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
+    async def make_request() -> None:
         route = respx_mock.get("https://social.xboxlive.com").mock(
             return_value=Response(200, json=get_response_json("people_summary_own"))
         )
@@ -143,12 +156,12 @@ async def test_ratelimits_exceeded_burst_only(respx_mock, xbl_client):
 
 
 async def helper_reach_and_wait_for_burst(
-    make_request,
-    start_time,
+    make_request: Callable,
+    start_time: datetime,
     burst_limit: int,
     expected_counter: int,
     frozen_datetime: FrozenDateTimeFactory,
-):
+) -> None:
     # Make as many requests as possible without exceeding the BURST limit.
     for _ in range(burst_limit):
         await make_request()
@@ -176,10 +189,12 @@ async def helper_reach_and_wait_for_burst(
 
 
 @pytest.mark.asyncio
-async def test_ratelimits_exceeded_sustain_only(respx_mock, xbl_client):
+async def test_ratelimits_exceeded_sustain_only(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     with freeze_time("2025-10-30T00:00:00-00:00") as frozen_datetime:
 
-        async def make_request():
+        async def make_request() -> None:
             route = respx_mock.get("https://social.xboxlive.com").mock(
                 return_value=Response(200, json=get_response_json("people_summary_own"))
             )

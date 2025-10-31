@@ -4,17 +4,21 @@ RateLimitedProvider
 Subclassed by providers with rate limit support
 """
 
+from typing import TYPE_CHECKING
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.common.exceptions import XboxException
 from pythonxbox.common.ratelimits import CombinedRateLimit
 from pythonxbox.common.ratelimits.models import LimitType, ParsedRateLimit, TimePeriod
+
+if TYPE_CHECKING:
+    from pythonxbox.api.client import XboxLiveClient
 
 
 class RateLimitedProvider(BaseProvider):
     # dict -> Dict (typing.dict) https://stackoverflow.com/a/63460173
     RATE_LIMITS: dict[str, int | dict[str, int]]
 
-    def __init__(self, client):
+    def __init__(self, client: "XboxLiveClient") -> None:
         """
         Initialize Baseclass
 
@@ -39,7 +43,7 @@ class RateLimitedProvider(BaseProvider):
                 "RateLimitedProvider as parent class but RATE_LIMITS not set!"
             )
 
-    def __handle_rate_limit_setup(self):
+    def __handle_rate_limit_setup(self) -> None:
         # Retrieve burst and sustain from the dict
         burst_key = self.RATE_LIMITS["burst"]
         sustain_key = self.RATE_LIMITS["sustain"]

@@ -29,7 +29,7 @@ class AuthenticationManager:
         client_secret: str,
         redirect_uri: str,
         scopes: list[str] | None = None,
-    ):
+    ) -> None:
         if not isinstance(client_session, (SignedSession, httpx.AsyncClient)):
             raise DeprecationWarning(
                 """Xbox WebAPI changed to use SignedSession (wrapped httpx.AsyncClient).

@@ -1,4 +1,5 @@
-from datetime import datetime, UTC
+from collections.abc import AsyncGenerator
+from datetime import UTC, datetime
 import uuid
 
 from ecdsa.keys import SigningKey, VerifyingKey
@@ -19,12 +20,11 @@ from pythonxbox.authentication.xal import (
 )
 from pythonxbox.common.request_signer import RequestSigner
 from pythonxbox.common.signed_session import SignedSession
-
 from tests.common import get_response
 
 
 @pytest_asyncio.fixture(scope="function")
-async def auth_mgr():
+async def auth_mgr() -> AsyncGenerator[AuthenticationManager]:
     session = SignedSession()
     mgr = AuthenticationManager(session, "abc", "123", "http://localhost")
     mgr.oauth = OAuth2TokenResponse.model_validate_json(
@@ -37,7 +37,7 @@ async def auth_mgr():
 
 
 @pytest_asyncio.fixture(scope="function")
-async def xal_mgr():
+async def xal_mgr() -> AsyncGenerator[XALManager]:
     session = SignedSession()
     mgr = XALManager(
         session,
@@ -50,7 +50,7 @@ async def xal_mgr():
 
 
 @pytest.fixture(scope="function")
-def xbl_client(auth_mgr):
+def xbl_client(auth_mgr: AuthenticationManager) -> XboxLiveClient:
     return XboxLiveClient(auth_mgr)
 
 
@@ -71,7 +71,7 @@ def ecdsa_verifying_key(ecdsa_signing_key: SigningKey) -> VerifyingKey:
 
 
 @pytest.fixture(scope="session")
-def synthetic_request_signer(ecdsa_signing_key) -> RequestSigner:
+def synthetic_request_signer(ecdsa_signing_key: VerifyingKey) -> RequestSigner:
     return RequestSigner(ecdsa_signing_key)
 
 
