@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_achievement_360_all(respx_mock, xbl_client):
+async def test_achievement_360_all(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://achievements.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("achievements_360_all"))
     )
@@ -19,7 +23,9 @@ async def test_achievement_360_all(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_achievement_360_earned(respx_mock, xbl_client):
+async def test_achievement_360_earned(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://achievements.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("achievements_360_earned"))
     )
@@ -33,7 +39,9 @@ async def test_achievement_360_earned(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_achievement_360_recent_progress(respx_mock, xbl_client):
+async def test_achievement_360_recent_progress(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://achievements.xboxlive.com").mock(
         return_value=Response(
             200, json=get_response_json("achievements_360_recent_progress")
@@ -51,7 +59,9 @@ async def test_achievement_360_recent_progress(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_achievement_one_details(respx_mock, xbl_client):
+async def test_achievement_one_details(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://achievements.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("achievements_one_details"))
     )
@@ -67,7 +77,9 @@ async def test_achievement_one_details(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_achievement_one_gameprogress(respx_mock, xbl_client):
+async def test_achievement_one_gameprogress(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://achievements.xboxlive.com").mock(
         return_value=Response(
             200, json=get_response_json("achievements_one_gameprogress")
@@ -83,7 +95,9 @@ async def test_achievement_one_gameprogress(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_achievement_one_recent_progress(respx_mock, xbl_client):
+async def test_achievement_one_recent_progress(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://achievements.xboxlive.com").mock(
         return_value=Response(
             200, json=get_response_json("achievements_one_recent_progress")

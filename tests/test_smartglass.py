@@ -1,13 +1,16 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from pythonxbox.api.provider.smartglass.models import InputKeyType, VolumeDirection
-
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_get_console_list(respx_mock, xbl_client):
+async def test_get_console_list(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xccs.xboxlive.com/lists/devices").mock(
         return_value=Response(200, json=get_response_json("smartglass_console_list"))
     )
@@ -18,7 +21,9 @@ async def test_get_console_list(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_installed_apps(respx_mock, xbl_client):
+async def test_get_installed_apps(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xccs.xboxlive.com/lists/installedApps").mock(
         return_value=Response(200, json=get_response_json("smartglass_installed_apps"))
     )
@@ -31,7 +36,9 @@ async def test_get_installed_apps(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_storage_devices(respx_mock, xbl_client):
+async def test_get_storage_devices(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xccs.xboxlive.com/lists/storageDevices").mock(
         return_value=Response(200, json=get_response_json("smartglass_storage_devices"))
     )
@@ -45,7 +52,9 @@ async def test_get_storage_devices(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_console_status(respx_mock, xbl_client):
+async def test_get_console_status(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xccs.xboxlive.com/consoles/ABCDEFG").mock(
         return_value=Response(200, json=get_response_json("smartglass_console_status"))
     )
@@ -56,7 +65,9 @@ async def test_get_console_status(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_get_op_status(respx_mock, xbl_client):
+async def test_get_op_status(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://xccs.xboxlive.com/opStatus").mock(
         return_value=Response(200, json=get_response_json("smartglass_op_status"))
     )
@@ -69,7 +80,7 @@ async def test_get_op_status(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_commands(respx_mock, xbl_client):
+async def test_commands(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     device_args = {"device_id": "ABCDEFG"}
     commands = [
         {"method": "wake_up", "args": {**device_args}},

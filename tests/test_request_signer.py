@@ -1,12 +1,13 @@
 import base64
 from binascii import unhexlify
+from datetime import datetime
 import pytest
 from ecdsa.keys import VerifyingKey, BadSignatureError
 
 from pythonxbox.common.request_signer import RequestSigner
 
 
-def test_synthetic_proof_key(synthetic_request_signer: RequestSigner):
+def test_synthetic_proof_key(synthetic_request_signer: RequestSigner) -> None:
     correct_proof = {
         "crv": "P-256",
         "alg": "ES256",
@@ -18,7 +19,9 @@ def test_synthetic_proof_key(synthetic_request_signer: RequestSigner):
     assert synthetic_request_signer.proof_field == correct_proof
 
 
-def test_synthetic_concat(synthetic_request_signer: RequestSigner, synthetic_timestamp):
+def test_synthetic_concat(
+    synthetic_request_signer: RequestSigner, synthetic_timestamp: datetime
+) -> None:
     ts_bytes = RequestSigner.get_timestamp_buffer(synthetic_timestamp)
 
     test_data = synthetic_request_signer._concat_data_to_sign(
@@ -37,7 +40,9 @@ def test_synthetic_concat(synthetic_request_signer: RequestSigner, synthetic_tim
     )
 
 
-def test_synthetic_hash(synthetic_request_signer: RequestSigner, synthetic_timestamp):
+def test_synthetic_hash(
+    synthetic_request_signer: RequestSigner, synthetic_timestamp: datetime
+) -> None:
     ts_bytes = RequestSigner.get_timestamp_buffer(synthetic_timestamp)
 
     test_data = synthetic_request_signer._concat_data_to_sign(
@@ -59,8 +64,8 @@ def test_synthetic_hash(synthetic_request_signer: RequestSigner, synthetic_times
 
 
 def test_synthetic_signature(
-    synthetic_request_signer: RequestSigner, synthetic_timestamp
-):
+    synthetic_request_signer: RequestSigner, synthetic_timestamp: datetime
+) -> None:
     test_signature = synthetic_request_signer.sign(
         method="POST",
         path_and_query="/path?query=1",
@@ -77,7 +82,7 @@ def test_synthetic_signature(
 
 def test_synthetic_verify_digest(
     synthetic_request_signer: RequestSigner, ecdsa_verifying_key: VerifyingKey
-):
+) -> None:
     message = unhexlify(
         "f7d61b6f8d4dcd86da1aa8553f0ee7c15450811e7cd2759364e22f67d853ff50"
     )
@@ -96,7 +101,7 @@ def test_synthetic_verify_digest(
     assert success_via_vk is True
 
 
-def test_import(ecdsa_signing_key_str: str):
+def test_import(ecdsa_signing_key_str: str) -> None:
     signer = RequestSigner.from_pem(ecdsa_signing_key_str)
     export = signer.export_signing_key()
 

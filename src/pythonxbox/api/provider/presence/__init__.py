@@ -17,7 +17,7 @@ class PresenceProvider(BaseProvider):
 
     async def get_presence(
         self,
-        xuid,
+        xuid: str,
         presence_level: PresenceLevel = PresenceLevel.USER,
         **kwargs,
     ) -> PresenceItem:

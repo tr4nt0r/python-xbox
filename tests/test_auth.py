@@ -3,11 +3,13 @@ from datetime import datetime, timedelta, UTC
 from httpx import Response
 import pytest
 
+from pythonxbox.authentication.manager import AuthenticationManager
 from tests.common import get_response_json
+from respx import MockRouter
 
 
 @pytest.mark.asyncio
-async def test_generate_auth_url(auth_mgr):
+async def test_generate_auth_url(auth_mgr: AuthenticationManager) -> None:
     url = auth_mgr.generate_authorization_url()
     assert url.startswith("https://login.live.com/oauth20_authorize.srf?")
     assert "client_id=abc" in url
@@ -15,14 +17,16 @@ async def test_generate_auth_url(auth_mgr):
 
 
 @pytest.mark.asyncio
-async def test_generate_auth_url_with_state(auth_mgr):
+async def test_generate_auth_url_with_state(auth_mgr: AuthenticationManager) -> None:
     state = "test_state"
     url = auth_mgr.generate_authorization_url(state)
     assert f"state={state}" in url
 
 
 @pytest.mark.asyncio
-async def test_request_tokens(respx_mock, auth_mgr):
+async def test_request_tokens(
+    respx_mock: MockRouter, auth_mgr: AuthenticationManager
+) -> None:
     route1 = respx_mock.post("https://login.live.com").mock(
         return_value=Response(200, json=get_response_json("auth_oauth2_token"))
     )
@@ -39,7 +43,9 @@ async def test_request_tokens(respx_mock, auth_mgr):
 
 
 @pytest.mark.asyncio
-async def test_refresh_tokens(respx_mock, auth_mgr):
+async def test_refresh_tokens(
+    respx_mock: MockRouter, auth_mgr: AuthenticationManager
+) -> None:
     # Expire Tokens
     expired = datetime.now(UTC) - timedelta(days=10)
     auth_mgr.oauth.issued = expired
@@ -62,7 +68,7 @@ async def test_refresh_tokens(respx_mock, auth_mgr):
 
 
 @pytest.mark.asyncio
-async def test_refresh_tokens_still_valid(auth_mgr):
+async def test_refresh_tokens_still_valid(auth_mgr: AuthenticationManager) -> None:
     now = datetime.now(UTC)
     auth_mgr.oauth.issued = now
     auth_mgr.user_token.not_after = now + timedelta(days=1)
@@ -71,7 +77,9 @@ async def test_refresh_tokens_still_valid(auth_mgr):
 
 
 @pytest.mark.asyncio
-async def test_refresh_tokens_user_still_valid(respx_mock, auth_mgr):
+async def test_refresh_tokens_user_still_valid(
+    respx_mock: MockRouter, auth_mgr: AuthenticationManager
+) -> None:
     # Expire Tokens
     expired = datetime.now(UTC) - timedelta(days=10)
     auth_mgr.oauth.issued = expired
@@ -90,7 +98,7 @@ async def test_refresh_tokens_user_still_valid(respx_mock, auth_mgr):
 
 
 @pytest.mark.asyncio
-async def test_xsts_properties(auth_mgr):
+async def test_xsts_properties(auth_mgr: AuthenticationManager) -> None:
     assert auth_mgr.xsts_token.xuid == "2669321029139235"
     assert auth_mgr.xsts_token.gamertag == "e"
     assert auth_mgr.xsts_token.userhash == "abcdefg"

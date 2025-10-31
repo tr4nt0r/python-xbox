@@ -3,16 +3,16 @@
 from pydantic import ConfigDict, BaseModel
 
 
-def to_pascal(string):
+def to_pascal(string: str) -> str:
     return "".join(word.capitalize() for word in string.split("_"))
 
 
-def to_camel(string):
+def to_camel(string: str) -> str:
     words = string.split("_")
     return words[0] + "".join(word.capitalize() for word in words[1:])
 
 
-def to_lower(string):
+def to_lower(string: str) -> str:
     return string.replace("_", "")
 
 

@@ -36,7 +36,7 @@ log = logging.getLogger("xbox.api")
 
 
 class Session:
-    def __init__(self, auth_mgr: AuthenticationManager):
+    def __init__(self, auth_mgr: AuthenticationManager) -> None:
         self._auth_mgr = auth_mgr
         self._cv = CorrelationVector()
 
@@ -125,7 +125,7 @@ class XboxLiveClient:
         self,
         auth_mgr: AuthenticationManager,
         language: XboxLiveLanguage = DefaultXboxLiveLanguages.United_States,
-    ):
+    ) -> None:
         self._auth_mgr = auth_mgr
         self.session = Session(auth_mgr)
         self._language = language

@@ -250,7 +250,7 @@ class SkuProperties(PascalCaseModel):
     is_bundle: bool
 
     @field_validator("last_update_date", mode="before", check_fields=True)
-    def validator(x):
+    def validator(x: "SkuProperties") -> "SkuProperties":
         return x or None
 
 

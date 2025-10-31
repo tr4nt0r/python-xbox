@@ -1,13 +1,14 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from pythonxbox.api.provider.presence.models import PresenceState
-
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_presence(respx_mock, xbl_client):
+async def test_presence(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.get("https://userpresence.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("presence"))
     )
@@ -17,7 +18,9 @@ async def test_presence(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_presence_batch(respx_mock, xbl_client):
+async def test_presence_batch(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://userpresence.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("presence_batch"))
     )
@@ -30,7 +33,7 @@ async def test_presence_batch(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_presence_too_many_people(xbl_client):
+async def test_presence_too_many_people(xbl_client: XboxLiveClient) -> None:
     xuids = range(0, 2000)
     with pytest.raises(Exception) as err:
         await xbl_client.presence.get_presence_batch(xuids)
@@ -39,7 +42,7 @@ async def test_presence_too_many_people(xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_presence_own(respx_mock, xbl_client):
+async def test_presence_own(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.get("https://userpresence.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("presence_own"))
     )
@@ -49,7 +52,9 @@ async def test_presence_own(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_presence_own_set(respx_mock, xbl_client):
+async def test_presence_own_set(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.put(
         "https://userpresence.xboxlive.com/users/xuid(2669321029139235)/state"
     ).mock(return_value=Response(200))
@@ -61,7 +66,9 @@ async def test_presence_own_set(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_presence_own_set_fail(respx_mock, xbl_client):
+async def test_presence_own_set_fail(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.put(
         "https://userpresence.xboxlive.com/users/xuid(2669321029139235)/state"
     ).mock(return_value=Response(500))

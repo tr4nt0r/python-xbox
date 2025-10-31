@@ -1,11 +1,13 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_get_list(respx_mock, xbl_client):
+async def test_get_list(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.get("https://eplists.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("lists_get_items"))
     )
@@ -16,7 +18,7 @@ async def test_get_list(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_list_add(respx_mock, xbl_client):
+async def test_list_add(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.post("https://eplists.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("list_add_item"))
     )
@@ -39,7 +41,7 @@ async def test_list_add(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_list_delete(respx_mock, xbl_client):
+async def test_list_delete(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
     route = respx_mock.delete("https://eplists.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("list_delete_item"))
     )

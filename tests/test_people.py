@@ -1,11 +1,15 @@
 from httpx import Response
 import pytest
+from respx import MockRouter
 
+from pythonxbox.api.client import XboxLiveClient
 from tests.common import get_response_json
 
 
 @pytest.mark.asyncio
-async def test_people_friends_own(respx_mock, xbl_client):
+async def test_people_friends_own(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://peoplehub.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_friends_own"))
     )
@@ -16,7 +20,9 @@ async def test_people_friends_own(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_people_friends_by_xuid(respx_mock, xbl_client):
+async def test_people_friends_by_xuid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://peoplehub.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_friends_by_xuid"))
     )
@@ -27,7 +33,9 @@ async def test_people_friends_by_xuid(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_profiles_batch(respx_mock, xbl_client):
+async def test_profiles_batch(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.post("https://peoplehub.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_batch"))
     )
@@ -41,7 +49,9 @@ async def test_profiles_batch(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_people_recommendations(respx_mock, xbl_client):
+async def test_people_recommendations(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://peoplehub.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_recommendations"))
     )
@@ -52,7 +62,9 @@ async def test_people_recommendations(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_people_summary_own(respx_mock, xbl_client):
+async def test_people_summary_own(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://social.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_summary_own"))
     )
@@ -62,7 +74,9 @@ async def test_people_summary_own(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_people_summary_by_xuid(respx_mock, xbl_client):
+async def test_people_summary_by_xuid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://social.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_summary_by_xuid"))
     )
@@ -72,7 +86,9 @@ async def test_people_summary_by_xuid(respx_mock, xbl_client):
 
 
 @pytest.mark.asyncio
-async def test_people_summary_by_gamertag(respx_mock, xbl_client):
+async def test_people_summary_by_gamertag(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
     route = respx_mock.get("https://social.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("people_summary_by_gamertag"))
     )
