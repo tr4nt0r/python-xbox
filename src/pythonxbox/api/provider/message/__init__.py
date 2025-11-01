@@ -4,6 +4,7 @@ Message - Read and send messages
 TODO: Support group messaging
 """
 
+from http import HTTPStatus
 from typing import ClassVar
 
 from pythonxbox.api.provider.baseprovider import BaseProvider
@@ -12,6 +13,8 @@ from pythonxbox.api.provider.message.models import (
     InboxResponse,
     SendMessageResponse,
 )
+
+MESSAGE_MAX_LEN = 256
 
 
 class MessageProvider(BaseProvider):
@@ -82,7 +85,7 @@ class MessageProvider(BaseProvider):
         resp = await self.client.session.put(
             url, json=post_data, headers=self.HEADERS_HORIZON, **kwargs
         )
-        return resp.status_code == 200
+        return resp.status_code == HTTPStatus.OK
 
     async def delete_message(
         self, conversation_id: str, message_id: str, **kwargs
@@ -102,7 +105,7 @@ class MessageProvider(BaseProvider):
         resp = await self.client.session.delete(
             url, headers=self.HEADERS_MESSAGE, **kwargs
         )
-        return resp.status_code == 200
+        return resp.status_code == HTTPStatus.OK
 
     async def send_message(
         self, xuid: str, message_text: str, **kwargs
@@ -117,8 +120,10 @@ class MessageProvider(BaseProvider):
         Returns:
             :class:`SendMessageResponse`: Send Message Response
         """
-        if len(message_text) > 256:
-            raise ValueError("Message text exceeds max length of 256 chars")
+        if len(message_text) > MESSAGE_MAX_LEN:
+            raise ValueError(
+                f"Message text exceeds max length of {MESSAGE_MAX_LEN} chars"
+            )
 
         url = f"{self.MSG_URL}/network/Xbox/users/me/conversations/users/xuid({xuid})"
         post_data = {

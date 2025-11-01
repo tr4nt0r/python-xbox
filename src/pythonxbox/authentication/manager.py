@@ -4,6 +4,7 @@ Authentication Manager
 Authenticate with Windows Live Server and Xbox Live.
 """
 
+from http import HTTPStatus
 import logging
 
 import httpx
@@ -152,7 +153,7 @@ class AuthenticationManager:
         }
 
         resp = await self.session.post(url, json=data, headers=headers)
-        if resp.status_code == 401:  # if unauthorized
+        if resp.status_code == HTTPStatus.UNAUTHORIZED:  # if unauthorized
             print(
                 "Failed to authorize you! Your password or username may be wrong or you are trying to use child account (< 18 years old)"
             )

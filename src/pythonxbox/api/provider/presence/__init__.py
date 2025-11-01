@@ -2,6 +2,7 @@
 Presence - Get online status of friends
 """
 
+from http import HTTPStatus
 from typing import ClassVar
 
 from pythonxbox.api.provider.baseprovider import BaseProvider
@@ -61,7 +62,9 @@ class PresenceProvider(BaseProvider):
 
         Returns: List[:class:`PresenceItem`]: List of presence items
         """
-        if len(xuids) > 1100:
+        MAX_XUIDS = 1100
+
+        if len(xuids) > MAX_XUIDS:
             raise Exception("Xuid list length is > 1100")
 
         url = self.PRESENCE_URL + "/users/batch"
@@ -112,4 +115,4 @@ class PresenceProvider(BaseProvider):
         resp = await self.client.session.put(
             url, json=data, headers=self.HEADERS_PRESENCE, **kwargs
         )
-        return resp.status_code == 200
+        return resp.status_code == HTTPStatus.OK

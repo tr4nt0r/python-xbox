@@ -151,7 +151,7 @@ class RequestSigner:
         return hash.digest()
 
     @staticmethod
-    def _concat_data_to_sign(
+    def _concat_data_to_sign(  # noqa: PLR0913
         signature_version: bytes,
         method: str,
         path_and_query: str,

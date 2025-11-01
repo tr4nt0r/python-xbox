@@ -48,7 +48,7 @@ class CQSProvider(BaseProvider):
         resp.raise_for_status()
         return CqsChannelListResponse(**resp.json())
 
-    async def get_schedule(
+    async def get_schedule(  # noqa: PLR0913
         self,
         locale_info: str,
         headend_id: str,

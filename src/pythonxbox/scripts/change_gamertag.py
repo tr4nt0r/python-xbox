@@ -19,6 +19,8 @@ from pythonxbox.authentication.models import OAuth2TokenResponse
 from pythonxbox.common.signed_session import SignedSession
 from pythonxbox.scripts import CLIENT_ID, CLIENT_SECRET, TOKENS_FILE
 
+GAMERTAG_MAX_LEN = 15
+
 
 async def async_main() -> None:
     parser = argparse.ArgumentParser(description="Change your gamertag")
@@ -44,8 +46,8 @@ async def async_main() -> None:
 
     args = parser.parse_args()
 
-    if len(args.gamertag) > 15:
-        print("Desired gamertag exceedes limit of 15 chars")
+    if len(args.gamertag) > GAMERTAG_MAX_LEN:
+        print(f"Desired gamertag exceedes limit of {GAMERTAG_MAX_LEN} chars")
         sys.exit(-1)
 
     if not os.path.exists(args.tokens):
