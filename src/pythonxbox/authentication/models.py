@@ -1,6 +1,6 @@
 """Authentication Models."""
 
-from datetime import datetime, timedelta, UTC
+from datetime import UTC, datetime, timedelta
 
 from pydantic import BaseModel, Field
 from pydantic.dataclasses import dataclass

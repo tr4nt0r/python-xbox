@@ -5,6 +5,7 @@ Subclassed by providers with rate limit support
 """
 
 from typing import TYPE_CHECKING
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.common.exceptions import XboxException
 from pythonxbox.common.ratelimits import CombinedRateLimit

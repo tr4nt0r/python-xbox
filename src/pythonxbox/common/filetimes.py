@@ -25,7 +25,7 @@
 """Tools to convert between Python datetime instances and Microsoft times."""
 
 from calendar import timegm
-from datetime import datetime, timedelta, UTC
+from datetime import UTC, datetime, timedelta
 
 # http://support.microsoft.com/kb/167296
 # How To Convert a UNIX time_t to a Win32 FILETIME or SYSTEMTIME
