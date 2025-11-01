@@ -3,6 +3,7 @@ Titlehub - Get Title history and info
 """
 
 from typing import TYPE_CHECKING
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.titlehub.models import TitleFields, TitleHubResponse
 

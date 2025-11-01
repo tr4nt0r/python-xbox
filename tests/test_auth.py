@@ -1,11 +1,11 @@
-from datetime import datetime, timedelta, UTC
+from datetime import UTC, datetime, timedelta
 
 from httpx import Response
 import pytest
+from respx import MockRouter
 
 from pythonxbox.authentication.manager import AuthenticationManager
 from tests.common import get_response_json
-from respx import MockRouter
 
 
 @pytest.mark.asyncio

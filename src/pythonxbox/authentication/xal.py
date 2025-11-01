@@ -5,10 +5,10 @@ Authenticate with Windows Live Server and Xbox Live (used by mobile Xbox Apps)
 """
 
 import base64
+from collections.abc import Callable
 import hashlib
 import logging
 import os
-from collections.abc import Callable
 from urllib import parse
 import uuid
 

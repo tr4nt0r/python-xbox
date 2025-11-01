@@ -5,7 +5,7 @@ Employed for generating the "Signature" header in authentication requests.
 """
 
 import base64
-from datetime import datetime, UTC
+from datetime import UTC, datetime
 import hashlib
 import struct
 

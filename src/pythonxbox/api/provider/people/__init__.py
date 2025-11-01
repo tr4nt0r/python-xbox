@@ -2,13 +2,14 @@
 People - Access friendlist from own profiles and others
 """
 
+from typing import TYPE_CHECKING
+
 from pythonxbox.api.provider.people.models import (
     PeopleDecoration,
     PeopleResponse,
     PeopleSummaryResponse,
 )
 from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from pythonxbox.api.client import XboxLiveClient

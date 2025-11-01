@@ -1,8 +1,9 @@
 import base64
 from binascii import unhexlify
 from datetime import datetime
+
+from ecdsa.keys import BadSignatureError, VerifyingKey
 import pytest
-from ecdsa.keys import VerifyingKey, BadSignatureError
 
 from pythonxbox.common.request_signer import RequestSigner
 

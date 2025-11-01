@@ -1,6 +1,6 @@
 """Base Models."""
 
-from pydantic import ConfigDict, BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 def to_pascal(string: str) -> str:

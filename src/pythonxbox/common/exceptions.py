@@ -3,8 +3,10 @@ Special Exception subclasses
 """
 
 from typing import Any
-from pythonxbox.common.ratelimits import RateLimit
+
 from httpx import Response
+
+from pythonxbox.common.ratelimits import RateLimit
 
 
 class XboxException(Exception):
