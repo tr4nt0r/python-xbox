@@ -95,12 +95,16 @@ class XALManager:
     @staticmethod
     def _generate_code_verifier() -> str:
         # https://tools.ietf.org/html/rfc7636
+        MIN_LEN = 43
+        MAX_LEN = 128
+
         code_verifier = (
             base64.urlsafe_b64encode(XALManager._get_random_bytes(32))
             .decode()
             .rstrip("=")
         )
-        assert len(code_verifier) >= 43 and len(code_verifier) <= 128
+        if not (MIN_LEN <= len(code_verifier) <= MAX_LEN):
+            raise ValueError(f"Invalid code_verifier length: {len(code_verifier)}")
 
         return code_verifier
 

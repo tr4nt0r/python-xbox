@@ -3,6 +3,7 @@ Userstats - Get game statistics
 """
 
 from typing import ClassVar
+
 from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 from pythonxbox.api.provider.userstats.models import (
     GeneralStatsField,
