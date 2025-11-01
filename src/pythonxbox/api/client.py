@@ -84,10 +84,9 @@ class Session:
             data = data or {}
             data.update(extra_data)
 
-        if rate_limits:
+        if rate_limits and rate_limits.is_exceeded():
             # Check if rate limits have been exceeded for this endpoint
-            if rate_limits.is_exceeded():
-                raise RateLimitExceededException("Rate limit exceeded", rate_limits)
+            raise RateLimitExceededException("Rate limit exceeded", rate_limits)
 
         response = await self._auth_mgr.session.request(
             method, url, **kwargs, headers=headers, params=params, data=data
