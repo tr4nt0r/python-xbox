@@ -173,7 +173,7 @@ class CombinedRateLimit(RateLimit):
         """
 
         # Map self.__limits to (limit).get_counter()
-        counter_map = map(lambda limit: limit.get_counter(), self.__limits)
+        counter_map = (limit.get_counter() for limit in self.__limits)
         counters = list(counter_map)
 
         # Sort the counters list by value
@@ -200,7 +200,7 @@ class CombinedRateLimit(RateLimit):
         dates_exceeded_only = filter(lambda limit: limit.is_exceeded(), self.__limits)
 
         # Map self.__limits to (limit).get_reset_after()
-        dates_map = map(lambda limit: limit.get_reset_after(), dates_exceeded_only)
+        dates_map = (limit.get_reset_after() for limit in dates_exceeded_only)
 
         # Convert the map object to a list
         dates = list(dates_map)
@@ -241,7 +241,7 @@ class CombinedRateLimit(RateLimit):
         """
 
         # Map self.__limits to (limit).is_exceeded()
-        is_exceeded_map = map(lambda limit: limit.is_exceeded(), self.__limits)
+        is_exceeded_map = (limit.is_exceeded() for limit in self.__limits)
         is_exceeded_list = list(is_exceeded_map)
 
         # Return True if any variable in list is True

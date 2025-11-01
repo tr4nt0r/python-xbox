@@ -111,7 +111,7 @@ class UserStatsProvider(RateLimitedProvider):
         post_data = {
             "arrangebyfield": "xuid",
             "groups": [{"name": "Hero", "titleId": title_id}],
-            "stats": [dict(name=stat, titleId=title_id) for stat in stats_fields],
+            "stats": [{"name": stat, "titleId": title_id} for stat in stats_fields],
             "xuids": xuids,
         }
         resp = await self.client.session.post(
@@ -150,7 +150,9 @@ class UserStatsProvider(RateLimitedProvider):
         post_data = {
             "arrangebyfield": "xuid",
             "groups": [{"name": "Hero", "scid": service_config_id}],
-            "stats": [dict(name=stat, scid=service_config_id) for stat in stats_fields],
+            "stats": [
+                {"name": stat, "scid": service_config_id} for stat in stats_fields
+            ],
             "xuids": xuids,
         }
         resp = await self.client.session.post(
