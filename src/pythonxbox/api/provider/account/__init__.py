@@ -1,3 +1,5 @@
+from typing import ClassVar
+
 from pythonxbox.api.provider.account.models import (
     ChangeGamertagResult,
     ClaimGamertagResult,
@@ -9,8 +11,8 @@ class AccountProvider(BaseProvider):
     BASE_URL_USER_MGT = "https://user.mgt.xboxlive.com"
     BASE_URL_ACCOUNT = "https://accounts.xboxlive.com"
 
-    HEADERS_USER_MGT = {"x-xbl-contract-version": "1"}
-    HEADERS_ACCOUNT = {"x-xbl-contract-version": "2"}
+    HEADERS_USER_MGT: ClassVar = {"x-xbl-contract-version": "1"}
+    HEADERS_ACCOUNT: ClassVar = {"x-xbl-contract-version": "2"}
 
     async def claim_gamertag(
         self, xuid: str, gamertag: str, **kwargs

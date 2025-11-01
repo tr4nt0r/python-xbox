@@ -2,6 +2,7 @@
 Userstats - Get game statistics
 """
 
+from typing import ClassVar
 from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 from pythonxbox.api.provider.userstats.models import (
     GeneralStatsField,
@@ -11,14 +12,14 @@ from pythonxbox.api.provider.userstats.models import (
 
 class UserStatsProvider(RateLimitedProvider):
     USERSTATS_URL = "https://userstats.xboxlive.com"
-    HEADERS_USERSTATS = {"x-xbl-contract-version": "2"}
-    HEADERS_USERSTATS_WITH_METADATA = {"x-xbl-contract-version": "3"}
+    HEADERS_USERSTATS: ClassVar = {"x-xbl-contract-version": "2"}
+    HEADERS_USERSTATS_WITH_METADATA: ClassVar = {"x-xbl-contract-version": "3"}
     SEPERATOR = ","
 
     # NOTE: Stats Read (userstats.xboxlive.com) and Stats Write (statswrite.xboxlive.com)
     # Are mentioned as their own objects but their rate limits are the same and do not collide
     # (Stats Read -> read rate limit, Stats Write -> write rate limit)
-    RATE_LIMITS = {"burst": 100, "sustain": 300}
+    RATE_LIMITS: ClassVar = {"burst": 100, "sustain": 300}
 
     async def get_stats(
         self,

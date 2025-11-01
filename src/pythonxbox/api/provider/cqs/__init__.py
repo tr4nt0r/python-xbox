@@ -5,6 +5,8 @@ Used for download stump (TV Streaming) data
 (RemoteTVInput ServiceChannel on Smartglass)
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.cqs.models import (
     CqsChannelListResponse,
@@ -14,7 +16,7 @@ from pythonxbox.api.provider.cqs.models import (
 
 class CQSProvider(BaseProvider):
     CQS_URL = "https://cqs.xboxlive.com"
-    HEADERS_CQS = {
+    HEADERS_CQS: ClassVar = {
         "Cache-Control": "no-cache",
         "Accept": "application/json",
         "Pragma": "no-cache",

@@ -2,13 +2,18 @@
 EPLists - Mainly used for XBL Pins
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.lists.models import ListMetadata, ListsResponse
 
 
 class ListsProvider(BaseProvider):
     LISTS_URL = "https://eplists.xboxlive.com"
-    HEADERS_LISTS = {"Content-Type": "application/json", "x-xbl-contract-version": "2"}
+    HEADERS_LISTS: ClassVar = {
+        "Content-Type": "application/json",
+        "x-xbl-contract-version": "2",
+    }
 
     SEPERATOR = "."
 

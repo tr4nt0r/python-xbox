@@ -2,7 +2,7 @@
 People - Access friendlist from own profiles and others
 """
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, ClassVar
 
 from pythonxbox.api.provider.people.models import (
     PeopleDecoration,
@@ -17,16 +17,16 @@ if TYPE_CHECKING:
 
 class PeopleProvider(RateLimitedProvider):
     SOCIAL_URL = "https://social.xboxlive.com"
-    HEADERS_SOCIAL = {"x-xbl-contract-version": "2"}
+    HEADERS_SOCIAL: ClassVar = {"x-xbl-contract-version": "2"}
     PEOPLE_URL = "https://peoplehub.xboxlive.com"
-    HEADERS_PEOPLE = {
+    HEADERS_PEOPLE: ClassVar = {
         "x-xbl-contract-version": "7",
         "Accept-Language": "overwrite in __init__",
     }
     SEPERATOR = ","
 
     # NOTE: Rate Limits are noted for social.xboxlive.com ONLY
-    RATE_LIMITS = {"burst": 10, "sustain": 30}
+    RATE_LIMITS: ClassVar = {"burst": 10, "sustain": 30}
 
     client: "XboxLiveClient"
 

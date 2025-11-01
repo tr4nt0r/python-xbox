@@ -2,6 +2,8 @@
 Mediahub - Fetch screenshots and gameclips
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.mediahub.models import (
     MediahubGameclips,
@@ -11,7 +13,7 @@ from pythonxbox.api.provider.mediahub.models import (
 
 class MediahubProvider(BaseProvider):
     MEDIAHUB_URL = "https://mediahub.xboxlive.com"
-    HEADERS = {"x-xbl-contract-version": "3"}
+    HEADERS: ClassVar = {"x-xbl-contract-version": "3"}
 
     async def fetch_own_clips(
         self, skip: int = 0, count: int = 500, **kwargs

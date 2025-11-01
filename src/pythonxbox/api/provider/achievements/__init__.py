@@ -4,6 +4,8 @@ Achievements
 Get Xbox 360 and Xbox One Achievement data
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.achievements.models import (
     Achievement360ProgressResponse,
     Achievement360Response,
@@ -15,10 +17,10 @@ from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 
 class AchievementsProvider(RateLimitedProvider):
     ACHIEVEMENTS_URL = "https://achievements.xboxlive.com"
-    HEADERS_GAME_360_PROGRESS = {"x-xbl-contract-version": "1"}
-    HEADERS_GAME_PROGRESS = {"x-xbl-contract-version": "2"}
+    HEADERS_GAME_360_PROGRESS: ClassVar = {"x-xbl-contract-version": "1"}
+    HEADERS_GAME_PROGRESS: ClassVar = {"x-xbl-contract-version": "2"}
 
-    RATE_LIMITS = {"burst": 100, "sustain": 300}
+    RATE_LIMITS: ClassVar = {"burst": 100, "sustain": 300}
 
     async def get_achievements_detail_item(
         self, xuid: str, service_config_id: str, achievement_id: str, **kwargs

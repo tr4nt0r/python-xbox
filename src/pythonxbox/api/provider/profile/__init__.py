@@ -4,16 +4,18 @@ Profile
 Get Userprofiles by XUID or Gamertag
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.profile.models import ProfileResponse, ProfileSettings
 from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 
 
 class ProfileProvider(RateLimitedProvider):
     PROFILE_URL = "https://profile.xboxlive.com"
-    HEADERS_PROFILE = {"x-xbl-contract-version": "3"}
+    HEADERS_PROFILE: ClassVar = {"x-xbl-contract-version": "3"}
     SEPARATOR = ","
 
-    RATE_LIMITS = {"burst": 10, "sustain": 30}
+    RATE_LIMITS: ClassVar = {"burst": 10, "sustain": 30}
 
     async def get_profiles(self, xuid_list: list[str], **kwargs) -> ProfileResponse:
         """
