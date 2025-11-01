@@ -126,7 +126,6 @@ class SingleRateLimit(RateLimit):
         if not self.__exceeded and self.__counter >= self.__limit:
             self.__exceeded = True
             # reset-after is now dependent on the time since the first request of this cycle.
-            # self.__set_reset_after()
 
     def __reset_counter_if_required(self) -> None:
         # Check to make sure reset_after is not None
