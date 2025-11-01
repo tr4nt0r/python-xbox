@@ -22,7 +22,8 @@ class XTokenResponse(PascalCaseModel):
 
 
 class XADDisplayClaims(BaseModel):
-    # {"xdi": {"did": "F.....", "dcs": "0"}}
+    """{"xdi": {"did": "F.....", "dcs": "0"}}"""
+
     xdi: dict[str, str]
 
 

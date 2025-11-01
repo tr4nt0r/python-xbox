@@ -73,7 +73,7 @@ class RateLimitedProvider(BaseProvider):
             # TODO: schema here?
             # Since the key-value pairs match we can just pass the dict to the model
             return ParsedRateLimit(**key, period=period)
-            # return ParsedRateLimit(read=key["read"], write=key["write"])
+
         else:
             raise XboxException(
                 "RATE_LIMITS value types not recognised. Must be one of 'int, 'dict'."
