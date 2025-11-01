@@ -2,6 +2,8 @@
 Presence - Get online status of friends
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.presence.models import (
     PresenceBatchResponse,
@@ -13,7 +15,10 @@ from pythonxbox.api.provider.presence.models import (
 
 class PresenceProvider(BaseProvider):
     PRESENCE_URL = "https://userpresence.xboxlive.com"
-    HEADERS_PRESENCE = {"x-xbl-contract-version": "3", "Accept": "application/json"}
+    HEADERS_PRESENCE: ClassVar = {
+        "x-xbl-contract-version": "3",
+        "Accept": "application/json",
+    }
 
     async def get_presence(
         self,

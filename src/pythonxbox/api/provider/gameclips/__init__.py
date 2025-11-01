@@ -2,13 +2,15 @@
 Gameclips - Get gameclip info
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.gameclips.models import GameclipsResponse
 
 
 class GameclipProvider(BaseProvider):
     GAMECLIPS_METADATA_URL = "https://gameclipsmetadata.xboxlive.com"
-    HEADERS_GAMECLIPS_METADATA = {"x-xbl-contract-version": "1"}
+    HEADERS_GAMECLIPS_METADATA: ClassVar = {"x-xbl-contract-version": "1"}
 
     async def get_recent_community_clips_by_title_id(
         self, title_id: str, **kwargs
@@ -31,7 +33,11 @@ class GameclipProvider(BaseProvider):
         return GameclipsResponse(**resp.json())
 
     async def get_recent_own_clips(
-        self, title_id: str = None, skip_items: int = 0, max_items: int = 25, **kwargs
+        self,
+        title_id: str | None = None,
+        skip_items: int = 0,
+        max_items: int = 25,
+        **kwargs,
     ) -> GameclipsResponse:
         """
         Get own recent clips, optionally filter for title Id
@@ -59,7 +65,7 @@ class GameclipProvider(BaseProvider):
     async def get_recent_clips_by_xuid(
         self,
         xuid: str,
-        title_id: str = None,
+        title_id: str | None = None,
         skip_items: int = 0,
         max_items: int = 25,
         **kwargs,
@@ -109,7 +115,11 @@ class GameclipProvider(BaseProvider):
         return GameclipsResponse(**resp.json())
 
     async def get_saved_own_clips(
-        self, title_id: str = None, skip_items: int = 0, max_items: int = 25, **kwargs
+        self,
+        title_id: str | None = None,
+        skip_items: int = 0,
+        max_items: int = 25,
+        **kwargs,
     ) -> GameclipsResponse:
         """
         Get own saved clips, optionally filter for title Id an
@@ -137,7 +147,7 @@ class GameclipProvider(BaseProvider):
     async def get_saved_clips_by_xuid(
         self,
         xuid: str,
-        title_id: str = None,
+        title_id: str | None = None,
         skip_items: int = 0,
         max_items: int = 25,
         **kwargs,

@@ -2,7 +2,7 @@
 SmartGlass - Control Registered Devices
 """
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, ClassVar
 from uuid import uuid4
 
 from httpx import Response
@@ -26,7 +26,7 @@ if TYPE_CHECKING:
 
 class SmartglassProvider(BaseProvider):
     SG_URL = "https://xccs.xboxlive.com"
-    HEADERS_SG = {
+    HEADERS_SG: ClassVar = {
         "x-xbl-contract-version": "4",
         "skillplatform": "RemoteManagement",
     }

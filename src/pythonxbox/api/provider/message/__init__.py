@@ -4,6 +4,8 @@ Message - Read and send messages
 TODO: Support group messaging
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.message.models import (
     ConversationResponse,
@@ -14,8 +16,8 @@ from pythonxbox.api.provider.message.models import (
 
 class MessageProvider(BaseProvider):
     MSG_URL = "https://xblmessaging.xboxlive.com"
-    HEADERS_MESSAGE = {"x-xbl-contract-version": "1"}
-    HEADERS_HORIZON = {"x-xbl-contract-version": "2"}
+    HEADERS_MESSAGE: ClassVar = {"x-xbl-contract-version": "1"}
+    HEADERS_HORIZON: ClassVar = {"x-xbl-contract-version": "2"}
 
     async def get_inbox(self, max_items: int = 100, **kwargs) -> InboxResponse:
         """

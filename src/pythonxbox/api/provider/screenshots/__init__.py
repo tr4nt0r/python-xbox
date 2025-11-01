@@ -2,13 +2,15 @@
 Screenshots - Get screenshot info
 """
 
+from typing import ClassVar
+
 from pythonxbox.api.provider.baseprovider import BaseProvider
 from pythonxbox.api.provider.screenshots.models import ScreenshotResponse
 
 
 class ScreenshotsProvider(BaseProvider):
     SCREENSHOTS_METADATA_URL = "https://screenshotsmetadata.xboxlive.com"
-    HEADERS_SCREENSHOTS_METADATA = {"x-xbl-contract-version": "5"}
+    HEADERS_SCREENSHOTS_METADATA: ClassVar = {"x-xbl-contract-version": "5"}
 
     async def get_recent_community_screenshots_by_title_id(
         self, title_id: str, **kwargs
@@ -31,7 +33,11 @@ class ScreenshotsProvider(BaseProvider):
         return ScreenshotResponse(**resp.json())
 
     async def get_recent_own_screenshots(
-        self, title_id: str = None, skip_items: int = 0, max_items: int = 25, **kwargs
+        self,
+        title_id: str | None = None,
+        skip_items: int = 0,
+        max_items: int = 25,
+        **kwargs,
     ) -> ScreenshotResponse:
         """
         Get own recent screenshots, optionally filter for title Id
@@ -59,7 +65,7 @@ class ScreenshotsProvider(BaseProvider):
     async def get_recent_screenshots_by_xuid(
         self,
         xuid: str,
-        title_id: str = None,
+        title_id: str | None = None,
         skip_items: int = 0,
         max_items: int = 25,
         **kwargs,
@@ -109,7 +115,11 @@ class ScreenshotsProvider(BaseProvider):
         return ScreenshotResponse(**resp.json())
 
     async def get_saved_own_screenshots(
-        self, title_id: str = None, skip_items: int = 0, max_items: int = 25, **kwargs
+        self,
+        title_id: str | None = None,
+        skip_items: int = 0,
+        max_items: int = 25,
+        **kwargs,
     ) -> ScreenshotResponse:
         """
         Get own saved screenshots, optionally filter for title Id an
@@ -137,7 +147,7 @@ class ScreenshotsProvider(BaseProvider):
     async def get_saved_screenshots_by_xuid(
         self,
         xuid: str,
-        title_id: str = None,
+        title_id: str | None = None,
         skip_items: int = 0,
         max_items: int = 25,
         **kwargs,

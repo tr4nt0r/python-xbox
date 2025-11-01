@@ -1,5 +1,6 @@
 from collections.abc import Callable
 from datetime import datetime, timedelta
+from typing import ClassVar
 
 from freezegun import freeze_time
 from freezegun.api import FrozenDateTimeFactory
@@ -37,7 +38,7 @@ def test_ratelimitedprovider_rate_limits_same_rw_values(
     xbl_client: XboxLiveClient,
 ) -> None:
     class child_class(RateLimitedProvider):
-        RATE_LIMITS = {"burst": 1, "sustain": 2}
+        RATE_LIMITS: ClassVar = {"burst": 1, "sustain": 2}
 
     instance = child_class(xbl_client)
 
@@ -49,7 +50,7 @@ def test_ratelimitedprovider_rate_limits_diff_rw_values(
     xbl_client: XboxLiveClient,
 ) -> None:
     class child_class(RateLimitedProvider):
-        RATE_LIMITS = {
+        RATE_LIMITS: ClassVar = {
             "burst": {"read": 1, "write": 2},
             "sustain": {"read": 3, "write": 4},
         }
@@ -62,7 +63,7 @@ def test_ratelimitedprovider_rate_limits_diff_rw_values(
 
 def test_ratelimitedprovider_rate_limits_mixed(xbl_client: XboxLiveClient) -> None:
     class burst_diff(RateLimitedProvider):
-        RATE_LIMITS = {"burst": {"read": 1, "write": 2}, "sustain": 3}
+        RATE_LIMITS: ClassVar = {"burst": {"read": 1, "write": 2}, "sustain": 3}
 
     burst_diff_inst = burst_diff(xbl_client)
 
@@ -71,7 +72,7 @@ def test_ratelimitedprovider_rate_limits_mixed(xbl_client: XboxLiveClient) -> No
     helper_test_combinedratelimit(burst_diff_inst.rate_limit_write, 2, 3)
 
     class sustain_diff(RateLimitedProvider):
-        RATE_LIMITS = {"burst": 4, "sustain": {"read": 5, "write": 6}}
+        RATE_LIMITS: ClassVar = {"burst": 4, "sustain": {"read": 5, "write": 6}}
 
     sustain_diff_inst = sustain_diff(xbl_client)
 
@@ -84,7 +85,7 @@ def test_ratelimitedprovider_rate_limits_missing_values_correct_type(
     xbl_client: XboxLiveClient,
 ) -> None:
     class child_class(RateLimitedProvider):
-        RATE_LIMITS = {"incorrect": "values"}
+        RATE_LIMITS: ClassVar = {"incorrect": "values"}
 
     with pytest.raises(XboxException) as exception:
         child_class(xbl_client)
@@ -108,7 +109,7 @@ def test_ratelimitedprovider_rate_limits_incorrect_key_type(
     xbl_client: XboxLiveClient,
 ) -> None:
     class child_class(RateLimitedProvider):
-        RATE_LIMITS = {"burst": True, "sustain": False}
+        RATE_LIMITS: ClassVar = {"burst": True, "sustain": False}
 
     with pytest.raises(XboxException) as exception:
         child_class(xbl_client)

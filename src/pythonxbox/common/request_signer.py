@@ -100,7 +100,7 @@ class RequestSigner:
         path_and_query: str,
         body: bytes = b"",
         authorization: str = "",
-        timestamp: datetime = None,
+        timestamp: datetime | None = None,
     ) -> str:
         if timestamp is None:
             timestamp = datetime.now(UTC)
