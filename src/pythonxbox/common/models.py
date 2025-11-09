@@ -1,15 +1,7 @@
 """Base Models."""
 
 from pydantic import BaseModel, ConfigDict
-
-
-def to_pascal(string: str) -> str:
-    return "".join(word.capitalize() for word in string.split("_"))
-
-
-def to_camel(string: str) -> str:
-    words = string.split("_")
-    return words[0] + "".join(word.capitalize() for word in words[1:])
+from pydantic.alias_generators import to_camel, to_pascal
 
 
 def to_lower(string: str) -> str:
