@@ -5,10 +5,10 @@ authors = [
     {name = "Manfred Dennerlein Rodelo", email = "manfred@dennerlein.name"},
 ]
 dependencies = [
-    "ecdsa",
-    "httpx",
-    "ms_cv",
-    "pydantic==2.*",
+    "ecdsa>=0.19",
+    "httpx>=0.25.1",
+    "ms_cv>=0.1.1",
+    "pydantic>=2.12",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
