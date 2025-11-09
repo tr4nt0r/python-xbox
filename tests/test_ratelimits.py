@@ -135,7 +135,7 @@ async def test_ratelimits_exceeded_burst_only(
 
     # Make as many requests as possible without exceeding
     max_request_num = xbl_client.people.RATE_LIMITS["burst"]
-    for i in range(max_request_num):
+    for _ in range(max_request_num):
         await make_request()
 
     # Make another request, ensure that it raises the exception.
