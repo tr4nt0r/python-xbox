@@ -146,9 +146,8 @@ class RequestSigner:
 
     @staticmethod
     def _hash(data: bytes) -> bytes:
-        hash = hashlib.sha256()
-        hash.update(data)
-        return hash.digest()
+        """Compute SHA-256 hash of the input data."""
+        return hashlib.sha256(data).digest()
 
     @staticmethod
     def _concat_data_to_sign(  # noqa: PLR0913
