@@ -38,7 +38,7 @@ class MediahubProvider(BaseProvider):
             url, json=post_data, headers=self.HEADERS, **kwargs
         )
         resp.raise_for_status()
-        return MediahubGameclips(**resp.json())
+        return MediahubGameclips.model_validate_json(resp.text)
 
     async def fetch_own_screenshots(
         self, skip: int = 0, count: int = 500, **kwargs
@@ -63,4 +63,4 @@ class MediahubProvider(BaseProvider):
             url, json=post_data, headers=self.HEADERS, **kwargs
         )
         resp.raise_for_status()
-        return MediahubScreenshots(**resp.json())
+        return MediahubScreenshots.model_validate_json(resp.text)

@@ -56,7 +56,7 @@ class SmartglassProvider(BaseProvider):
             "includeStorageDevices": str(include_storage_devices).lower(),
         }
         resp = await self._fetch_list("devices", params, **kwargs)
-        return SmartglassConsoleList(**resp.json())
+        return SmartglassConsoleList.model_validate_json(resp.text)
 
     async def get_installed_apps(
         self, device_id: str | None = None, **kwargs
@@ -73,7 +73,7 @@ class SmartglassProvider(BaseProvider):
         if device_id:
             params["deviceId"] = device_id
         resp = await self._fetch_list("installedApps", params, **kwargs)
-        return InstalledPackagesList(**resp.json())
+        return InstalledPackagesList.model_validate_json(resp.text)
 
     async def get_storage_devices(self, device_id: str, **kwargs) -> StorageDevicesList:
         """
@@ -86,7 +86,7 @@ class SmartglassProvider(BaseProvider):
         """
         params = {"deviceId": device_id}
         resp = await self._fetch_list("storageDevices", params, **kwargs)
-        return StorageDevicesList(**resp.json())
+        return StorageDevicesList.model_validate_json(resp.text)
 
     async def get_console_status(
         self, device_id: str, **kwargs
@@ -102,7 +102,7 @@ class SmartglassProvider(BaseProvider):
         url = f"{self.SG_URL}/consoles/{device_id}"
         resp = await self.client.session.get(url, headers=self.HEADERS_SG, **kwargs)
         resp.raise_for_status()
-        return SmartglassConsoleStatus(**resp.json())
+        return SmartglassConsoleStatus.model_validate_json(resp.text)
 
     async def get_op_status(
         self, device_id: str, op_id: str, **kwargs
@@ -124,7 +124,7 @@ class SmartglassProvider(BaseProvider):
         }
         resp = await self.client.session.get(url, headers=headers, **kwargs)
         resp.raise_for_status()
-        return OperationStatusResponse(**resp.json())
+        return OperationStatusResponse.model_validate_json(resp.text)
 
     async def wake_up(self, device_id: str, **kwargs) -> CommandResponse:
         """
@@ -399,4 +399,4 @@ class SmartglassProvider(BaseProvider):
             url, json=body, headers=self.HEADERS_SG, **kwargs
         )
         resp.raise_for_status()
-        return CommandResponse(**resp.json())
+        return CommandResponse.model_validate_json(resp.text)

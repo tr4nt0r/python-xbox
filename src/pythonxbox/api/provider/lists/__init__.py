@@ -35,7 +35,7 @@ class ListsProvider(BaseProvider):
             url, json=post_body, headers=self.HEADERS_LISTS, **kwargs
         )
         resp.raise_for_status()
-        return ListMetadata(**resp.json())
+        return ListMetadata.model_validate_json(resp.text)
 
     async def get_items(
         self, xuid: str, listname: str = "XBLPins", **kwargs
@@ -53,7 +53,7 @@ class ListsProvider(BaseProvider):
         url = self.LISTS_URL + f"/users/xuid({xuid})/lists/PINS/{listname}"
         resp = await self.client.session.get(url, headers=self.HEADERS_LISTS, **kwargs)
         resp.raise_for_status()
-        return ListsResponse(**resp.json())
+        return ListsResponse.model_validate_json(resp.text)
 
     async def insert_items(
         self, xuid: str, post_body: dict, listname: str = "XBLPins", **kwargs
@@ -73,4 +73,4 @@ class ListsProvider(BaseProvider):
             url, json=post_body, headers=self.HEADERS_LISTS, **kwargs
         )
         resp.raise_for_status()
-        return ListMetadata(**resp.json())
+        return ListMetadata.model_validate_json(resp.text)

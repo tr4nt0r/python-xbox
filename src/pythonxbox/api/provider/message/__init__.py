@@ -35,7 +35,7 @@ class MessageProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_MESSAGE, **kwargs
         )
         resp.raise_for_status()
-        return InboxResponse(**resp.json())
+        return InboxResponse.model_validate_json(resp.text)
 
     async def get_conversation(
         self, xuid: str, max_items: int = 100, **kwargs
@@ -55,7 +55,7 @@ class MessageProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_MESSAGE, **kwargs
         )
         resp.raise_for_status()
-        return ConversationResponse(**resp.json())
+        return ConversationResponse.model_validate_json(resp.text)
 
     async def delete_conversation(
         self, conversation_id: str, horizon: str, **kwargs
@@ -139,4 +139,4 @@ class MessageProvider(BaseProvider):
             url, json=post_data, headers=self.HEADERS_MESSAGE, **kwargs
         )
         resp.raise_for_status()
-        return SendMessageResponse(**resp.json())
+        return SendMessageResponse.model_validate_json(resp.text)

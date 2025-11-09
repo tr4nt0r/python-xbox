@@ -36,7 +36,7 @@ class CatalogProvider(BaseProvider):
             url, params=params, include_auth=False, **kwargs
         )
         resp.raise_for_status()
-        return CatalogResponse(**resp.json())
+        return CatalogResponse.model_validate_json(resp.text)
 
     async def get_product_from_alternate_id(
         self,
@@ -60,7 +60,7 @@ class CatalogProvider(BaseProvider):
             url, params=params, include_auth=False, **kwargs
         )
         resp.raise_for_status()
-        return CatalogResponse(**resp.json())
+        return CatalogResponse.model_validate_json(resp.text)
 
     async def product_search(
         self,
@@ -83,4 +83,4 @@ class CatalogProvider(BaseProvider):
             url, params=params, include_auth=False, **kwargs
         )
         resp.raise_for_status()
-        return CatalogSearchResponse(**resp.json())
+        return CatalogSearchResponse.model_validate_json(resp.text)

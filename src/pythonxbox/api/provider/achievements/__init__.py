@@ -44,7 +44,7 @@ class AchievementsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return AchievementResponse(**resp.json())
+        return AchievementResponse.model_validate_json(resp.text)
 
     async def get_achievements_xbox360_all(
         self, xuid: str, title_id: str, **kwargs
@@ -69,7 +69,7 @@ class AchievementsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return Achievement360Response(**resp.json())
+        return Achievement360Response.model_validate_json(resp.text)
 
     async def get_achievements_xbox360_earned(
         self, xuid: str, title_id: str, **kwargs
@@ -94,7 +94,7 @@ class AchievementsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return Achievement360Response(**resp.json())
+        return Achievement360Response.model_validate_json(resp.text)
 
     async def get_achievements_xbox360_recent_progress_and_info(
         self, xuid: str, **kwargs
@@ -116,7 +116,7 @@ class AchievementsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return Achievement360ProgressResponse(**resp.json())
+        return Achievement360ProgressResponse.model_validate_json(resp.text)
 
     async def get_achievements_xboxone_gameprogress(
         self, xuid: str, title_id: str, **kwargs
@@ -141,7 +141,7 @@ class AchievementsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return AchievementResponse(**resp.json())
+        return AchievementResponse.model_validate_json(resp.text)
 
     async def get_achievements_xboxone_recent_progress_and_info(
         self, xuid: str, **kwargs
@@ -163,4 +163,4 @@ class AchievementsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return RecentProgressResponse(**resp.json())
+        return RecentProgressResponse.model_validate_json(resp.text)

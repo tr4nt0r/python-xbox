@@ -30,7 +30,7 @@ class ScreenshotsProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_SCREENSHOTS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return ScreenshotResponse(**resp.json())
+        return ScreenshotResponse.model_validate_json(resp.text)
 
     async def get_recent_own_screenshots(
         self,
@@ -60,7 +60,7 @@ class ScreenshotsProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_SCREENSHOTS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return ScreenshotResponse(**resp.json())
+        return ScreenshotResponse.model_validate_json(resp.text)
 
     async def get_recent_screenshots_by_xuid(
         self,
@@ -92,7 +92,7 @@ class ScreenshotsProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_SCREENSHOTS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return ScreenshotResponse(**resp.json())
+        return ScreenshotResponse.model_validate_json(resp.text)
 
     async def get_saved_community_screenshots_by_title_id(
         self, title_id: str, **kwargs
@@ -112,7 +112,7 @@ class ScreenshotsProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_SCREENSHOTS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return ScreenshotResponse(**resp.json())
+        return ScreenshotResponse.model_validate_json(resp.text)
 
     async def get_saved_own_screenshots(
         self,
@@ -142,7 +142,7 @@ class ScreenshotsProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_SCREENSHOTS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return ScreenshotResponse(**resp.json())
+        return ScreenshotResponse.model_validate_json(resp.text)
 
     async def get_saved_screenshots_by_xuid(
         self,
@@ -174,4 +174,4 @@ class ScreenshotsProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_SCREENSHOTS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return ScreenshotResponse(**resp.json())
+        return ScreenshotResponse.model_validate_json(resp.text)

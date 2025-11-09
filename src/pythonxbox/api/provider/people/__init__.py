@@ -62,7 +62,7 @@ class PeopleProvider(RateLimitedProvider):
         url = f"{self.PEOPLE_URL}/users/me/people/friends/decoration/{decoration}"
         resp = await self.client.session.get(url, headers=self._headers, **kwargs)
         resp.raise_for_status()
-        return PeopleResponse(**resp.json())
+        return PeopleResponse.model_validate_json(resp.text)
 
     async def get_friends_by_xuid(
         self,
@@ -88,7 +88,7 @@ class PeopleProvider(RateLimitedProvider):
         url = f"{self.PEOPLE_URL}/users/me/people/xuids({xuid})/decoration/{decoration}"
         resp = await self.client.session.get(url, headers=self._headers, **kwargs)
         resp.raise_for_status()
-        return PeopleResponse(**resp.json())
+        return PeopleResponse.model_validate_json(resp.text)
 
     async def get_friends_own_batch(
         self,
@@ -119,7 +119,7 @@ class PeopleProvider(RateLimitedProvider):
             url, json={"xuids": xuids}, headers=self._headers, **kwargs
         )
         resp.raise_for_status()
-        return PeopleResponse(**resp.json())
+        return PeopleResponse.model_validate_json(resp.text)
 
     async def get_friend_recommendations(
         self, decoration_fields: list[PeopleDecoration] | None = None, **kwargs
@@ -139,7 +139,7 @@ class PeopleProvider(RateLimitedProvider):
         )
         resp = await self.client.session.get(url, headers=self._headers, **kwargs)
         resp.raise_for_status()
-        return PeopleResponse(**resp.json())
+        return PeopleResponse.model_validate_json(resp.text)
 
     async def get_friends_summary_own(self, **kwargs) -> PeopleSummaryResponse:
         """
@@ -153,7 +153,7 @@ class PeopleProvider(RateLimitedProvider):
             url, headers=self.HEADERS_SOCIAL, rate_limits=self.rate_limit_read, **kwargs
         )
         resp.raise_for_status()
-        return PeopleSummaryResponse(**resp.json())
+        return PeopleSummaryResponse.model_validate_json(resp.text)
 
     async def get_friends_summary_by_xuid(
         self, xuid: str, **kwargs
@@ -172,7 +172,7 @@ class PeopleProvider(RateLimitedProvider):
             url, headers=self.HEADERS_SOCIAL, rate_limits=self.rate_limit_read, **kwargs
         )
         resp.raise_for_status()
-        return PeopleSummaryResponse(**resp.json())
+        return PeopleSummaryResponse.model_validate_json(resp.text)
 
     async def get_friends_summary_by_gamertag(
         self, gamertag: str, **kwargs
@@ -191,4 +191,4 @@ class PeopleProvider(RateLimitedProvider):
             url, headers=self.HEADERS_SOCIAL, rate_limits=self.rate_limit_read, **kwargs
         )
         resp.raise_for_status()
-        return PeopleSummaryResponse(**resp.json())
+        return PeopleSummaryResponse.model_validate_json(resp.text)

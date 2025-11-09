@@ -63,7 +63,7 @@ class TitlehubProvider(BaseProvider):
             url, params=params, headers=self._headers, **kwargs
         )
         resp.raise_for_status()
-        return TitleHubResponse(**resp.json())
+        return TitleHubResponse.model_validate_json(resp.text)
 
     async def _get_title_info(
         self, moniker: str, fields: list[TitleFields] | None = None, **kwargs
@@ -81,7 +81,7 @@ class TitlehubProvider(BaseProvider):
         url = f"{self.TITLEHUB_URL}/users/xuid({self.client.xuid})/titles/{moniker}/decoration/{fields}"
         resp = await self.client.session.get(url, headers=self._headers, **kwargs)
         resp.raise_for_status()
-        return TitleHubResponse(**resp.json())
+        return TitleHubResponse.model_validate_json(resp.text)
 
     async def get_title_info(
         self, title_id: str, fields: list[TitleFields] | None = None, **kwargs
@@ -141,4 +141,4 @@ class TitlehubProvider(BaseProvider):
             url, json=post_data, headers=self._headers, **kwargs
         )
         resp.raise_for_status()
-        return TitleHubResponse(**resp.json())
+        return TitleHubResponse.model_validate_json(resp.text)
