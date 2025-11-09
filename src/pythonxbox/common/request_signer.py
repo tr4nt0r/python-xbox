@@ -179,11 +179,13 @@ class RequestSigner:
 
     @staticmethod
     def __base64_escaped(binary: bytes) -> str:
-        encoded = base64.b64encode(binary).decode("ascii")
-        encoded = encoded.rstrip("=")
-        encoded = encoded.replace("+", "-")
-        encoded = encoded.replace("/", "_")
-        return encoded
+        return (
+            base64.b64encode(binary)
+            .decode("ascii")
+            .rstrip("=")
+            .replace("+", "-")
+            .replace("/", "_")
+        )
 
     @staticmethod
     def __encode_ec_coord(coord: int) -> str:

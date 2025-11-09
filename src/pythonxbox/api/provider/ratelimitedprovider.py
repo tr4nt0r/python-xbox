@@ -69,12 +69,11 @@ class RateLimitedProvider(BaseProvider):
         if isinstance(key, int) and not isinstance(key, bool):
             # bool is a subclass of int, hence the explicit check
             return ParsedRateLimit(read=key, write=key, period=period)
-        elif isinstance(key, dict):
+        if isinstance(key, dict):
             # TODO: schema here?
             # Since the key-value pairs match we can just pass the dict to the model
             return ParsedRateLimit(**key, period=period)
 
-        else:
-            raise XboxException(
-                "RATE_LIMITS value types not recognised. Must be one of 'int, 'dict'."
-            )
+        raise XboxException(
+            "RATE_LIMITS value types not recognised. Must be one of 'int, 'dict'."
+        )
