@@ -40,7 +40,7 @@ class CatalogProvider(BaseProvider):
 
     async def get_product_from_alternate_id(
         self,
-        id: str,
+        id: str,  # noqa: A002
         id_type: AlternateIdType,
         fields: FieldsTemplate = FieldsTemplate.DETAILS,
         top: int = 25,

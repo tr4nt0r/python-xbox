@@ -59,7 +59,7 @@ class SingleRateLimit(RateLimit):
     This class is mainly used by the CombinedRateLimit class.
     """
 
-    def __init__(self, time_period: TimePeriod, type: LimitType, limit: int) -> None:
+    def __init__(self, time_period: TimePeriod, type: LimitType, limit: int) -> None:  # noqa: A002
         self.__time_period = time_period
         self.__type = type
         self.__limit = limit
@@ -148,7 +148,7 @@ class CombinedRateLimit(RateLimit):
 
     """
 
-    def __init__(self, *parsed_limits: ParsedRateLimit, type: LimitType) -> None:
+    def __init__(self, *parsed_limits: ParsedRateLimit, type: LimitType) -> None:  # noqa: A002
         # *parsed_limits is a tuple
 
         # Create a SingleRateLimit instance for each limit
