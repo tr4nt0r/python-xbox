@@ -9,21 +9,21 @@ jobs:
         os: [windows-latest, ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v5
-    - name: Install Hatch
-      uses: pypa/hatch@install
-    - name: Lint and typecheck
-      run: |
-        hatch fmt --linter
-    - name: Test
-      run: |
-        hatch test --all
+      - uses: actions/checkout@v5
+      - name: Install Hatch
+        uses: pypa/hatch@install
+      - name: Lint and typecheck
+        run: |
+          hatch fmt --linter
+      - name: Test
+        run: |
+          hatch test --all
 
-    - uses: codecov/codecov-action@v5
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        fail_ci_if_error: false
-        verbose: true
+      - uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false
+          verbose: true
 
   release:
     runs-on: ubuntu-latest
@@ -31,45 +31,44 @@ jobs:
     needs: test
     if: startsWith(github.ref, 'refs/tags/')
     permissions:
-        contents: write
-        id-token: write
+      contents: write
+      id-token: write
 
     steps:
-    - uses: actions/checkout@v5
-    - name: Install dependencies
-      shell: bash
-      run: pipx install hatch
-    - name: mint API token
-      id: mint-token
-      run: |
-        # retrieve the ambient OIDC token
-        resp=$(curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-        "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=pypi")
-        oidc_token=$(jq -r '.value' <<< "${resp}")
+      - uses: actions/checkout@v5
+      - name: Install Hatch
+        uses: pypa/hatch@install
+      - name: mint API token
+        id: mint-token
+        run: |
+          # retrieve the ambient OIDC token
+          resp=$(curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+          "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=pypi")
+          oidc_token=$(jq -r '.value' <<< "${resp}")
 
-        # exchange the OIDC token for an API token
-        resp=$(curl -X POST https://pypi.org/_/oidc/mint-token -d "{\"token\": \"${oidc_token}\"}")
-        api_token=$(jq -r '.token' <<< "${resp}")
+          # exchange the OIDC token for an API token
+          resp=$(curl -X POST https://pypi.org/_/oidc/mint-token -d "{\"token\": \"${oidc_token}\"}")
+          api_token=$(jq -r '.token' <<< "${resp}")
 
-        # mask the newly minted API token, so that we don't accidentally leak it
-        echo "::add-mask::${api_token}"
+          # mask the newly minted API token, so that we don't accidentally leak it
+          echo "::add-mask::${api_token}"
 
-        # see the next step in the workflow for an example of using this step output
-        echo "api-token=${api_token}" >> "${GITHUB_OUTPUT}"
-    - name: Build and publish on PyPI
-      env:
-        HATCH_INDEX_USER: __token__
-        HATCH_INDEX_AUTH: ${{ steps.mint-token.outputs.api-token }}
-      run: |
-        hatch build
-        hatch publish
-    - name: Create release
-      uses: ncipollo/release-action@v1
-      with:
-        draft: true
-        body: ${{ github.event.head_commit.message }}
-        allowUpdates: true
-        omitBodyDuringUpdate: true
-        updateOnlyUnreleased: true
-        artifacts: dist/*.whl,dist/*.tar.gz
-        token: ${{ secrets.GITHUB_TOKEN }}
+          # see the next step in the workflow for an example of using this step output
+          echo "api-token=${api_token}" >> "${GITHUB_OUTPUT}"
+      - name: Build and publish on PyPI
+        env:
+          HATCH_INDEX_USER: __token__
+          HATCH_INDEX_AUTH: ${{ steps.mint-token.outputs.api-token }}
+        run: |
+          hatch build
+          hatch publish
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          draft: true
+          body: ${{ github.event.head_commit.message }}
+          allowUpdates: true
+          omitBodyDuringUpdate: true
+          updateOnlyUnreleased: true
+          artifacts: dist/*.whl,dist/*.tar.gz
+          token: ${{ secrets.GITHUB_TOKEN }}
