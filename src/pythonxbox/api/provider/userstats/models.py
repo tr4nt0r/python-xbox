@@ -1,4 +1,4 @@
-from pythonxbox.common.models import LowerCaseModel, PascalCaseModel
+from pythonxbox.common.models import FlatCaseModel, PascalCaseModel
 
 
 class GeneralStatsField:
@@ -17,7 +17,7 @@ class Properties(PascalCaseModel):
     display_name: str | None = None
 
 
-class Stat(LowerCaseModel):
+class Stat(FlatCaseModel):
     group_properties: GroupProperties | None = None
     xuid: str
     scid: str
@@ -27,18 +27,18 @@ class Stat(LowerCaseModel):
     properties: Properties
 
 
-class StatListsCollectionItem(LowerCaseModel):
+class StatListsCollectionItem(FlatCaseModel):
     arrange_by_field: str
     arrange_by_field_id: str
     stats: list[Stat]
 
 
-class Group(LowerCaseModel):
+class Group(FlatCaseModel):
     name: str
     title_id: str | None = None
     statlistscollection: list[StatListsCollectionItem]
 
 
-class UserStatsResponse(LowerCaseModel):
+class UserStatsResponse(FlatCaseModel):
     groups: list[Group] | None = None
     statlistscollection: list[StatListsCollectionItem]
