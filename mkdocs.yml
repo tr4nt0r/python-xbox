@@ -1,0 +1,109 @@
+site_name: python-xbox
+site_description: A library to authenticate with Xbox Network and use their API
+
+repo_url: https://github.com/tr4nt0r/python-xbox
+repo_name: tr4nt0r/python-xbox
+
+theme:
+    name: material
+    icon:
+        logo: material/library
+    palette:
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+              icon: material/brightness-auto
+              name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: pink
+          accent: purple
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: pink
+          accent: purple
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+
+markdown_extensions:
+    - toc:
+          permalink: true
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+
+plugins:
+    - search
+    - mkdocstrings:
+          handlers:
+              python:
+                  paths: [src]
+                  inventories:
+                      - https://docs.python.org/3.14/objects.inv
+                  options:
+                      docstring_style: google
+                      merge_init_into_class: true
+                      show_root_members_full_path: true
+                      show_symbol_type_toc: true
+                      show_symbol_type_heading: true
+                      show_if_no_docstring: true
+                      members_order: source
+
+watch:
+    - docs
+    - src
+
+nav:
+    - About: index.md
+    - Reference:
+          - Xbox Live Client: reference/client.md
+          - Language definitions: reference/language.md
+          - Provider:
+                - Account: reference/account.md
+                - Achievements: reference/achievements.md
+                - Catalog: reference/catalog.md
+                - CQS: reference/cqs.md
+                - Gameclips: reference/gameclips.md
+                - Lists: reference/lists.md
+                - Mediahub: reference/mediahub.md
+                - Message: reference/message.md
+                - People: reference/people.md
+                - Presence: reference/presence.md
+                - Profile: reference/profile.md
+                - Screenshots: reference/screenshots.md
+                - Smartglass: reference/smartglass.md
+                - Titlehub: reference/titlehub.md
+                - Usersearch: reference/usersearch.md
+                - Userstats: reference/userstats.md
+          - Authentication:
+                - Authentication manager: reference/manager.md
+                - XAL manager: reference/xalmanager.md
+          - Models:
+                - Account: reference/account_models.md
+                - Achievements: reference/achievements_models.md
+                - Catalog: reference/catalog_models.md
+                - CQS: reference/cqs_models.md
+                - Gameclips: reference/gameclips_models.md
+                - Lists: reference/lists_models.md
+                - Mediahub: reference/mediahub_models.md
+                - Message: reference/message_models.md
+                - People: reference/people_models.md
+                - Presence: reference/presence_models.md
+                - Profile: reference/profile_models.md
+                - Screenshots: reference/screenshots_models.md
+                - Smartglass: reference/smartglass_models.md
+                - Titlehub: reference/titlehub_models.md
+                - Usersearch: reference/usersearch_models.md
+                - Userstats: reference/userstats_models.md

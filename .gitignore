@@ -74,3 +74,5 @@ target/
 # Node
 node_modules
 
+# mkdocs site
+site/
