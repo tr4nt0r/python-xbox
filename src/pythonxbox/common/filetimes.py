@@ -77,5 +77,4 @@ def filetime_to_dt(ft: int) -> datetime:
     # Convert to datetime object
     dt = datetime.fromtimestamp(s, UTC)
     # Add remainder in as microseconds. Python 3.2 requires an integer
-    dt = dt.replace(microsecond=(ns100 // 10))
-    return dt
+    return dt.replace(microsecond=(ns100 // 10))

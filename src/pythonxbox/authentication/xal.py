@@ -112,9 +112,7 @@ class XALManager:
     def _get_code_challenge_from_code_verifier(code_verifier: str) -> str:
         code_challenge = hashlib.sha256(code_verifier.encode()).digest()
         # Base64 urlsafe encoding WITH stripping trailing '='
-        code_challenge = base64.urlsafe_b64encode(code_challenge).decode().rstrip("=")
-
-        return code_challenge
+        return base64.urlsafe_b64encode(code_challenge).decode().rstrip("=")
 
     @staticmethod
     def _generate_random_state() -> str:
@@ -345,8 +343,6 @@ class XALManager:
         )
 
         # Do Sisu authorization
-        sisu_authorization = await self.do_sisu_authorization(
+        return await self.do_sisu_authorization(
             sisu_session_id, tokens.access_token, device_token_resp.token
         )
-
-        return sisu_authorization

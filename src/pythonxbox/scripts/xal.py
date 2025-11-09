@@ -42,12 +42,11 @@ def user_prompt_authentication(auth_url: str) -> str:
     Takes the redirect URL from stdin
     """
 
-    redirect_url = input(
+    return input(
         f"Continue auth with the following URL:\n\n"
         f"URL: {auth_url}\n\n"
         f"Provide redirect URI: "
     )
-    return redirect_url
 
 
 async def do_auth(device_id: uuid.UUID, token_filepath: str) -> None:
