@@ -25,19 +25,13 @@ DEFAULT_SCOPES = ["Xboxlive.signin", "Xboxlive.offline_access"]
 class AuthenticationManager:
     def __init__(
         self,
-        client_session: SignedSession,
+        client_session: SignedSession | httpx.AsyncClient,
         client_id: str,
         client_secret: str,
         redirect_uri: str,
         scopes: list[str] | None = None,
     ) -> None:
-        if not isinstance(client_session, (SignedSession, httpx.AsyncClient)):
-            raise DeprecationWarning(
-                """Xbox WebAPI changed to use SignedSession (wrapped httpx.AsyncClient).
-                Please check the documentation"""
-            )
-
-        self.session: SignedSession = client_session
+        self.session = client_session
         self._client_id: str = client_id
         self._client_secret: str = client_secret
         self._redirect_uri: str = redirect_uri
