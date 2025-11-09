@@ -23,6 +23,10 @@ DEFAULT_SCOPES = ["Xboxlive.signin", "Xboxlive.offline_access"]
 
 
 class AuthenticationManager:
+    oauth: OAuth2TokenResponse | None = None
+    user_token: XAUResponse | None = None
+    xsts_token: XSTSResponse | None = None
+
     def __init__(
         self,
         client_session: SignedSession | httpx.AsyncClient,
@@ -32,14 +36,10 @@ class AuthenticationManager:
         scopes: list[str] | None = None,
     ) -> None:
         self.session = client_session
-        self._client_id: str = client_id
-        self._client_secret: str = client_secret
-        self._redirect_uri: str = redirect_uri
-        self._scopes: list[str] = scopes or DEFAULT_SCOPES
-
-        self.oauth: OAuth2TokenResponse = None
-        self.user_token: XAUResponse = None
-        self.xsts_token: XSTSResponse = None
+        self._client_id = client_id
+        self._client_secret = client_secret
+        self._redirect_uri = redirect_uri
+        self._scopes = scopes or DEFAULT_SCOPES
 
     def generate_authorization_url(self, state: str | None = None) -> str:
         """Generate Windows Live Authorization URL."""
@@ -148,9 +148,10 @@ class AuthenticationManager:
 
         resp = await self.session.post(url, json=data, headers=headers)
         if resp.status_code == HTTPStatus.UNAUTHORIZED:  # if unauthorized
-            print(
-                "Failed to authorize you! Your password or username may be wrong or you are trying to use child account (< 18 years old)"
+            msg = (
+                "Failed to authorize you! Your password or username may be wrong or"
+                " you are trying to use child account (< 18 years old)"
             )
-            raise AuthenticationException()
+            raise AuthenticationException(msg)
         resp.raise_for_status()
         return XSTSResponse.model_validate_json(resp.text)
