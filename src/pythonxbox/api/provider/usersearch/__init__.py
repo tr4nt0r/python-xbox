@@ -28,4 +28,4 @@ class UserSearchProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_USER_SEARCH, **kwargs
         )
         resp.raise_for_status()
-        return UserSearchResponse(**resp.json())
+        return UserSearchResponse.model_validate_json(resp.text)

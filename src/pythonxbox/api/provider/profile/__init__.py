@@ -55,7 +55,7 @@ class ProfileProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return ProfileResponse(**resp.json())
+        return ProfileResponse.model_validate_json(resp.text)
 
     async def get_profile_by_xuid(self, target_xuid: str, **kwargs) -> ProfileResponse:
         """
@@ -97,7 +97,7 @@ class ProfileProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return ProfileResponse(**resp.json())
+        return ProfileResponse.model_validate_json(resp.text)
 
     async def get_profile_by_gamertag(self, gamertag: str, **kwargs) -> ProfileResponse:
         """
@@ -139,4 +139,4 @@ class ProfileProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return ProfileResponse(**resp.json())
+        return ProfileResponse.model_validate_json(resp.text)

@@ -52,7 +52,7 @@ class UserStatsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return UserStatsResponse(**resp.json())
+        return UserStatsResponse.model_validate_json(resp.text)
 
     async def get_stats_with_metadata(
         self,
@@ -86,7 +86,7 @@ class UserStatsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return UserStatsResponse(**resp.json())
+        return UserStatsResponse.model_validate_json(resp.text)
 
     async def get_stats_batch(
         self,
@@ -124,7 +124,7 @@ class UserStatsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return UserStatsResponse(**resp.json())
+        return UserStatsResponse.model_validate_json(resp.text)
 
     async def get_stats_batch_by_scid(
         self,
@@ -165,4 +165,4 @@ class UserStatsProvider(RateLimitedProvider):
             **kwargs,
         )
         resp.raise_for_status()
-        return UserStatsResponse(**resp.json())
+        return UserStatsResponse.model_validate_json(resp.text)

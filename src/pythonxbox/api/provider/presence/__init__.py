@@ -43,7 +43,7 @@ class PresenceProvider(BaseProvider):
             url, headers=self.HEADERS_PRESENCE, **kwargs
         )
         resp.raise_for_status()
-        return PresenceItem(**resp.json())
+        return PresenceItem.model_validate_json(resp.text)
 
     async def get_presence_batch(
         self,
@@ -98,7 +98,7 @@ class PresenceProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_PRESENCE, **kwargs
         )
         resp.raise_for_status()
-        return PresenceItem(**resp.json())
+        return PresenceItem.model_validate_json(resp.text)
 
     async def set_presence_own(self, presence_state: PresenceState, **kwargs) -> bool:
         """

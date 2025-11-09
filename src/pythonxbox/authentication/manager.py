@@ -111,7 +111,7 @@ class AuthenticationManager:
             "https://login.live.com/oauth20_token.srf", data=data
         )
         resp.raise_for_status()
-        return OAuth2TokenResponse(**resp.json())
+        return OAuth2TokenResponse.model_validate_json(resp.text)
 
     async def request_user_token(
         self,
@@ -135,7 +135,7 @@ class AuthenticationManager:
 
         resp = await self.session.post(url, json=data, headers=headers)
         resp.raise_for_status()
-        return XAUResponse(**resp.json())
+        return XAUResponse.model_validate_json(resp.text)
 
     async def request_xsts_token(
         self, relying_party: str = "http://xboxlive.com"
@@ -159,4 +159,4 @@ class AuthenticationManager:
             )
             raise AuthenticationException()
         resp.raise_for_status()
-        return XSTSResponse(**resp.json())
+        return XSTSResponse.model_validate_json(resp.text)

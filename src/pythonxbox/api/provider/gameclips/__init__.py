@@ -30,7 +30,7 @@ class GameclipProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_GAMECLIPS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return GameclipsResponse(**resp.json())
+        return GameclipsResponse.model_validate_json(resp.text)
 
     async def get_recent_own_clips(
         self,
@@ -60,7 +60,7 @@ class GameclipProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_GAMECLIPS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return GameclipsResponse(**resp.json())
+        return GameclipsResponse.model_validate_json(resp.text)
 
     async def get_recent_clips_by_xuid(
         self,
@@ -92,7 +92,7 @@ class GameclipProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_GAMECLIPS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return GameclipsResponse(**resp.json())
+        return GameclipsResponse.model_validate_json(resp.text)
 
     async def get_saved_community_clips_by_title_id(
         self, title_id: str, **kwargs
@@ -112,7 +112,7 @@ class GameclipProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_GAMECLIPS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return GameclipsResponse(**resp.json())
+        return GameclipsResponse.model_validate_json(resp.text)
 
     async def get_saved_own_clips(
         self,
@@ -142,7 +142,7 @@ class GameclipProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_GAMECLIPS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return GameclipsResponse(**resp.json())
+        return GameclipsResponse.model_validate_json(resp.text)
 
     async def get_saved_clips_by_xuid(
         self,
@@ -174,4 +174,4 @@ class GameclipProvider(BaseProvider):
             url, params=params, headers=self.HEADERS_GAMECLIPS_METADATA, **kwargs
         )
         resp.raise_for_status()
-        return GameclipsResponse(**resp.json())
+        return GameclipsResponse.model_validate_json(resp.text)

@@ -129,7 +129,7 @@ class XALManager:
         params = {"type": 1}
         resp = await session.get(url, headers=headers, params=params)
         resp.raise_for_status()
-        return TitleEndpointsResponse(**resp.json())
+        return TitleEndpointsResponse.model_validate_json(resp.text)
 
     async def request_device_token(self) -> XADResponse:
         # Proof of possession: https://tools.ietf.org/html/rfc7800
@@ -160,7 +160,7 @@ class XALManager:
 
         resp = await self.session.send_signed("POST", url, headers=headers, json=data)
         resp.raise_for_status()
-        return XADResponse(**resp.json())
+        return XADResponse.model_validate_json(resp.text)
 
     async def __oauth20_token_endpoint(self, json_body: dict) -> httpx.Response:
         url = "https://login.live.com/oauth20_token.srf"
@@ -182,7 +182,7 @@ class XALManager:
         }
         resp = await self.__oauth20_token_endpoint(post_body)
         resp.raise_for_status()
-        return OAuth2TokenResponse(**resp.json())
+        return OAuth2TokenResponse.model_validate_json(resp.text)
 
     async def refresh_token(self, refresh_token_jwt: str) -> httpx.Response:
         post_body = {
@@ -261,7 +261,7 @@ class XALManager:
             "POST", url, headers=headers, json=post_body
         )
         resp.raise_for_status()
-        return SisuAuthorizationResponse(**resp.json())
+        return SisuAuthorizationResponse.model_validate_json(resp.text)
 
     async def xsts_authorization(
         self,
@@ -290,7 +290,7 @@ class XALManager:
             "POST", url, headers=headers, json=post_body
         )
         resp.raise_for_status()
-        return XSTSResponse(**resp.json())
+        return XSTSResponse.model_validate_json(resp.text)
 
     async def auth_flow(
         self, user_input_cb: Callable[[str], str]
