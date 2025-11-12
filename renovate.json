@@ -1,10 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": ["config:best-practices"],
+  "labels": [":recycle: dependencies"],
+  "commitMessagePrefix": "⬆️",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageAction": "Bump",
   "pep621": {
     "enabled": true
   },
   "poetry": {
     "enabled": false
-  }
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["pep621"],
+      "addLabels": [":snake: python"]
+    }
+  ]
 }
