@@ -9,7 +9,7 @@ jobs:
         os: [windows-latest, ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
       - name: Install Hatch
         uses: pypa/hatch@install
       - name: Lint and typecheck
@@ -19,7 +19,7 @@ jobs:
         run: |
           hatch test --all
 
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@5a1091511ad55cbe89839c7260b706298ca349f7 # v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
@@ -35,7 +35,7 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5
       - name: Install Hatch
         uses: pypa/hatch@install
       - name: mint API token
@@ -63,7 +63,7 @@ jobs:
           hatch build
           hatch publish
       - name: Create release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@b7eabc95ff50cbeeedec83973935c8f306dfcd0b # v1
         with:
           draft: true
           body: ${{ github.event.head_commit.message }}
