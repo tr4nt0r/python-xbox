@@ -93,13 +93,11 @@ class SmartglassConsoleStatus(CamelCaseModel):
 
 class InstalledPackage(CamelCaseModel):
     one_store_product_id: str | None = None
-    title_id: int
+    title_id: int | None = None
     aumid: str | None = None
     last_active_time: datetime | None = None
-    is_game: bool
     name: str | None = None
     content_type: str
-    instance_id: str
     storage_device_id: str
     unique_id: str
     legacy_product_id: str | None = None
