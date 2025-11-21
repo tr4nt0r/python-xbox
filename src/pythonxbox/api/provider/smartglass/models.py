@@ -96,10 +96,8 @@ class InstalledPackage(CamelCaseModel):
     title_id: int
     aumid: str | None = None
     last_active_time: datetime | None = None
-    is_game: bool
     name: str | None = None
     content_type: str
-    instance_id: str
     storage_device_id: str
     unique_id: str
     legacy_product_id: str | None = None
