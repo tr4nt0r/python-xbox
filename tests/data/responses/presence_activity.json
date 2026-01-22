@@ -1,0 +1,20 @@
+{
+	"xuid": "0123456789",
+	"state": "online",
+	"devices": [
+		{
+			"type": "D",
+			"titles": [
+				{
+					"id": "12341234",
+					"name": "Contoso 5",
+					"state": "active",
+					"placement": "fill",
+					"timestamp": "2012-09-17T07:15:23.4930000",
+					"activity": {"richPresence": "Team Deathmatch on Nirvana"}
+				}
+			]
+		}
+	]
+}
+
