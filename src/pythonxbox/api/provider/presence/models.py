@@ -32,7 +32,7 @@ class ActivityRecord(CamelCaseModel):
 class TitleRecord(CamelCaseModel):
     id: str | None = None
     name: str | None = None
-    activity: list[ActivityRecord] | None = None
+    activity: ActivityRecord | None = None
     lastModified: str | None = None
     placement: str | None = None
     state: str | None = None
