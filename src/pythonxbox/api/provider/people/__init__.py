@@ -70,7 +70,7 @@ class PeopleProvider(RateLimitedProvider):
             ]
         decoration = self.SEPERATOR.join(decoration_fields)
 
-        url = f"{self.PEOPLE_URL}/users/me/people/social/decoration/{decoration}"
+        url = f"{self.PEOPLE_URL}/users/me/people/friends/decoration/{decoration}"
         resp = await self.client.session.get(url, headers=self._headers_v7, **kwargs)
         resp.raise_for_status()
         return PeopleResponse.model_validate_json(resp.text)
