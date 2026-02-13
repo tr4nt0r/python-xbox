@@ -115,7 +115,7 @@ python = ["3.14", "3.13", "3.12", "3.11"]
 
 [tool.hatch.envs.hatch-static-analysis]
 dependencies = [
-    "ruff==0.15.0",
+    "ruff==0.15.1",
 ]
 config-path = "none"
 
