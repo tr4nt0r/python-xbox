@@ -78,7 +78,7 @@ def test_synthetic_signature(
 
     assert (
         test_signature
-        == "AAAAAQHWE40Q98yAFe3R7GuZfvGA350cH7hWgg4HIHjaD9lGYiwxki6bNyGnB8dMEIfEmBiuNuGUfWjY5lL2h44X/VMGOkPIezVb7Q=="
+        == "AAAAAQHWE40Q98yA7m+8q9G9JwEg9aIyK7yadd3P1nUG10lTF/FcV+y87bUVOUJoihhLSTcJCg4UvOR/aDj46lb6Le82PrsSXHoMOw=="
     )
 
 
@@ -90,7 +90,7 @@ def test_synthetic_verify_digest(
         "f7d61b6f8d4dcd86da1aa8553f0ee7c15450811e7cd2759364e22f67d853ff50"
     )
     signature = base64.b64decode(
-        "Fe3R7GuZfvGA350cH7hWgg4HIHjaD9lGYiwxki6bNyGnB8dMEIfEmBiuNuGUfWjY5lL2h44X/VMGOkPIezVb7Q=="
+        "7m+8q9G9JwEg9aIyK7yadd3P1nUG10lTF/FcV+y87bUVOUJoihhLSTcJCg4UvOR/aDj46lb6Le82PrsSXHoMOw=="
     )
     invalid_signature = b"\xff" + bytes(signature)[1:]
     success = synthetic_request_signer.verify_digest(signature, message)
