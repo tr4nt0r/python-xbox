@@ -4,7 +4,6 @@
 [![Build](https://github.com/tr4nt0r/python-xbox/actions/workflows/build.yml/badge.svg)](https://github.com/tr4nt0r/python-xbox/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/tr4nt0r/python-xbox/graph/badge.svg?token=DWUTrV1tM4)](https://codecov.io/gh/tr4nt0r/python-xbox)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/python-xbox?style=flat&label=pypi%20downloads)
-[!["Buy Me A Coffee"](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/tr4nt0r)
 [![GitHub Sponsor](https://img.shields.io/badge/GitHub-Sponsor-blue?logo=github)](https://github.com/sponsors/tr4nt0r)
 
 python-xbox is a python library to authenticate with Xbox Network via your Microsoft Account and provides Xbox related Web-API.
