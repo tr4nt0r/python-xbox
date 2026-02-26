@@ -5,7 +5,7 @@ authors = [
     {name = "Manfred Dennerlein Rodelo", email = "manfred@dennerlein.name"},
 ]
 dependencies = [
-    "ecdsa>=0.19",
+    "cryptography>=42.0",
     "httpx>=0.25.1",
     "ms_cv>=0.1.1",
     "pydantic>=2.12",
@@ -84,7 +84,7 @@ packages = ["src/pythonxbox"]
 python = "3.13"
 dependencies = [
     "platformdirs==4.9.2",
-    "ecdsa==0.19.1",
+    "cryptography>=42.0",
     "httpx==0.28.1",
     "ms_cv==0.1.1",
     "pydantic==2.12.5",

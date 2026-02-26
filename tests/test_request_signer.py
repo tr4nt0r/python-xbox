@@ -2,7 +2,8 @@ import base64
 from binascii import unhexlify
 from datetime import datetime
 
-from ecdsa.keys import BadSignatureError, VerifyingKey
+from cryptography.exceptions import InvalidSignature
+from cryptography.hazmat.primitives.asymmetric import ec
 import pytest
 
 from pythonxbox.common.request_signer import RequestSigner
@@ -82,7 +83,8 @@ def test_synthetic_signature(
 
 
 def test_synthetic_verify_digest(
-    synthetic_request_signer: RequestSigner, ecdsa_verifying_key: VerifyingKey
+    synthetic_request_signer: RequestSigner,
+    ecdsa_verifying_key: ec.EllipticCurvePublicKey,
 ) -> None:
     message = unhexlify(
         "f7d61b6f8d4dcd86da1aa8553f0ee7c15450811e7cd2759364e22f67d853ff50"
@@ -95,7 +97,7 @@ def test_synthetic_verify_digest(
     success_via_vk = synthetic_request_signer.verify_digest(
         signature, message, ecdsa_verifying_key
     )
-    with pytest.raises(BadSignatureError):
+    with pytest.raises(InvalidSignature):
         synthetic_request_signer.verify_digest(invalid_signature, message)
 
     assert success is True

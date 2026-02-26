@@ -2,7 +2,8 @@ from collections.abc import AsyncGenerator
 from datetime import UTC, datetime
 import uuid
 
-from ecdsa.keys import SigningKey, VerifyingKey
+from cryptography.hazmat.primitives.asymmetric import ec
+from cryptography.hazmat.primitives.serialization import load_pem_private_key
 import pytest
 import pytest_asyncio
 
@@ -61,17 +62,21 @@ def ecdsa_signing_key_str() -> str:
 
 
 @pytest.fixture(scope="session")
-def ecdsa_signing_key(ecdsa_signing_key_str: str) -> SigningKey:
-    return SigningKey.from_pem(ecdsa_signing_key_str)
+def ecdsa_signing_key(ecdsa_signing_key_str: str) -> ec.EllipticCurvePrivateKey:
+    return load_pem_private_key(ecdsa_signing_key_str.encode(), password=None)
 
 
 @pytest.fixture(scope="session")
-def ecdsa_verifying_key(ecdsa_signing_key: SigningKey) -> VerifyingKey:
-    return ecdsa_signing_key.get_verifying_key()
+def ecdsa_verifying_key(
+    ecdsa_signing_key: ec.EllipticCurvePrivateKey,
+) -> ec.EllipticCurvePublicKey:
+    return ecdsa_signing_key.public_key()
 
 
 @pytest.fixture(scope="session")
-def synthetic_request_signer(ecdsa_signing_key: VerifyingKey) -> RequestSigner:
+def synthetic_request_signer(
+    ecdsa_signing_key: ec.EllipticCurvePrivateKey,
+) -> RequestSigner:
     return RequestSigner(ecdsa_signing_key)
 
 
