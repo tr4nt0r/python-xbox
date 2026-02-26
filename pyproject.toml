@@ -84,7 +84,7 @@ packages = ["src/pythonxbox"]
 python = "3.13"
 dependencies = [
     "platformdirs==4.9.2",
-    "cryptography>=42.0",
+    "cryptography==46.0.5",
     "httpx==0.28.1",
     "ms_cv==0.1.1",
     "pydantic==2.12.5",
