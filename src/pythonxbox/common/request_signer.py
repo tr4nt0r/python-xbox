@@ -1,5 +1,4 @@
-"""
-Request Signer
+"""Request Signer
 
 Employed for generating the "Signature" header in authentication requests.
 """
@@ -9,7 +8,8 @@ from datetime import UTC, datetime
 import hashlib
 import struct
 
-from ecdsa import NIST256p, SigningKey, VerifyingKey
+from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives.asymmetric import ec, utils
 
 from pythonxbox.authentication.models import SignaturePolicy
 from pythonxbox.common import filetimes
@@ -22,31 +22,39 @@ DEFAULT_SIGNING_POLICY = SignaturePolicy(
 class RequestSigner:
     def __init__(
         self,
-        signing_key: SigningKey | None = None,
+        signing_key: ec.EllipticCurvePrivateKey | None = None,
         signing_policy: SignaturePolicy | None = None,
     ) -> None:
-        self.signing_key = signing_key or SigningKey.generate(curve=NIST256p)
+        self.signing_key = signing_key or ec.generate_private_key(ec.SECP256R1())
         self.signing_policy = signing_policy or DEFAULT_SIGNING_POLICY
 
-        pk_point = self.signing_key.verifying_key.pubkey.point
+        pub_nums = self.signing_key.public_key().public_numbers()
         self.proof_field = {
             "use": "sig",
             "alg": self.signing_policy.supported_algorithms[0],
             "kty": "EC",
             "crv": "P-256",
-            "x": self.__encode_ec_coord(pk_point.x()),
-            "y": self.__encode_ec_coord(pk_point.y()),
+            "x": self.__encode_ec_coord(pub_nums.x),
+            "y": self.__encode_ec_coord(pub_nums.y),
         }
 
     def export_signing_key(self) -> str:
-        return self.signing_key.to_pem().decode()
+        return self.signing_key.private_bytes(
+            serialization.Encoding.PEM,
+            serialization.PrivateFormat.TraditionalOpenSSL,
+            serialization.NoEncryption(),
+        ).decode()
 
     @staticmethod
-    def import_signing_key(signing_key: str) -> SigningKey:
-        return SigningKey.from_pem(signing_key)
+    def import_signing_key(signing_key: str) -> ec.EllipticCurvePrivateKey:
+        key = serialization.load_pem_private_key(signing_key.encode(), password=None)
+        if not isinstance(key, ec.EllipticCurvePrivateKey):
+            msg = "Expected an EC private key"
+            raise TypeError(msg)
+        return key
 
     @classmethod
-    def from_pem(cls, pem_string: str) -> SigningKey:
+    def from_pem(cls, pem_string: str) -> "RequestSigner":
         request_signer = RequestSigner.import_signing_key(pem_string)
         return cls(request_signer)
 
@@ -79,7 +87,7 @@ class RequestSigner:
         self,
         signature: bytes,
         digest: bytes,
-        verifying_key: VerifyingKey | None = None,
+        verifying_key: ec.EllipticCurvePublicKey | None = None,
     ) -> bool:
         """
         Verify signature against digest
@@ -91,8 +99,12 @@ class RequestSigner:
 
         Returns: True on successful verification, False otherwise
         """
-        verifier = verifying_key or self.signing_key.verifying_key
-        return verifier.verify_digest(signature, digest)
+        verifier = verifying_key or self.signing_key.public_key()
+        r = int.from_bytes(signature[:32], "big")
+        s = int.from_bytes(signature[32:], "big")
+        der_sig = utils.encode_dss_signature(r, s)
+        verifier.verify(der_sig, digest, ec.ECDSA(utils.Prehashed(hashes.SHA256())))
+        return True
 
     def sign(
         self,
@@ -139,7 +151,12 @@ class RequestSigner:
         digest = self._hash(data)
 
         # Sign the hash
-        signature = self.signing_key.sign_digest_deterministic(digest)
+        der_sig = self.signing_key.sign(
+            digest,
+            ec.ECDSA(utils.Prehashed(hashes.SHA256()), deterministic_signing=True),
+        )
+        r, s = utils.decode_dss_signature(der_sig)
+        signature = r.to_bytes(32, "big") + s.to_bytes(32, "big")
 
         # Return signature version + timestamp encoded + signature
         return signature_version_bytes + ts_bytes + signature
