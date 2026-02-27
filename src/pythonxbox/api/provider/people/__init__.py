@@ -71,7 +71,10 @@ class PeopleProvider(RateLimitedProvider):
         **kwargs,
     ) -> PeopleResponse:
         """
-        Get friendlist of own profile
+        Get friendlist of a user by their XUID
+
+        Args:
+            xuid: XUID of the user to get friends from
 
         Returns:
             :class:`PeopleResponse`: People Response
