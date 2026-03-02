@@ -93,9 +93,9 @@ class PeopleProvider(RateLimitedProvider):
         resp.raise_for_status()
         return PeopleResponse.model_validate_json(resp.text)
 
-    async def get_profile_by_xuid(self, xuid: str, decoration_fields: list[PeopleDecoration] | None = None, **kwargs) -> PeopleResponse:
+    async def get_friend_by_xuid(self, xuid: str, decoration_fields: list[PeopleDecoration] | None = None, **kwargs) -> PeopleResponse:
         """
-        Get a single user's profile from the authenticated user's perspective
+        Get a single friend's profile from the authenticated user's perspective
 
         This returns relationship metadata (isFriend, canBeFriended, etc.) as seen
         by the caller, making it useful for profile lookups and relationship checks.
