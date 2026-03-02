@@ -1,5 +1,5 @@
 """
-People - Access friendlist from own profiles and others
+People - Access friendlist and profile info from own profile and others
 """
 
 from typing import TYPE_CHECKING, ClassVar
@@ -89,6 +89,33 @@ class PeopleProvider(RateLimitedProvider):
         decoration = self.SEPERATOR.join(decoration_fields)
 
         url = f"{self.PEOPLE_URL}/users/xuid({xuid})/people/friends/decoration/{decoration}"
+        resp = await self.client.session.get(url, headers=self._headers, **kwargs)
+        resp.raise_for_status()
+        return PeopleResponse.model_validate_json(resp.text)
+
+    async def get_profile_by_xuid(self, xuid: str, decoration_fields: list[PeopleDecoration] | None = None, **kwargs) -> PeopleResponse:
+        """
+        Get a single user's profile from the authenticated user's perspective
+
+        This returns relationship metadata (isFriend, canBeFriended, etc.) as seen
+        by the caller, making it useful for profile lookups and relationship checks.
+
+        Args:
+            xuid: XUID of the user to retrieve profile for
+
+        Returns:
+            :class:`PeopleResponse`: People Response with a single person entry
+        """
+        if not decoration_fields:
+            decoration_fields = [
+                PeopleDecoration.PREFERRED_COLOR,
+                PeopleDecoration.DETAIL,
+                PeopleDecoration.MULTIPLAYER_SUMMARY,
+                PeopleDecoration.PRESENCE_DETAIL,
+            ]
+        decoration = self.SEPERATOR.join(decoration_fields)
+
+        url = f"{self.PEOPLE_URL}/users/me/people/xuids({xuid})/decoration/{decoration}"
         resp = await self.client.session.get(url, headers=self._headers, **kwargs)
         resp.raise_for_status()
         return PeopleResponse.model_validate_json(resp.text)
