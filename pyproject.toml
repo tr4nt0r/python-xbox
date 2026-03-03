@@ -121,7 +121,7 @@ config-path = "none"
 
 [tool.hatch.envs.docs]
 dependencies = [
-    "mkdocs-material==9.7.3",
+    "mkdocs-material==9.7.4",
     "mkdocstrings[python]==1.0.3",
 ]
 [tool.hatch.envs.docs.scripts]
