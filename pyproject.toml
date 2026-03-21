@@ -90,7 +90,7 @@ dependencies = [
     "pydantic==2.12.5",
     "pytest==9.0.2",
     "pytest-asyncio==1.3.0",
-    "pytest-cov==7.0.0",
+    "pytest-cov==7.1.0",
     "freezegun==1.5.5",
     "respx~=0.22",
 ]
