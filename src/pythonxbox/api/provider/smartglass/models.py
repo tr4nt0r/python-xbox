@@ -141,8 +141,8 @@ class CommandDestination(CamelCaseModel):
     id: str
     name: str
     power_state: PowerState
-    remote_management_enabled: bool
-    console_streaming_enabled: bool
+    remote_management_enabled: bool | None = None
+    console_streaming_enabled: bool | None = None
     console_type: ConsoleType
     wireless_warning: str | None = None
     out_of_home_warning: str | None = None
