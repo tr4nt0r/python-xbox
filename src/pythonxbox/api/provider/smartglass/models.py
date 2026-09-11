@@ -151,7 +151,7 @@ class CommandDestination(CamelCaseModel):
 class CommandResponse(CamelCaseModel):
     result: str | None = None
     ui_text: str | None = None
-    destination: CommandDestination
+    destination: CommandDestination | None
     user_info: str | None = None
     op_id: str
     status: SmartglassApiStatus
