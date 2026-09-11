@@ -36,6 +36,21 @@ async def test_titlehub_titleinfo(
 
 
 @pytest.mark.asyncio
+async def test_titlehub_titleinfo_by_xuid(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
+    route = respx_mock.get("https://titlehub.xboxlive.com").mock(
+        return_value=Response(200, json=get_response_json("titlehub_titleinfo"))
+    )
+    ret = await xbl_client.titlehub.get_title_info_by_xuid(987654321, 1717113201)
+
+    assert len(ret.titles) == 1
+    assert "xuid(987654321)" in str(respx_mock.calls[0].request.url)
+
+    assert route.called
+
+
+@pytest.mark.asyncio
 async def test_titlehub_batch(
     respx_mock: MockRouter, xbl_client: XboxLiveClient
 ) -> None:
