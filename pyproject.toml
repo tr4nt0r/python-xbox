@@ -92,7 +92,7 @@ dependencies = [
     "pytest-asyncio==1.4.0",
     "pytest-cov==7.1.0",
     "freezegun==1.5.5",
-    "respx~=0.22",
+    "respx==0.23.1",
 ]
 
 [tool.hatch.envs.hatch-test]
@@ -100,7 +100,7 @@ parallel = true
 extra-dependencies = [
   "pytest-cov~=7.0",
   "pytest-asyncio~=1.1",
-  "respx~=0.22",
+  "respx==0.23.1",
   "freezegun==1.5.5"
 ]
 extra-args = ["--cov=src/", "--cov-report=term-missing", "--cov-report=xml", "-vv"]
