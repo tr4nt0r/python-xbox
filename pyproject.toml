@@ -2,7 +2,7 @@
 name = "python-xbox"
 description = "A library to authenticate with Xbox Network and use their API"
 authors = [
-    {name = "Manfred Dennerlein Rodelo", email = "manfred@dennerlein.name"},
+    {name = "Manfred Dennerlein Rodelo", email = "tr4nt0r@uber.space"},
 ]
 dependencies = [
     "cryptography>=42.0",
