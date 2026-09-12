@@ -62,7 +62,7 @@ async def async_main() -> None:
             print(
                 f"""
                 Could not refresh tokens from {tokens_file}, err={e}\n
-                You might have to delete the tokens file and re-authenticate 
+                You might have to delete the tokens file and re-authenticate
                 if refresh token is expired
             """
             )

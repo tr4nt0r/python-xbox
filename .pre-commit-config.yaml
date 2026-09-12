@@ -12,3 +12,17 @@ repos:
       - id: check-executables-have-shebangs
         stages: [manual]
       - id: check-json
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-shebang-scripts-are-executable
+      - id: debug-statements
+      - id: check-ast
+
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+        args: ["--unsafe"] # needed for !! tags in mkdocs.yml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: ["--fix=auto"] # replace 'auto' with 'lf' to enforce Linux/Mac line endings or 'crlf' for Windows
