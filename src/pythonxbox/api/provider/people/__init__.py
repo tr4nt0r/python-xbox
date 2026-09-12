@@ -93,7 +93,12 @@ class PeopleProvider(RateLimitedProvider):
         resp.raise_for_status()
         return PeopleResponse.model_validate_json(resp.text)
 
-    async def get_friend_by_xuid(self, xuid: str, decoration_fields: list[PeopleDecoration] | None = None, **kwargs) -> PeopleResponse:
+    async def get_friend_by_xuid(
+        self,
+        xuid: str,
+        decoration_fields: list[PeopleDecoration] | None = None,
+        **kwargs,
+    ) -> PeopleResponse:
         """
         Get a single friend's profile from the authenticated user's perspective
 
