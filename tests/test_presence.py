@@ -78,8 +78,11 @@ async def test_presence_own_set_fail(
     assert route.called
     assert not ret
 
+
 @pytest.mark.asyncio
-async def test_presence_with_activity(respx_mock: MockRouter, xbl_client: XboxLiveClient) -> None:
+async def test_presence_with_activity(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
 
     route = respx_mock.get("https://userpresence.xboxlive.com").mock(
         return_value=Response(200, json=get_response_json("presence_activity"))
@@ -89,5 +92,7 @@ async def test_presence_with_activity(respx_mock: MockRouter, xbl_client: XboxLi
 
     assert route.called
     assert response.xuid == "0123456789"
-    assert response.devices[0].titles[0].activity.richPresence == "Team Deathmatch on Nirvana"
-
+    assert (
+        response.devices[0].titles[0].activity.richPresence
+        == "Team Deathmatch on Nirvana"
+    )
