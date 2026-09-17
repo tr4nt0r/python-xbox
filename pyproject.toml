@@ -115,11 +115,11 @@ python = ["3.15", "3.14", "3.13", "3.12", "3.11"]
 
 [tool.hatch.envs.hatch-check-code]
 config-path = "none"
-dependencies = ["ruff==0.16.7"]
+dependencies = ["ruff==0.16.8"]
 
 [tool.hatch.envs.hatch-check-fmt]
 config-path = "none"
-dependencies = ["ruff==0.16.7"]
+dependencies = ["ruff==0.16.8"]
 
 [tool.hatch.envs.docs]
 dependencies = [
