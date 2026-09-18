@@ -51,6 +51,25 @@ async def test_titlehub_titleinfo_by_xuid(
 
 
 @pytest.mark.asyncio
+async def test_titlehub_titleinfo_by_pfn(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
+    route = respx_mock.get("https://titlehub.xboxlive.com").mock(
+        return_value=Response(200, json=get_response_json("titlehub_titleinfo"))
+    )
+    ret = await xbl_client.titlehub.get_title_info_by_pfn(
+        "Microsoft.SeaofThieves_8wekyb3d8bbwe"
+    )
+
+    assert len(ret.titles) == 1
+    assert "pfn(Microsoft.SeaofThieves_8wekyb3d8bbwe)" in str(
+        respx_mock.calls[0].request.url
+    )
+
+    assert route.called
+
+
+@pytest.mark.asyncio
 async def test_titlehub_batch(
     respx_mock: MockRouter, xbl_client: XboxLiveClient
 ) -> None:
