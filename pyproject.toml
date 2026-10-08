@@ -87,7 +87,7 @@ dependencies = [
     "cryptography==50.0.2",
     "httpx==0.28.1",
     "ms_cv==0.1.1",
-    "pydantic==2.13.5",
+    "pydantic==2.14.0",
     "pytest==9.1.1",
     "pytest-asyncio==1.4.0",
     "pytest-cov==7.1.0",
