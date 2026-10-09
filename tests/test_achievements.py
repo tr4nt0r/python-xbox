@@ -3,6 +3,7 @@ import pytest
 from respx import MockRouter
 
 from pythonxbox.api.client import XboxLiveClient
+from pythonxbox.api.provider.achievements.models import RarityCategory
 from tests.common import get_response_json
 
 
@@ -35,7 +36,7 @@ async def test_achievement_360_earned(
     )
 
     assert len(ret.achievements) == 1
-    assert ret.achievements[0].rarity.current_category == "Rare"
+    assert ret.achievements[0].rarity.current_category == RarityCategory.RARE
     assert route.called
 
 
@@ -95,7 +96,7 @@ async def test_achievement_one_details(
     )
 
     assert len(ret.achievements) == 1
-    assert ret.achievements[0].rarity.current_category == "Rare"
+    assert ret.achievements[0].rarity.current_category == RarityCategory.RARE
     assert route.called
 
 

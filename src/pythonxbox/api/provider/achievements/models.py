@@ -1,4 +1,5 @@
 from datetime import datetime, time
+from enum import StrEnum
 from typing import Any
 
 from pydantic import BaseModel
@@ -11,8 +12,14 @@ class PagingInfo(CamelCaseModel):
     total_records: int
 
 
+class RarityCategory(StrEnum):
+    UNSET = "Unset"
+    RARE = "Rare"
+    COMMON = "Common"
+
+
 class Rarity(CamelCaseModel):
-    current_category: str
+    current_category: RarityCategory
     current_percentage: float
 
 
