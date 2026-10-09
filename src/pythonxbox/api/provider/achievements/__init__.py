@@ -17,8 +17,8 @@ from pythonxbox.api.provider.ratelimitedprovider import RateLimitedProvider
 
 class AchievementsProvider(RateLimitedProvider):
     ACHIEVEMENTS_URL = "https://achievements.xboxlive.com"
-    HEADERS_GAME_360_PROGRESS: ClassVar = {"x-xbl-contract-version": "1"}
-    HEADERS_GAME_PROGRESS: ClassVar = {"x-xbl-contract-version": "2"}
+    HEADERS_GAME_360_PROGRESS: ClassVar = {"x-xbl-contract-version": "3"}
+    HEADERS_GAME_PROGRESS: ClassVar = {"x-xbl-contract-version": "4"}
 
     RATE_LIMITS: ClassVar = {"burst": 100, "sustain": 300}
 
