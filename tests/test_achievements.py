@@ -35,6 +35,7 @@ async def test_achievement_360_earned(
     )
 
     assert len(ret.achievements) == 1
+    assert ret.achievements[0].rarity.current_category == "Rare"
     assert route.called
 
 
@@ -73,6 +74,7 @@ async def test_achievement_one_details(
     )
 
     assert len(ret.achievements) == 1
+    assert ret.achievements[0].rarity.current_category == "Rare"
     assert route.called
 
 

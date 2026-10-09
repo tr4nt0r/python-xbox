@@ -11,6 +11,11 @@ class PagingInfo(CamelCaseModel):
     total_records: int
 
 
+class Rarity(CamelCaseModel):
+    current_category: str
+    current_percentage: float
+
+
 class Achievement360(CamelCaseModel):
     id: int
     title_id: int
@@ -28,6 +33,7 @@ class Achievement360(CamelCaseModel):
     type: int
     is_revoked: bool
     time_unlocked: datetime
+    rarity: Rarity | None = None
 
 
 class Title360(CamelCaseModel):
@@ -109,6 +115,7 @@ class Achievement(CamelCaseModel):
     estimated_time: time
     deeplink: Any = None
     is_revoked: bool
+    rarity: Rarity | None = None
 
 
 class AchievementResponse(CamelCaseModel):
