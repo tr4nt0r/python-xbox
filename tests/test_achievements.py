@@ -60,6 +60,27 @@ async def test_achievement_360_recent_progress(
 
 
 @pytest.mark.asyncio
+async def test_achievement_360_recent_unlocks(
+    respx_mock: MockRouter, xbl_client: XboxLiveClient
+) -> None:
+    route = respx_mock.get("https://achievements.xboxlive.com").mock(
+        return_value=Response(
+            200, json=get_response_json("achievements_360_recent_unlocks")
+        )
+    )
+
+    ret = await xbl_client.achievements.get_achievements_xbox360_recent_unlocks(
+        xuid="2669321029139235"
+    )
+
+    assert len(ret.achievements) == 5
+    url = str(respx_mock.calls[0].request.url)
+    assert "unlockedOnly=true" in url
+    assert "orderBy=UnlockTime" in url
+    assert route.called
+
+
+@pytest.mark.asyncio
 async def test_achievement_one_details(
     respx_mock: MockRouter, xbl_client: XboxLiveClient
 ) -> None:

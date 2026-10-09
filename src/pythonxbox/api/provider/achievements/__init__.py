@@ -118,6 +118,35 @@ class AchievementsProvider(RateLimitedProvider):
         resp.raise_for_status()
         return Achievement360ProgressResponse.model_validate_json(resp.text)
 
+    async def get_achievements_xbox360_recent_unlocks(
+        self, xuid: str, max_items: int | None = 32, **kwargs
+    ) -> Achievement360Response:
+        """
+        Get recently unlocked achievements for X360 titles
+
+        Args:
+            xuid (str): Xbox User Id
+            max_items (int): Maximum items
+
+        Returns:
+            :class:`Achievement360Response`: Achievement 360 Response
+        """
+        url = f"{self.ACHIEVEMENTS_URL}/users/xuid({xuid})/achievements?"
+        params = {
+            "unlockedOnly": "true",
+            "orderBy": "UnlockTime",
+            "maxItems": max_items,
+        }
+        resp = await self.client.session.get(
+            url,
+            params=params,
+            headers=self.HEADERS_GAME_360_PROGRESS,
+            rate_limits=self.rate_limit_read,
+            **kwargs,
+        )
+        resp.raise_for_status()
+        return Achievement360Response.model_validate_json(resp.text)
+
     async def get_achievements_xboxone_gameprogress(
         self, xuid: str, title_id: str, **kwargs
     ) -> AchievementResponse:
