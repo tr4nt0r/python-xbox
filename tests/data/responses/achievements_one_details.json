@@ -53,7 +53,11 @@
       ],
       "estimatedTime": "00:00:00",
       "deeplink": null,
-      "isRevoked": false
+      "isRevoked": false,
+      "rarity": {
+        "currentCategory": "Rare",
+        "currentPercentage": 0.47
+      }
     }
   ],
   "pagingInfo": {

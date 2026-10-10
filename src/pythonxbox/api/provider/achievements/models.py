@@ -1,4 +1,5 @@
 from datetime import datetime, time
+from enum import StrEnum
 from typing import Any
 
 from pydantic import BaseModel
@@ -9,6 +10,17 @@ from pythonxbox.common.models import CamelCaseModel
 class PagingInfo(CamelCaseModel):
     continuation_token: str | None = None
     total_records: int
+
+
+class RarityCategory(StrEnum):
+    UNSET = "Unset"
+    RARE = "Rare"
+    COMMON = "Common"
+
+
+class Rarity(CamelCaseModel):
+    current_category: RarityCategory
+    current_percentage: float
 
 
 class Achievement360(CamelCaseModel):
@@ -28,6 +40,7 @@ class Achievement360(CamelCaseModel):
     type: int
     is_revoked: bool
     time_unlocked: datetime
+    rarity: Rarity | None = None
 
 
 class Title360(CamelCaseModel):
@@ -109,6 +122,7 @@ class Achievement(CamelCaseModel):
     estimated_time: time
     deeplink: Any = None
     is_revoked: bool
+    rarity: Rarity | None = None
 
 
 class AchievementResponse(CamelCaseModel):

@@ -16,7 +16,11 @@
       "lockedDescription": "Erzeuge ein Farblöscher-Hexa aus 5 Hexas",
       "type": 1,
       "isRevoked": false,
-      "timeUnlocked": "2014-04-12T14:05:02.0000000Z"
+      "timeUnlocked": "2014-04-12T14:05:02.0000000Z",
+      "rarity": {
+        "currentCategory": "Rare",
+        "currentPercentage": 0.16
+      }
     }
   ],
   "pagingInfo": {
