@@ -1,0 +1,119 @@
+{
+  "achievements": [
+    {
+      "id": 3,
+      "titleId": 1297287339,
+      "name": "We Struck Gold, Son!",
+      "sequence": 77,
+      "flags": 1245198,
+      "unlockedOnline": true,
+      "unlocked": true,
+      "isSecret": false,
+      "platform": 1,
+      "gamerscore": 10,
+      "imageId": 6,
+      "description": "Found food and ammo in Hanover.",
+      "lockedDescription": "Story Progression in Act 1 Chapter 3 (Standard or Arcade).",
+      "type": 6,
+      "isRevoked": false,
+      "timeUnlocked": "2013-07-03T14:55:26.4830000Z",
+      "rarity": {
+        "currentCategory": "Common",
+        "currentPercentage": 54.56
+      }
+    },
+    {
+      "id": 29,
+      "titleId": 1297287339,
+      "name": "Level 5",
+      "sequence": 76,
+      "flags": 1245194,
+      "unlockedOnline": true,
+      "unlocked": true,
+      "isSecret": false,
+      "platform": 1,
+      "gamerscore": 5,
+      "imageId": 32,
+      "description": "Reached level 5.",
+      "lockedDescription": "Reach level 5.",
+      "type": 2,
+      "isRevoked": false,
+      "timeUnlocked": "2013-07-03T14:47:56.0770000Z",
+      "rarity": {
+        "currentCategory": "Common",
+        "currentPercentage": 72.85
+      }
+    },
+    {
+      "id": 30,
+      "titleId": 1297287339,
+      "name": "Level 10",
+      "sequence": 75,
+      "flags": 1245194,
+      "unlockedOnline": true,
+      "unlocked": true,
+      "isSecret": false,
+      "platform": 1,
+      "gamerscore": 10,
+      "imageId": 33,
+      "description": "Reached level 10.",
+      "lockedDescription": "Reach level 10.",
+      "type": 2,
+      "isRevoked": false,
+      "timeUnlocked": "2013-07-03T14:47:56.0770000Z",
+      "rarity": {
+        "currentCategory": "Common",
+        "currentPercentage": 59.72
+      }
+    },
+    {
+      "id": 119,
+      "titleId": 1161890141,
+      "name": "Legend",
+      "sequence": 93,
+      "flags": 1245193,
+      "unlockedOnline": true,
+      "unlocked": true,
+      "isSecret": false,
+      "platform": 1,
+      "gamerscore": 50,
+      "imageId": 276,
+      "description": "Mission accomplished.",
+      "lockedDescription": "Mission accomplished.",
+      "type": 1,
+      "isRevoked": false,
+      "timeUnlocked": "2013-07-03T09:45:23.7070000Z",
+      "rarity": {
+        "currentCategory": "Common",
+        "currentPercentage": 43.91
+      }
+    },
+    {
+      "id": 123,
+      "titleId": 1161890141,
+      "name": "Long Service Medal",
+      "sequence": 94,
+      "flags": 1245193,
+      "unlockedOnline": true,
+      "unlocked": true,
+      "isSecret": false,
+      "platform": 1,
+      "gamerscore": 50,
+      "imageId": 280,
+      "description": "Complete Mass Effect 3 twice, or once with a Mass Effect 2 import.",
+      "lockedDescription": "Complete Mass Effect 3 twice, or once with a Mass Effect 2 import.",
+      "type": 1,
+      "isRevoked": false,
+      "timeUnlocked": "2013-07-03T09:45:23.7070000Z",
+      "rarity": {
+        "currentCategory": "Common",
+        "currentPercentage": 33.01
+      }
+    }
+  ],
+  "version": "2026-10-08T18:27:06.2470000Z",
+  "pagingInfo": {
+    "continuationToken": "98,2026-10-08T18:27:06.2470000Z",
+    "totalRecords": 888
+  }
+}
