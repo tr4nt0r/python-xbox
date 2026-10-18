@@ -1,4 +1,4 @@
 """Top-level package for python-xbox."""
 
 __author__ = """tr4nt0r"""
-__version__ = "0.3.0"
+__version__ = "0.4.0"
