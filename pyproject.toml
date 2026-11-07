@@ -123,7 +123,7 @@ dependencies = ["ruff==0.17.4"]
 
 [tool.hatch.envs.docs]
 dependencies = [
-    "mkdocs-material==9.8.0",
+    "mkdocs-material==9.8.1",
     "mkdocstrings[python]==1.0.8",
 ]
 [tool.hatch.envs.docs.scripts]
